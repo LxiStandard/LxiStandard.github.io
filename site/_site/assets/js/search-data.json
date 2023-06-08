@@ -1,0 +1,23 @@
+{"0": {
+    "doc": "Announcements",
+    "title": "Announcements",
+    "content": ". | ",
+    "url": "/announcements.html",
+    
+    "relUrl": "/announcements.html"
+  },"1": {
+    "doc": "Announcements",
+    "title": "Creation of LXI Public Site",
+    "content": "At the June 2023 LXI meeting we decided to create a public LXI subdomain with various elements that LXI needs to have publicly available. | . ",
+    "url": "/announcements.html",
+    
+    "relUrl": "/announcements.html"
+  },"2": {
+    "doc": "Specification Downloads",
+    "title": "Specification Downloads",
+    "content": "This page has links to all of the current LXI specifications. | Document | Word | PDF | . | (Guide_to_LXI_Documentation_1.6-2022-05-26.docx) | Word | PDF | . | (LXI_API_Extended_Function_1.0_2022-06-30.docx) | Word | PDF | . | (LXI_Clock_Synchronization_Extended_Function_1.1_2022-05-10.docx) | Word | PDF | . | (LXI_Device_Specification_1.6_2022-06-09.docx) | Word | PDF | . | (LXI_Event_Log_Extended_Function_1.0_2022-05-10.docx) | Word | PDF | . | (LXI_Event_Messaging_Extended_Function_1.1_2022-05-10.docx) | Word | PDF | . | (LXI_HiSLIP_Extended_Function_1.3_2022-05-26.docx) | Word | PDF | . | (LXI_IEEE_1588_Profile_1.0_2008-12-01.docx) | Word | PDF | . | (LXI_IPv6_Extended_Function_2.0_2022-05-10.docx) | Word | PDF | . | (LXI_Security_Extended_Function_1.0_2022-05-10.docx) | Word | PDF | . | (LXI_Security_Extended_Function_1.0_2022-05-24.docx) | Word | PDF | . | (LXI_Timestamped_Data_Extended_Function_1.0_2022-05-10.docx) | Word | PDF | . | (LXI_VXI-11_Discovery_and_Identification_Extended_Function_1.1_2022-05-10.docx) | Word | PDF | . | (LXI_Wired_Trigger_Bus_Extended_Function_1.1_2022-05-10.docx) | Word | PDF | . ",
+    "url": "/specifications/specs.html",
+    
+    "relUrl": "/specifications/specs.html"
+  }
+}
