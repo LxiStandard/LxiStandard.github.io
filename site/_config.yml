@@ -1,7 +1,8 @@
 title: LXI Standard Auxiliary Pages
 description: Incorporating Jekyll just-the-docs them into md derived from old site
 
-theme: just-the-docs
+#theme: just-the-docs
+remote_theme: just-the-docs/just-the-docs
 
 # baseurl should not be set (since IVI doesn't use a sub) per https://ben.balter.com/jekyll-style-guide/config/#baseurl
 
