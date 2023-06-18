@@ -92,7 +92,7 @@ class documentInfo:
                 md += "-"
             # Skip HTML for now
         else:
-            md = self.rawURL + "||||"
+            md = "["+self.rawURL+"](" + self.rawURL + ")||||"
         return md  
 
 
@@ -111,7 +111,7 @@ def buildURLTable(directory):
     lines= list(fileList.keys())
     lines.sort()
     output= []
-    output.append("|Title|Ver|Date|Word|PDF|")
+    output.append("|Title|Version|Date|Word|PDF|")
     output.append("|---|:---:|---|:---:|:---:|")
     for line in lines:
         newItem = fileList[line]
