@@ -28,7 +28,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Create Dynamic Content
-        run: actions/buildLXI.sh 
+        run: scripts/buildLXI.sh 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
