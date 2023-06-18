@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Specification Downloads
+title: Specifications
 nav_order:  2
 ---
 
