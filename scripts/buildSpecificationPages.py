@@ -111,8 +111,8 @@ def buildURLTable(directory):
     lines= list(fileList.keys())
     lines.sort()
     output= []
-    output.append("|Name|Version|Date|Word|PDF|")
-    output.append("|---|---|---|---|---|")
+    output.append("|Title|Ver|Date|Word|PDF|")
+    output.append("|---|:---:|---|:---:|:---:|")
     for line in lines:
         newItem = fileList[line]
         output.append(newItem.markdown())
