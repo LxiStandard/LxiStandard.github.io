@@ -107,7 +107,9 @@ def buildURLTable(directory):
         if fileInfo.sortKey in fileList:
             fileList[fileInfo.sortKey].merge(fileInfo)
         else:
-            fileList[fileInfo.sortKey] = fileInfo
+            # strip the VersionInfo.md from table
+            if (fileInfo.name!="VersionInfo.md"):
+                fileList[fileInfo.sortKey] = fileInfo
     lines= list(fileList.keys())
     lines.sort()
     output= []
