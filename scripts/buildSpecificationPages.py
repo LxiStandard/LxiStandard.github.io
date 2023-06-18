@@ -40,7 +40,7 @@ class documentInfo:
     URLhtml=""
 
     def __init__(self, filename):
-        filenameRE= r"([\w\d-]+)_(\d+\.\d+)_(\d\d\d\d-\d\d-\d\d).(.*)"
+        filenameRE= r"([\w\d-]+)_([\d\.]+)_(\d\d\d\d-\d\d-\d\d).(.*)"
         match= re.match(filenameRE,filename)
         if (match):
             self.name = match.group(1)
