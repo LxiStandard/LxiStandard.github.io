@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- General Example -->
+<LXIDevice xmlns="http://www.lxistandard.org/InstrumentIdentification/2.0" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://www.lxistandard.org/InstrumentIdentification/2.0 ./2.0.xsd"
+>
+    <Manufacturer>My Company, Inc.</Manufacturer>
+    <Model>EX1234</Model>
+    <SerialNumber>543210</SerialNumber>
+    <FirmwareRevision>1.2.3a</FirmwareRevision>
+    <ManufacturerDescription>Sample Device</ManufacturerDescription>
+    <HomepageURL>http://www.mycompany.com</HomepageURL>
+    <DriverURL>http://www.mycompany.com</DriverURL>
+    <ConnectedDevices>
+        <DeviceURI>http://sampledevice.local/devices/device0/</DeviceURI>
+        <DeviceURI>http://sampledevice.local/devices/device2/</DeviceURI>
+    </ConnectedDevices>
+    <UserDescription>Demo of Identification Schema</UserDescription>
+    <IdentificationURL>http://sampledevice.local/lxi/identification</IdentificationURL>
+    <Interface  xsi:type="NetworkInformation" InterfaceType="LXI" IPType="IPv4" InterfaceName="eth0">
+        <InstrumentAddressString>TCPIP::10.1.2.32::INSTR</InstrumentAddressString>
+        <InstrumentAddressString>TCPIP::10.1.2.32::5000::SOCKET</InstrumentAddressString>
+        <InstrumentAddressString>TCPIP::10.1.2.32::hislip0::INSTR</InstrumentAddressString>
+        <Hostname>10.1.2.32</Hostname>
+        <IPAddress>10.1.2.32</IPAddress>
+        <SubnetMask>255.255.255.0</SubnetMask>
+        <MACAddress>00:3F:F8:6A:1A:3A</MACAddress>
+        <Gateway>10.1.2.1</Gateway>
+        <DHCPEnabled>true</DHCPEnabled>
+        <AutoIPEnabled>true</AutoIPEnabled>
+    </Interface>
+    <Interface InterfaceType="SCPIRaw"  InterfaceName="5225" >    </Interface>
+    <Interface InterfaceType="SCPITelnet"  InterfaceName="5226" >    </Interface>
+    
+    <Interface InterfaceType="MyCompanyCustomNetworkInterface" InterfaceName="MyCompany1">
+        <InstrumentAddressString>10.1.2.32:5025</InstrumentAddressString>
+    </Interface>
+    
+
+    <IVISoftwareModuleName>Thingamajig</IVISoftwareModuleName>
+    
+
+    <Subinstruments>
+        <Subinstrument Name="HP 3457A Stripe Multimeter">
+            <HiSLIP>  <!-- Regarding default subaddress - force it   -->
+                <Subaddress>hislip0</Subaddress>
+                <Subaddress>hislip-HP3457A</Subaddress>
+            </HiSLIP>
+            <Socket Port="22" />
+            <VXI11></VXI11><!-- Default is inst0 -->
+        </Subinstrument>
+        <Subinstrument Name="DAQ Function of HP3457">
+            <Identity>
+                <Manufacturer2>Hewlett-Packard</Manufacturer2>
+                <Model2>3457 DAQ Module</Model2>
+                <SerialNumber2>US0000043</SerialNumber2>
+                <FirmwareRevision2>1.0</FirmwareRevision2>
+            </Identity>
+            <HiSLIP>
+                <Subaddress>hislip1</Subaddress>
+                <Subaddress>hislip-HP3457DAQ</Subaddress>
+            </HiSLIP>
+            <REST Port="8080" RootURL="/API" />
+            <REST Port="80" RootURL="/lxi" />
+        
+            <Socket Port="5024" Protocol="SCPIRaw" />
+            <Telnet Port="5025" Protocol="SCPIRaw"></Telnet>
+            <VXI11 Device="inst1"></VXI11>
+        </Subinstrument>
+    </Subinstruments>
+    <Extension>
+        <SampleExtension foo="bar">Arbitrary Vendor Extension Data can go here.</SampleExtension>
+        <ScpiEndpoints>   
+            <Endpoint>
+
+            </Endpoint>
+        </ScpiEndpoints>
+
+    </Extension>
+    <Domain>1</Domain>
+    <LXIVersion>1.5</LXIVersion>
+    <LXIExtendedFunctions>   
+        <Function FunctionName="SCPI Endpoints" Version="1.0" >   <!-- An alternative: III -->
+            <ScpiEndpoints>
+                <Endpoint>
+                    <etc></etc>
+                </Endpoint>
+            </ScpiEndpoints>
+        </Function>
+        <Function FunctionName="LXI Wired Trigger Bus" Version="1.0" >
+            <dog type="xs:string">Hello</dog>
+            <cat></cat>
+        </Function>
+        <Function FunctionName="LXI Event Messaging" Version="1.0" />
+        <Function FunctionName="LXI Clock Synchronization" Version="1.0" />
+        <Function FunctionName="LXI Timestamped Data" Version="1.0" />
+        <Function FunctionName="LXI Event Logs" Version="1.0" />
+        <Function FunctionName="LXI IPv6" Version="1.0" />
+        <Function FunctionName="LXI VXI-11" Version="1.0" />
+        <Function FunctionName="Extension SCPIRaw" Version="1.6">
+            <port>5225</port>
+            <port>5224</port>
+        </Function>
+        <Function FunctionName="Extension SCPITelnet" Version="1.6">
+            <port>5226</port>
+        </Function>
+        <Function FunctionName="LXI HiSLIP" Version="1.0">
+            <Port>4880</Port>
+            <SubAddress>hislip0</SubAddress>
+            <SubAddress>Digitizer</SubAddress>
+    
+            <ScpiEndpoints>
+                <Endpoint>
+                    <etc></etc>
+                </Endpoint>
+            </ScpiEndpoints>
+        
+        </Function>
+    </LXIExtendedFunctions>
+</LXIDevice>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LXIDeviceSpecificConfiguration xmlns="http://lxistandard.org/schemas/LXIDeviceSpecificConfiguration/1.0" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://lxistandard.org/schemas/LXIDeviceSpecificConfiguration/1.0 LXIDeviceSpecificConfiguration/1.0.xsd"
+    >
+    <IPv4Device address="" dns1="" dns2="" gateway="" subnetMask="" />
+    <IPv6Device 
+        dns="" 
+        gateway="" 
+        globalAddress="0734:5678::4321:abcd:abcd:abcd:abcd, 0834:5678::4321:abcd:abcd:abcd:abcf"  
+        globalAddressEnabled="true"
+        globalAddressprefix="1234:5678::4321"
+        uniqueLocalAddress="FD34:5678::4321:abcd:abcd:abcd:abcd, FD34:5678::4321:abcd:abcd:abcd:abce, FD34:5678::4321:abcd:abcd:abcd:abcf"    
+        uniqueLocalAddressEnabled="true"
+        uniqueLocalAddressPrefix="FD34:5678::4321"
+        linkLocalAddress="FE34:5678::4321:abcd:abcd:abcd:abcd"
+        staticAddress="8080:6502:8008:6800:6801:6810:6809:4004" 
+    />
+</LXIDeviceSpecificConfiguration>
