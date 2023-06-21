@@ -5,7 +5,7 @@ nav_order:  3
 has_children: true
 ---
 
-#LXI API Schemas
+# LXI API Schemas
 
 LXI defines a REST HTTP API that utilizes XSD schemas to 
 define the parameters for the REST operations. This page 
