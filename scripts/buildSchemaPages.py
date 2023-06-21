@@ -63,7 +63,8 @@ def stripSuffixAndBuildTable(specName):
         linkSchema = "["+shortname+"]"+"("+url+")"
         linkDoc="None"
         if os.path.isfile(directory+shortname+".html"):
-            linkDoc="[doc]"+"(schemas/"+specName+"/"+shortname+".html"+")"
+            #linkDoc="[doc]"+"(schemas/"+specName+"/"+shortname+".html"+")"
+            linkDoc="[doc]"+"("+shortname+".html"+")"
         table.append(specName+"|"+linkSchema+"|"+linkDoc)
     
     table.append("")
@@ -73,7 +74,7 @@ def stripSuffixAndBuildTable(specName):
         table.append("## Examples")
         table.append("")
         for example in xmlFiles:
-            table.append("  * ["+example+"](schemas/"+specName+"/"+example+")")
+            table.append("  * ["+example+"]("+example+")")
         table.append("")
 
     return table
