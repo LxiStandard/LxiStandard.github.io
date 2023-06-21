@@ -4,3 +4,4 @@
 # this is run from the root of the LxiStandard.github.io repo
 
 python3 scripts/buildSpecificationPages.py
+python3 scripts/buildSchemaPages.py
