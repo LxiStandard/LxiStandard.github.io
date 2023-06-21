@@ -113,15 +113,15 @@ def buildURLTable(directory):
     lines= list(fileList.keys())
     lines.sort()
     output= []
-    output.append("<div class=\"spec-table\">")
-    output.append("\n")
+    #output.append("<div class=\"spec-table\">")
+    #output.append("\n")
     output.append("|Title|Version|Date|Word|PDF|")
     output.append("|---|:---:|---|:---:|:---:|")
     for line in lines:
         newItem = fileList[line]
         output.append(newItem.markdown())
     output.append("\n")
-    output.append("</div>")
+    #output.append("</div>")
 
     return output
 
