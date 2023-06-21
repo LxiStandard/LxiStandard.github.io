@@ -1,0 +1,24 @@
+div.lxi-callout-box {
+    background: #ddf;
+    padding: 10px 30px;
+    border-radius: 1em;
+}
+
+div.lxi-small-box {
+    background: rgb(235, 235, 235);
+    font-size:small;
+}
+
+div.spec-table {
+    table {
+        width: 60%;
+        border-collapse: collapse;
+        border: 1px solid black;
+        font-family: sans-serif;
+    }
+    th, td {
+        border: 1px solid black;
+        padding: 1px;
+    }
+    
+}

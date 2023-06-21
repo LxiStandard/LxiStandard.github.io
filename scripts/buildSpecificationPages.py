@@ -113,11 +113,13 @@ def buildURLTable(directory):
     lines= list(fileList.keys())
     lines.sort()
     output= []
+    output.append("<div class=\"spec-table\"")
     output.append("|Title|Version|Date|Word|PDF|")
     output.append("|---|:---:|---|:---:|:---:|")
     for line in lines:
         newItem = fileList[line]
         output.append(newItem.markdown())
+    output.append("</div")
     return output
 
 # called from root directory where input spec version resides
