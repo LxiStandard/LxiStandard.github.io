@@ -58,12 +58,9 @@ def stripSuffixAndBuildTable(specName):
     for file in schemasFiles:
         shortname = file[:-4]
         os.rename(directory+file, directory+shortname)
-
-        url= "schemas/"+specName+"/"+shortname
-        linkSchema = "["+shortname+"]"+"("+url+")"
+        linkSchema = "["+shortname+"]"+"("+shortname+")"
         linkDoc="None"
         if os.path.isfile(directory+shortname+".html"):
-            #linkDoc="[doc]"+"(schemas/"+specName+"/"+shortname+".html"+")"
             linkDoc="[doc]"+"("+shortname+".html"+")"
         table.append(specName+"|"+linkSchema+"|"+linkDoc)
     
