@@ -1,7 +1,11 @@
 # The *public.lxistandard.org* web subdomain (*LxiStandard.github.io*)
 
 This repository is used to generate the website at the *public.lxistandard.org* 
-subdomain.  The purpose of this subdomain is to make certain key LXI documents
+subdomain.  The README files for the *LxiStandard/lxi-api* repository and the
+*LxiStandard/Specifications* repos point to this documentation for details
+on the required file names and organizatin.
+
+The purpose of this subdomain is to make certain key LXI documents
 broadly available on the web.  That includes:
 
   * LXI Specifications that taken as a setup make up a 
