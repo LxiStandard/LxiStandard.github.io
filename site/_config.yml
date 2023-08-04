@@ -1,6 +1,10 @@
 title: LXI Standard Auxiliary Pages
 description: Incorporating Jekyll just-the-docs them into md derived from old site
 
+# in my experience, for a live github pages site, you need to use 'remote_theme'
+# but when serving the site locally with the provided script (scripts/serve.ps1)
+# the theme needs to be specified with just 'theme'.  So swap the comments to 
+# serve locally, and try to remember not to check it in -- Joe M. 2023-08-03
 #theme: just-the-docs
 remote_theme: just-the-docs/just-the-docs
 
