@@ -6,20 +6,24 @@ subdomain.  The README files for the *LxiStandard/lxi-api* repository and the
 on the required file names and organizatin.
 
 The purpose of this subdomain is to make certain key LXI documents
-broadly available on the web.  That includes:
+publicly available on the web.  This includes:
 
-  * LXI Specifications that taken as a setup make up a 
-  generation.  Where a generation is a set of self-consistent
-  specifications that are required for conformance with LXI. 
-  That is, a device that conforms to multiple specifications 
-  (such as, the LXI Device specification and the LXI IP v6 
-  specification) are required to comply with specified
-  self-consistent versions of those specifications.
+  * LXI Specifications that taken as a set make up a 
+    generation.  Where a generation is a set of self-consistent
+    specifications that are required for conformance with LXI. 
+    That is, a device that conforms to multiple specifications 
+    (such as, the LXI Device specification and the LXI IP v6 
+    specification) are required to comply with specified
+    self-consistent versions of those specifications.
 
-  * LXI Schemas used by the LXI API are available.  This includes the XML XSD schemas, documentation, and examples.
+  * LXI Schemas used by the LXI API are available.  This includes
+    the XML XSD schemas, documentation, and examples.
 
  * This website includes a standard github blog, useful for
-  annotating updates to other parts of this website.
+   annotating updates to other parts of this website.  Blog
+   entries can be made to site/_posts, preceding the filename
+   with the date and following the pattern of other blog
+   posts already there.
 
 ## Repository Summary
 
@@ -34,12 +38,17 @@ features:
    Specifications section of this repository.
 
 2. Similarly, when a push is made to the *LxiStandard/lxi-api* repository, actions
-   in that repository perform a push to this repository of the schemas, examples, and documentation.
+   in that repository perform a push to this repository of the schemas, examples,
+   and documentation.
 
    The workflow in this repository generates the html pages that make up the 
    Specifications section of this repository.
 
-## Repository workflow
+## Repository Workflow
+
+The repository workflow is triggered for any push.  It creates 
+the content that is created programmatically, then has standard
+github pages actions.
 
 The key work of creating the specifications and schemas area
 of the website is performed by the shell script 
@@ -50,7 +59,7 @@ and the specification pages (*scripts/buildSpecificationPages.py*).
 After these steps, the repository workflow follows conventional
 github pages steps.
 
-# Specifications
+# Specifications Pages
 
 This section has documentation on the structure and usage of the
 *LxiStandard/Specifications* repository.  This 
@@ -59,13 +68,10 @@ however, to keep the documentation together, and because
 the Python scripts that consume the files in that repository
 are in this repository, the documentation is here.
 
-
-
 ## Organization of the Specifications repository
 
 The Specifications repository loosely follows the organization
 that is exposed to customers on the website as illustrated here:
-
 
 ````
 ├── specifications
@@ -82,12 +88,17 @@ that is exposed to customers on the website as illustrated here:
 Additional directories may be added for additional
 LXI **Generations**.
 
-The *VersionInfo.md* file contains the description of this 
-particular LXI Generation, and any caveats (for instance
-if the version is under construction).  When the user navigates
-to this generation page they will see this markdown page 
-with a table appended to it by the Python script providing
-links to the docx and pdf files.
+The *VersionInfo.md* file contains markdown with any
+appropriate customer-facing documention for this 
+particular LXI Generation. The *VersionInfo.md* should 
+also contain any caveats (for instance
+if the version is under construction) regarding this 
+generation or the files in it.  
+
+When the user navigates
+to the generation page for a set of specifications they 
+will see this markdown page with a table appended to it 
+by the Python script providing links to the docx and pdf files.
 
 The table of docx and pdf files attempts to parse the files
 using the Python-style regular expression:
@@ -101,24 +112,26 @@ this parses a file name of the form:
 
 If the docx or pdf file names conform to this convention, then
 the table columns are populated with the specification name
-('My_cool_LXI_Spec'), the version ('1.2.3'), the date
-('1958-05-02'); and links are placed in the table for
+('My_cool_LXI_Spec'), version ('1.2.3') and date
+('1958-05-02').  Link are placed on each row for 
 docx and pdf files.
 
 If the filename does not conform with this convention, it 
 is placed in the table on a line by itself with no attempt
-to combine docx/pdf onto a single line or parse the contents.
+to combine docx/pdf onto a single line or parse the filename.
 
 Clearly, this regular expression could be easily adapted for
 some other filename convention, or to make it more flexible 
-(for instance accepting hyphens as separators).
+(for instance accepting hyphens as separators).  This is
+intentionally a little finicky to encourage consistent 
+filenaming.
 
 **Any push to the *LxiStandard/Specifications* repository 
 will result in all of the Specifications being pushed into 
 the *LxiStandard/lxistandard.github.io* where these actions
 are run.**
 
-## The *buildSpecificationPages.py* program
+## The *buildSpecificationPages.py* Program
 
 As noted above, this program is called by the buildLXI.sh
 script as part of the workflow for the 
@@ -126,12 +139,12 @@ script as part of the workflow for the
 
 This script is conventional Python and should not require
 substantial external documentation. The basic function 
-is to read the SpecificationIN directory and create a 
+is to read the *SpecificationIN* directory and create a 
 specifications directory in the site subdirectory.  In 
 addition, the script scans all the file names in each 
 subdirectory and creates the table visible on the website.
 
-# Schemas
+# Schema Pages
 
 This section has documentation on the structure and usage of the
 *LxiStandard/lxi-api* repository.  This 
@@ -140,15 +153,15 @@ however, to keep the documentation together, and because
 the Python scripts that consume the files in that repository
 are in this repository, the documentation is here.
 
-The README documetation in the lxi-api repository has 
+The README documentation in the lxi-api repository has 
 detailed documentation regarding the use of the Python
 scripts that generate the documentation from the 
-XSD files.  None of the information is repeated here, although
+XSD files.  None of that information is repeated here, although
 the output of that generation step is included with
 the XSD files.
 
 
-## Organization of the lxi-api repository
+## Organization of the *LxiStandard/lxi-api* Repository
 
 The lxi-api repository loosely follows the organization
 that is exposed to customers on the website as illustrated here:
@@ -174,27 +187,31 @@ You can see from the functioning website how this information
 is published to the website.
 
   * The html files are generated by the actions in 
-  the lxi-api repository.  The documentation is scraped
-  from the schema files to create the html.
+    the lxi-api repository.  The documentation is scraped
+    from the schema files to create the html.
   * For each schema, a page is created starting with the 
-  *SchemaInfo.md*.  This should be a substantive file 
-  describing the use of the schema and anything important
-  about changes between versions.
-  * After this information, a table is inserted with links
-  for the schema files and the documetation files (these
-  documentation files are generated by the Python script
-  in the *LxiStandard/lxi-api* repository).
-  * Finally, links for the example are inserted.
+    *SchemaInfo.md*.  This should be a substantive file 
+    describing the use of the schema and anything important
+    about changes between versions.
+  * A table is appended to the end of *SchemaInfo.md* with links
+    for the schema files and the documetation files arranged
+    by version (these are the
+    documentation files generated by the Python script
+    in the *LxiStandard/lxi-api* repository).
+  * If present, links for the examples are inserted. Any
+    documentation regarding the examples should be put in
+    a table in the *SchemaInfo.md* file.
 
-## The *buildSchemaPages.py* program
+## The *buildSchemaPages.py* Program
 
 The *buildSchemaPages* program is somewhat simpler than the 
 *buildSpecificationPages.py* program because it does not need
-to coalesce multiple formats of file.
+to coalesce multiple formats of a spec into a single table entry
+or parse off dates and versions from the filename.
 
-The program walks the directory structure indicated above
+*buildSchemaPages.py* walks the directory structure indicated above
 and builds a table of the schemas and the corresponding
-documentation, then appends a list of XML files.
+documentation, then appends the list of XML examples.
 
 The program starts with the *SchemaInfo.md* file and 
 appends a table of the schema files.  The table of 
@@ -202,9 +219,10 @@ schema files includes a link to the schema and documentation
 for each version of the schema in the repository.
 
 The file names are NOT parsed by the Python.  They are 
-presumed to be in the format shown in the file list above.
+presumed to be in the format shown in the file list above.  
+That is, *<major number>.<minor number>*.
 
 Finally, the XML files are all presumed to be examples
-and are listed at the end.  Any documentation appropriate 
-for the XML files (for instance, a table describing 
+and links to them are appended at the end.  Any documentation 
+appropriate for the XML files (for instance, a table describing 
 each one) should be included in the *SchemaInfo.md* file.
