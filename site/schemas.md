@@ -13,7 +13,8 @@ contains references to the most current, and historical
 versions of those schemas.
 
 For details on the APIs, the schemas, and their use, see 
-the LXI API Extended Function here.
+the LXI API Extended Function specification for the LXI 
+generations 1.6 and newer at [LXI Specifications](specifications.html).
 
 The schemas are in XSD format and do not return formatted HTML pages.
 
