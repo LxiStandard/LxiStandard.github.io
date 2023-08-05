@@ -158,7 +158,8 @@ detailed documentation regarding the use of the Python
 scripts that generate the documentation from the 
 XSD files.  None of that information is repeated here, although
 the output of that generation step is included with
-the XSD files.
+the XSD files. 
+See: [LXI API README](https://github.com/LxiStandard/lxi-api/blob/main/README.md).
 
 
 ## Organization of the *LxiStandard/lxi-api* Repository
@@ -226,3 +227,8 @@ Finally, the XML files are all presumed to be examples
 and links to them are appended at the end.  Any documentation 
 appropriate for the XML files (for instance, a table describing 
 each one) should be included in the *SchemaInfo.md* file.
+
+**Any push to the *LxiStandard/lxi-api* repository 
+will result in the schemas being pushed into 
+the *LxiStandard/lxistandard.github.io* where these actions
+are run.**
