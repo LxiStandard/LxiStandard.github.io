@@ -17,3 +17,9 @@ Note that the documentation below for the 1.0 version of the
 schema is inaccurate since the schema itself is based on an 
 earlier style. Documentation can be found in versions of  the
 LXI Specifications <em>before</em> LXI 1.6.1.
+
+The following examples are provided:
+
+| Example | Purpose |
+| ------------- |-------------|
+| InstrumentWithSubinstrumentsExample.xml | Simple example showing a device with some subinstruments |
