@@ -25,4 +25,4 @@ The following examples are provided:
 | InstrumentWithSubinstrumentsExample.xml | Simple example showing a device with some subinstruments |
 
 
-**Schemas:**
+## Schemas
