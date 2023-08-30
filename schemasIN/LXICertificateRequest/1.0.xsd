@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xs:schema xmlns:lxi="http://lxistandard.org/schemas/LXICertificateRequest/1.0" 
+<xs:schema xmlns:lxi="http://public.lxistandard.org/schemas/LXICertificateRequest/1.0" 
 		xmlns:xs="http://www.w3.org/2001/XMLSchema" 
-		targetNamespace="http://lxistandard.org/schemas/LXICertificateRequest/1.0" 
+		targetNamespace="http://public.lxistandard.org/schemas/LXICertificateRequest/1.0" 
 		elementFormDefault="qualified" 
 		attributeFormDefault="unqualified" version="1.0">
 
@@ -10,7 +10,7 @@
 		<xs:annotation>
 			<xs:appinfo>
 				<!-- The following date should be updated whenever this schema is updated!  Including doc changes.-->
-				<editorialdate>Nov 17, 2022</editorialdate>
+				<editorialdate>August 29, 2023</editorialdate>
 			  </xs:appinfo>
 			<xs:documentation>
 				<div>

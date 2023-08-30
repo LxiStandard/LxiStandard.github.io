@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xs:schema targetNamespace="http://lxistandard.org/schemas/LXIPendingDetails/1.0" 
-    xmlns:lxi="http://lxistandard.org/schemas/LXIPendingDetails/1.0" 
+<xs:schema targetNamespace="http://public.lxistandard.org/schemas/LXIPendingDetails/1.0" 
+    xmlns:lxi="http://public.lxistandard.org/schemas/LXIPendingDetails/1.0" 
     xmlns:xs="http://www.w3.org/2001/XMLSchema" 
     elementFormDefault="qualified" 
     attributeFormDefault="unqualified" 
@@ -10,7 +10,7 @@
     <xs:annotation>
         <xs:appinfo>
             <!-- The following date should be updated whenever this schema is updated!  Including doc changes.-->
-            <editorialdate>June 30, 2022</editorialdate>
+            <editorialdate>August 29, 2023</editorialdate>
         </xs:appinfo>
         <xs:documentation>
             <h2>LXI Pending Details Schema</h2>
@@ -53,6 +53,12 @@
                         <em>URL</em> provides a URL at which the client can 
                         perform a GET to determine the status of the pending 
                         operation.
+                    </p>
+                    <p>
+                        If the API for which this response is generated may result
+                        in a new IP address, then the URL returned from the 202
+                        response shall be constructed with either the hostname or
+                        an absolute path with no host.
                     </p>
                     <p>
                         RULE: <em>URL</em> shall be included.

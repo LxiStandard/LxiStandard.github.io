@@ -238,7 +238,7 @@
             h2 {
                 margin: 60px 0px 10px 0;
             }
-        </style><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        </style><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
         <div>
           <h2>LXI Common Configuration Schema</h2>
           <p>
@@ -304,14 +304,14 @@
             of an element, its use is described.
           </p>
         </div>
-      </xs:documentation><div xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><p><b>This schema specifies the XML namespace:</b></p><p style="margin-left:10%"><em>http://lxistandard.org/schemas/LXICommonConfiguration/1.0</em>,
-                version: <em>1.0</em><br/><em>Editorial date: </em><em>October 12, 2022</em></p></div><h3><a id= "LXICommonConfiguration" >LXICommonConfiguration</a></h3><div><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xml:lang="en">
+      </xs:documentation><div xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><p><b>This schema specifies the XML namespace:</b></p><p style="margin-left:10%"><em>http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0</em>,
+                version: <em>1.0</em><br/><em>Editorial date: </em><em>August 29, 2023</em></p></div><h3><a id= "LXICommonConfiguration" >LXICommonConfiguration</a></h3><div><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xml:lang="en">
         <p>
           <em>LXICommonConfiguration</em> is the root element for the LXI common configuration.
           It represents the configuration of one or more LXI physical interfaces and user authentication.
         </p>
         <p>The configuration in <em>LXICommonConfiguration</em> is generally common to all devices in a system.</p>
-      </xs:documentation></div><h4 xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema">Attributes</h4><table xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><tr><th style="background-color:#100080">Attribute</th><th style="background-color:#100080">Syntax</th><th style="background-color:#100080">LCI</th><th style="background-color:#100080">Description</th></tr><tr><td>strict</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:boolean</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td>false</td></tr></table></td><td>Write-only</td><td><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+      </xs:documentation></div><h4 xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema">Attributes</h4><table xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><tr><th style="background-color:#100080">Attribute</th><th style="background-color:#100080">Syntax</th><th style="background-color:#100080">LCI</th><th style="background-color:#100080">Description</th></tr><tr><td>strict</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:boolean</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td>false</td></tr></table></td><td>Write-only</td><td><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
           <p>
             <em>strict</em> indicates that designated portions of this XML document
             may not be ignored by the device.  This requirement does not bear on attributes and
@@ -331,7 +331,7 @@
             <li><em>/LXICommonConfiguration/HiSLIP</em></li>
             <li><em>/LXICommonConfiguration/VXI11</em></li>
           </ul>
-        </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>NA</p></td></tr><tr><td>HSMPresent</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:boolean</td></tr><td><b>Card.:</b></td><td>Req.</td></tr><tr><td><b>Default:</b></td><td>NA</td></tr></table></td><td>Read-only</td><td><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+        </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>NA</p></td></tr><tr><td>HSMPresent</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:boolean</td></tr><td><b>Card.:</b></td><td>Req.</td></tr><tr><td><b>Default:</b></td><td>NA</td></tr></table></td><td>Read-only</td><td><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
           <p>
             <em>HSMPresent</em> indicates if the device has a hardware security module.
           </p>
@@ -351,32 +351,32 @@
             device uses a HSM to protect the private keys used for LXI communication.
           </p>
         </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>NA</p></td></tr></table><h4>Sub-elements</h4><p>The following must occur in this order:</p><table><tr><th style="background-color:green">Element</th><th style="background-color:green">Type</th><th style="background-color:green">Cardinality</th><th style="background-color:green">Requirements</th></tr><tr xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><td>Interface</td><td>lxi:Interface</td><td> Required unbounded </td><td>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
               RULE: Devices shall accept configuration based on an <em>Interface</em> 
               element for any LXI conformant interface.
             </p>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
               At least one instance of the Interface element is required.  The device 
               shall support a PUT that includes an <em>Interface</em> element for any or all 
               interfaces that are LXI conformant.
             </p>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">RULE: Devices shall return an <em>Interface</em> element for each interface.</p>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">RULE: Devices shall return an <em>Interface</em> element for each interface.</p>
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
               <b>OBSERVATION: </b><em>Interfaces that do not conform with LXI specifications
               only require the <em>Interface/@Enable</em> attribute.</em>
             </p>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
               Devices may optionally configure non-LXI conformant interfaces with the Interface 
               element.
             </p>
           </td></tr><tr xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><td>ClientAuthentication</td><td>lxi:ClientAuthentication</td><td> Optional </td><td>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">RULE: <em>ClientAuthentication</em> shall be optionally accepted for PUT.</p>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">RULE: <em>ClientAuthentication</em> shall be optionally accepted for PUT.</p>
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
               RULE: <em>ClientAuthentication</em> without the <em>@passwords</em> or 
               <em>@APIAccess</em> attributes shall be returned for GET over secure 
               connections and elided for unsecure connections.
             </p>
-          </td></tr></table><br/><h3><a id= "Interface" >Interface</a></h3><div><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+          </td></tr></table><br/><h3><a id= "Interface" >Interface</a></h3><div><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
         <p>
           <em>Interface</em> specifies the settings associated with a single device interface
           including the common aspects of the ethernet configuration and configuration of 
@@ -430,7 +430,7 @@
           <em>LXICommonConfiguration/@strict</em> attribute regarding how certain protocol
           configurations are handled.
         </p>
-      </xs:documentation></div><h4 xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema">Attributes</h4><table xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><tr><th style="background-color:#100080">Attribute</th><th style="background-color:#100080">Syntax</th><th style="background-color:#100080">LCI</th><th style="background-color:#100080">Description</th></tr><tr><td>name</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:string</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td>LXI</td></tr></table></td><td>NA</td><td><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+      </xs:documentation></div><h4 xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema">Attributes</h4><table xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><tr><th style="background-color:#100080">Attribute</th><th style="background-color:#100080">Syntax</th><th style="background-color:#100080">LCI</th><th style="background-color:#100080">Description</th></tr><tr><td>name</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:string</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td>LXI</td></tr></table></td><td>NA</td><td><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
           <p>
             <em>name</em>
             identifies this physical network interface within the device.  It differentiates
@@ -453,7 +453,7 @@
             to configure them all identically and bridge traffic internally.
             </em>
           </p>
-        </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>NA</p></td></tr><tr><td>LXIConformant</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:string</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td><em>None</em></td></tr></table></td><td>Read-only</td><td><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+        </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>NA</p></td></tr><tr><td>LXIConformant</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:string</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td><em>None</em></td></tr></table></td><td>Read-only</td><td><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
           <p>
             <em>LXIConformant</em>
             is a read-only attribute that indicates the LXI specifications
@@ -477,12 +477,12 @@
               that does not comply with LXI is not required to implement 
               this attribute. </em>
           </p>
-        </xs:documentation><p><b>Required: </b>RULE: (read-only)</p><p><b>Unsecure impact: </b>NA</p></td></tr><tr><td>enabled</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:boolean</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td>true</td></tr></table></td><td>RULE: At LCI, all LXI conformant interfaces shall be enabled, others may be enabled.</td><td><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+        </xs:documentation><p><b>Required: </b>RULE: (read-only)</p><p><b>Unsecure impact: </b>NA</p></td></tr><tr><td>enabled</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:boolean</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td>true</td></tr></table></td><td>RULE: At LCI, all LXI conformant interfaces shall be enabled, others may be enabled.</td><td><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
           <p>
             <em>enabled</em>
             indicates if this physical network interface is enabled.
           </p>
-        </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>device dependent</p></td></tr><tr><td>unsecureMode</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:boolean</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td><em>None</em></td></tr></table></td><td>Read-only</td><td><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+        </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>device dependent</p></td></tr><tr><td>unsecureMode</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:boolean</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td><em>None</em></td></tr></table></td><td>Read-only</td><td><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
           <p>
             <em>unsecureMode</em>
             is a read-only attribute that indicates that one 
@@ -497,7 +497,7 @@
             shall be done by the instrument per the requirement in the 
             LXI Security Extended function.
           </p>
-        </xs:documentation><p><b>Required: </b>RULE: (read-only)</p><p><b>Unsecure impact: </b>NA</p></td></tr><tr><td>otherUnsecureProtocolsEnabled</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:boolean</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td>true</td></tr></table></td><td>No change, unless the protocol represented must be enabled to re-establish ethernet communication.</td><td><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+        </xs:documentation><p><b>Required: </b>RULE: (read-only)</p><p><b>Unsecure impact: </b>NA</p></td></tr><tr><td>otherUnsecureProtocolsEnabled</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:boolean</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td>true</td></tr></table></td><td>No change, unless the protocol represented must be enabled to re-establish ethernet communication.</td><td><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
           <p>
             <em>otherUnsecureProtocolsEnabled</em> represents the state of 
             various device-specific protocols that are beyond the scope of 
@@ -534,7 +534,7 @@
         </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>Unsecure when the attribute is True. Device determined when the attribute is false</p></td></tr><tr><td><em>Any Attribute</em></td><td><table><tr><td><b>Type:</b></td><td><em>Any type</em></td></tr><tr><td><b>Card.:</b></td><td><em>Optional</em></td></tr><tr><td><b>Default:</b></td><td><em>NA</em></td></tr></table></td><td> 
             RULE: Those settings necessary to re-establish ethernet communication with the 
             instrument shall be enabled.
-          </td><td><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+          </td><td><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
           <p>
             Arbitrarily typed elements may be included for devices to represent device-specific 
             configuration.
@@ -545,27 +545,27 @@
             indicate it is in unsecure mode.
           </p>
         </xs:documentation><p><b>Required: </b>No</p><p><b>Unsecure impact: </b></p></td></tr></table><h4>Sub-elements</h4><p>The following must occur in this order:</p><table><tr><th style="background-color:green">Element</th><th style="background-color:green">Type</th><th style="background-color:green">Cardinality</th><th style="background-color:green">Requirements</th></tr><tr xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><td>Network</td><td>lxi:Network</td><td> Optional </td><td>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">RULE: <em>Network</em> is required.</p>
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">RULE: <em>Network</em> is required.</p>
           </td></tr><tr xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><td>HTTP</td><td>lxi:HTTP</td><td> Optional unbounded </td><td>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
               RULE: <em>HTTP</em> is optional, however devices that implement HTTP
               are require to fully implement this element.
             </p>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
               RULE: If multiple HTTP elements are present, each shall have a 
               different port.
             </p>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
               Additional instances of this element may be used to provide independent
               control of multiple servers (although each must be on a different port).  
               This may be useful, for instance, if separate servers are setup for
               the API and the human interface.
             </p>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
               <b>OBSERVATION:</b> <em> Multiple services can be enabled on a single port.
               by including multiple instances of the <em>HTTP/Service</em> element.</em>
             </p>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
               <b>OBSERVATION:</b> <em>Devices may place restrictions on which services
               may be enabled or disabled on various ports.  For instance, some devices
               may require that all API services be enabled or disabled together.  To do
@@ -573,81 +573,81 @@
               same.</em>
             </p>
           </td></tr><tr xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><td>HTTPS</td><td>lxi:HTTPS</td><td> Optional unbounded </td><td>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">RULE: <em>HTTPS</em> is required.</p>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">RULE: <em>HTTPS</em> is required.</p>
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
               RULE: If multiple HTTPS elements are present, each shall have a 
               different port.
             </p>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
               Additional instances of this element may be used to provide independent
               control of multiple servers (although each must be on a different port).  
               This may be useful, for instance, if separate servers are setup for
               the API and the human interface.
             </p>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
               <b>OBSERVATION:</b><em> Multiple services can be enabled on a single port.
               by including multiple instances of the <em>HTTPS/Service</em> element.</em>
             </p>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
               <b>OBSERVATION:</b><em> Devices may place restrictions on which services
               may be enabled or disabled on various ports.  For instance, some devices
               may require that all API services be enabled or disabled together.  To do
               so, the <em>HTTPS/Service</em> element for each service must be set the same.</em>
             </p>
           </td></tr><tr xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><td>SCPIRaw</td><td>lxi:SCPIRaw</td><td> Optional unbounded </td><td>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
               RULE: At least one instance of <em>SCPIRaw</em> shall be accepted by devices that 
               implement a SCPIRaw Command and Control connection.
             </p>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
               A separate instance of <em>SCPIRaw</em> is used for each port at which 
               a SCPIRaw server is running.
             </p>
           </td></tr><tr xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><td>Telnet</td><td>lxi:Telnet</td><td> Optional unbounded </td><td>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
               RULE: At least one instance of <em>Telnet</em> shall be accepted by 
               devices that implement the Telnet
               Command and Control connection.
             </p>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
               A separate instance of <em>Telnet</em> is used for each port at which 
               a Telnet server is running.  
             </p>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
               <b>OBSERVATION:</b><em>
               This may be useful, for instance, if 
               one server provides access to a SCPI parser, and another to the device 
               operating system shell.</em>
             </p>
           </td></tr><tr xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><td>SCPITLS</td><td>lxi:SCPITLS</td><td> Optional unbounded </td><td>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
               RULE: At least one instance of <em>SCPITLS</em> shall be accepted by devices 
               that implement a SCPITLS Command and Control connection.
             </p>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
               A separate instance of <em>SCPITLS</em> is provided for each port at which 
               a SCPITLS server is running.
             </p>
           </td></tr><tr xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><td>HiSLIP</td><td>lxi:HiSLIP</td><td> Optional </td><td>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
               RULE: <em>HiSLIP</em> shall be accepted by devices that implement 
               the LXI HiSLIP extended function.</p>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
               Only a single instance of <em>HiSLIP</em> is permitted because a single 
               instance of the protocol supports an arbitrary number of instances of
               servers at an arbitrary number of subaddresses.
             </p>
           </td></tr><tr xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><td>VXI11</td><td>lxi:VXI11</td><td> Optional </td><td>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
               RULE: <em>VXI11</em> shall be accepted by devices that implement a VXI-11 
               Command and Control connection.
             </p>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
               Only a single instance of the VXI-11 protocol can be created on an 
               interface.
             </p>
           </td></tr><tr xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><td><em>Any element</em></td><td><em>Any type</em></td><td> Optional unbounded </td><td>
-        <xs:annotation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+        <xs:annotation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
           <xs:documentation>
             <p>
               Arbitrary subelements may be included in the <em>Interface</em> element.  This
@@ -677,7 +677,7 @@
             </p>
           </xs:documentation>
         </xs:annotation>
-      </td></tr></table><br/><h3><a id= "Network" >Network</a></h3><div><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      </td></tr></table><br/><h3><a id= "Network" >Network</a></h3><div><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
         <p>
           <em>Network</em>
           contains various settings associated with the Ethernet interface.
@@ -694,16 +694,16 @@
           of various Ethernet settings.
         </p>
       </xs:documentation></div><p>The <em>Network</em> complex type has <b>no attributes</b></p><h4>Sub-elements</h4><p>The following must occur in this order:</p><table><tr><th style="background-color:green">Element</th><th style="background-color:green">Type</th><th style="background-color:green">Cardinality</th><th style="background-color:green">Requirements</th></tr><tr xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><td>IPv4</td><td>lxi:IPv4</td><td> Optional </td><td>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
               RULE: <em>IPv4</em> is required.
             </p>
           </td></tr><tr xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><td>IPv6</td><td>lxi:IPv6</td><td> Optional </td><td>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">RULE: <em>IPv6</em> is required by devices that implement the IPv6 Extended Function.</p>
-          </td></tr></table><br/><h3><a id= "IPv4" >IPv4</a></h3><div><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">RULE: <em>IPv6</em> is required by devices that implement the IPv6 Extended Function.</p>
+          </td></tr></table><br/><h3><a id= "IPv4" >IPv4</a></h3><div><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
         <p><em>IPv4</em> represents the state of the IP version 4 capabilities of the device.</p>
-      </xs:documentation></div><h4 xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema">Attributes</h4><table xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><tr><th style="background-color:#100080">Attribute</th><th style="background-color:#100080">Syntax</th><th style="background-color:#100080">LCI</th><th style="background-color:#100080">Description</th></tr><tr><td>enabled</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:boolean</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td>true</td></tr></table></td><td>True</td><td><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+      </xs:documentation></div><h4 xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema">Attributes</h4><table xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><tr><th style="background-color:#100080">Attribute</th><th style="background-color:#100080">Syntax</th><th style="background-color:#100080">LCI</th><th style="background-color:#100080">Description</th></tr><tr><td>enabled</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:boolean</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td>true</td></tr></table></td><td>True</td><td><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
           <p><em>enabled</em> generally enables or disables IPv4 operation.</p>
-        </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>Does not impact unsecure mode</p></td></tr><tr><td>autoIPEnabled</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:boolean</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td><em>None</em></td></tr></table></td><td>True</td><td><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+        </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>Does not impact unsecure mode</p></td></tr><tr><td>autoIPEnabled</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:boolean</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td><em>None</em></td></tr></table></td><td>True</td><td><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
           <p>
             <em>autoIPEnabled</em> represents the state of the Link Local Addressing 
             capability in the device.  If enabled, the device may acquire an address
@@ -726,7 +726,7 @@
             In some implementations <em>autoIPEnabled</em> and 
             <em>DHCPEnabled</em> are coupled, that is, both must be enabled or disabled.</em>
           </p>
-        </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>Does not impact unsecure mode</p></td></tr><tr><td>DHCPEnabled</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:boolean</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td><em>None</em></td></tr></table></td><td>True</td><td><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+        </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>Does not impact unsecure mode</p></td></tr><tr><td>DHCPEnabled</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:boolean</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td><em>None</em></td></tr></table></td><td>True</td><td><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
           <p>
             <em>DHCPEnabled</em> represents the state of the device DHCP protocol.
             If True, configuration is accepted via the DHCP protocol.
@@ -752,7 +752,7 @@
             In some implementations <em>autoIPEnabled</em> and <em>DHCPEnabled</em>
             are coupled, that is, both must be enabled or disabled.</em>
           </p>
-        </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>Does not impact unsecure mode</p></td></tr><tr><td>mDNSEnabled</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:boolean</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td>true</td></tr></table></td><td>True</td><td><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+        </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>Does not impact unsecure mode</p></td></tr><tr><td>mDNSEnabled</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:boolean</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td>true</td></tr></table></td><td>True</td><td><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
           <p><em>mDNSEnabled</em> represents the state of the multicast DNS 
             responder in the device.
           </p>
@@ -770,7 +770,7 @@
             If <em>mDNSEnabled</em> is absent, and <em>IPv6/@mDNSEnabled</em> is present, 
             then <em>mDNSEnabled</em> takes on the same value as <em>IPv6/@mDNSEnabled</em>. 
           </p>
-        </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>Does not impact unsecure mode</p></td></tr><tr><td>dynamicDNSEnabled</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:boolean</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td>true</td></tr></table></td><td>True</td><td><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+        </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>Does not impact unsecure mode</p></td></tr><tr><td>dynamicDNSEnabled</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:boolean</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td>true</td></tr></table></td><td>True</td><td><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
           <p>
             <em>dynamicDNSEnabled</em> represents the state of the dynamic DNS
              capability.  Dynamic DNS is used to publish the hostname of the 
@@ -792,7 +792,7 @@
             RULE: The <em>dynamicDNSEnabled</em> attribute shall be implemented irrespective of 
             if IPv6 dynamic DNS is implemented.
           </p>
-        </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>Does not impact unsecure mode</p></td></tr><tr><td>pingEnabled</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:boolean</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td>true</td></tr></table></td><td>True</td><td><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+        </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>Does not impact unsecure mode</p></td></tr><tr><td>pingEnabled</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:boolean</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td>true</td></tr></table></td><td>True</td><td><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
           <p>
             <em>pingEnabled</em> represents the state of the IPv4 ICMP ping responder.
           </p>
@@ -806,13 +806,13 @@
             then <em>pingEnabled</em> takes on the same value as <em>IPv6/@pingEnabled</em>. 
           </p>
 
-        </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>Does not impact unsecure mode</p></td></tr><tr><td><em>Any Attribute</em></td><td><table><tr><td><b>Type:</b></td><td><em>Any type</em></td></tr><tr><td><b>Card.:</b></td><td><em>Optional</em></td></tr><tr><td><b>Default:</b></td><td><em>NA</em></td></tr></table></td><td>No change unless the configured attribute is necessary to re-establish ethernet communication.</td><td><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+        </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>Does not impact unsecure mode</p></td></tr><tr><td><em>Any Attribute</em></td><td><table><tr><td><b>Type:</b></td><td><em>Any type</em></td></tr><tr><td><b>Card.:</b></td><td><em>Optional</em></td></tr><tr><td><b>Default:</b></td><td><em>NA</em></td></tr></table></td><td>No change unless the configured attribute is necessary to re-establish ethernet communication.</td><td><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
           <p>
             Arbitrary extension attributes may be included to provide device-specific 
             IPv4 configuration that is beyond the scope of the LXI requirements.
           </p>
           <p>RULE: LXI devices shall ignore extension attributes they do not recognize.</p>
-        </xs:documentation><p><b>Required: </b>No</p><p><b>Unsecure impact: </b>Vendor determined</p></td></tr></table><br/><p>The IPv4 complex type has <b>no subelements</b></p><br/><h3><a id= "IPv6" >IPv6</a></h3><div><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        </xs:documentation><p><b>Required: </b>No</p><p><b>Unsecure impact: </b>Vendor determined</p></td></tr></table><br/><p>The IPv4 complex type has <b>no subelements</b></p><br/><h3><a id= "IPv6" >IPv6</a></h3><div><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
         <p><em>IPv6</em> represents the state of the IP version 6 capabilities of the device.</p>
         <p>RULE: Since <em>IPv6</em> is required in devices that implement
           the LXI IP Version 6 Extended Function, the required attributes are only
@@ -824,11 +824,11 @@
           <em>LXICommonConfiguration/@strict</em>
           attribute is false such a device ignores the <em>IPv6</em> element on a PUT.  
         </p>
-      </xs:documentation></div><h4 xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema">Attributes</h4><table xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><tr><th style="background-color:#100080">Attribute</th><th style="background-color:#100080">Syntax</th><th style="background-color:#100080">LCI</th><th style="background-color:#100080">Description</th></tr><tr><td>enabled</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:boolean</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td>true</td></tr></table></td><td>True</td><td><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+      </xs:documentation></div><h4 xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema">Attributes</h4><table xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><tr><th style="background-color:#100080">Attribute</th><th style="background-color:#100080">Syntax</th><th style="background-color:#100080">LCI</th><th style="background-color:#100080">Description</th></tr><tr><td>enabled</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:boolean</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td>true</td></tr></table></td><td>True</td><td><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
           <p>
             <em>enabled</em> generally enables or disables IPv6 capability.
           </p>
-        </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>Does not impact unsecure mode</p></td></tr><tr><td>DHCPEnabled</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:boolean</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td>true</td></tr></table></td><td>True</td><td><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+        </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>Does not impact unsecure mode</p></td></tr><tr><td>DHCPEnabled</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:boolean</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td>true</td></tr></table></td><td>True</td><td><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
           <p>
             <em>DHCPEnabled</em> represents the state of the device IPv6 DHCP protocol. 
             If True, configuration is accepted via the DHCP protocol.
@@ -841,7 +841,7 @@
           <p>
             See the note on IPv6 autoconfiguration under <em>Network/IPv6</em>.
           </p>
-        </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>Does not impact unsecure mode</p></td></tr><tr><td>RAEnabled</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:boolean</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td>true</td></tr></table></td><td>True</td><td><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+        </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>Does not impact unsecure mode</p></td></tr><tr><td>RAEnabled</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:boolean</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td>true</td></tr></table></td><td>True</td><td><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
           <p>
             <em>RAEnabled</em>
             represents the state of address generation based on the router
@@ -850,7 +850,7 @@
           <p>
             See the note on IPv6 autoconfiguration under <em>Network/IPv6</em>.
           </p>
-        </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>See @privacyModeEnabled.</p></td></tr><tr><td>staticAddressEnabled</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:boolean</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td>true</td></tr></table></td><td>True</td><td><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+        </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>See @privacyModeEnabled.</p></td></tr><tr><td>staticAddressEnabled</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:boolean</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td>true</td></tr></table></td><td>True</td><td><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
           <p>
             <em>staticAddressEnabled</em>
             indicates if the device uses the static address configured with 
@@ -861,7 +861,7 @@
               configured.
             </em>
           </p>
-        </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>Does not impact unsecure mode.</p></td></tr><tr><td>privacyModeEnabled</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:boolean</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td>true</td></tr></table></td><td>True</td><td><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+        </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>Does not impact unsecure mode.</p></td></tr><tr><td>privacyModeEnabled</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:boolean</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td>true</td></tr></table></td><td>True</td><td><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
           <p>
             <em>privacyModeEnabled</em> indicates if the MAC
             address is included in the IPv6 address 
@@ -876,7 +876,7 @@
           <p>
             See the <em>Observation</em> on IPv6 autoconfiguration under <em>Network/IPv6</em>.
           </p>
-        </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>If False the device is in unsecure mode.</p></td></tr><tr><td>mDNSEnabled</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:boolean</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td>true</td></tr></table></td><td>True</td><td><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+        </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>If False the device is in unsecure mode.</p></td></tr><tr><td>mDNSEnabled</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:boolean</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td>true</td></tr></table></td><td>True</td><td><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
           <p>
             <em>mDNSEnabled</em>
             represents the state of the IPv6 multicast DNS responder in the device.
@@ -895,7 +895,7 @@
             If <em>mDNSEnabled</em> is absent, and <em>IPv4/@mDNSEnabled</em> is present, 
             then <em>mDNSEnabled</em> takes on the same value as <em>IPv4/@mDNSEnabled</em>. 
           </p>
-        </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>Does not impact unsecure mode</p></td></tr><tr><td>dynamicDNSEnabled</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:boolean</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td>true</td></tr></table></td><td>True</td><td><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+        </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>Does not impact unsecure mode</p></td></tr><tr><td>dynamicDNSEnabled</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:boolean</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td>true</td></tr></table></td><td>True</td><td><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
           <p>
             <em>dynamicDNSEnabled</em>
             represents the state of the IPv6 dynamic DNS capability used to publish
@@ -918,7 +918,7 @@
               RULE: Attribute shall be implemented irrespective of 
               if IPv4 dynamic DNS is implemented.
             
-          </p><p><b>Unsecure impact: </b>Does not impact unsecure mode</p></td></tr><tr><td>pingEnabled</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:boolean</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td>true</td></tr></table></td><td>True</td><td><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+          </p><p><b>Unsecure impact: </b>Does not impact unsecure mode</p></td></tr><tr><td>pingEnabled</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:boolean</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td>true</td></tr></table></td><td>True</td><td><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
           <p><em>pingEnabled</em> represents the state of the IPv6 ICMP ping function.</p>
           <p>
             If <em>pingEnabled</em> is absent, and <em>IPv4/@pingEnabled</em> is present, 
@@ -942,14 +942,14 @@
               No change unless changing the configured attribute is necessary 
               to re-establish ethernet communication.
             
-          </td><td><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+          </td><td><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
           <p>
             Arbitrary extension attributes may be included to provide device specific 
             IPv6 configuration that is beyond the
             scope of the LXI requirements.
           </p>
           <p>RULE: LXI devices shall ignore extension attributes they do not recognize.</p>
-        </xs:documentation><p><b>Required: </b>No</p><p><b>Unsecure impact: </b>Vendor determined</p></td></tr></table><br/><p>The IPv6 complex type has <b>no subelements</b></p><br/><h3><a id= "HTTP" >HTTP</a></h3><div><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        </xs:documentation><p><b>Required: </b>No</p><p><b>Unsecure impact: </b>Vendor determined</p></td></tr></table><br/><p>The IPv6 complex type has <b>no subelements</b></p><br/><h3><a id= "HTTP" >HTTP</a></h3><div><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
         <p>
           <em>HTTP</em> represents the configuration of the unsecure HTTP server including
           general behavior and the services available on the server.
@@ -980,7 +980,7 @@
           not change the HTTP/@operation state nor the enabled services on LCI 
           unless necessary to re-establish communication.
         </p>
-      </xs:documentation></div><h4 xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema">Attributes</h4><table xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><tr><th style="background-color:#100080">Attribute</th><th style="background-color:#100080">Syntax</th><th style="background-color:#100080">LCI</th><th style="background-color:#100080">Description</th></tr><tr><td>operation</td><td><table><tr><tr><td><b>Type:</b></td><td>restriction of: xs:string</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td>enable</td></tr></table></td><td>No change unless changing the configured attribute is necessary to re-establish ethernet communication.  For instance, to enable the LXI API.</td><td><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+      </xs:documentation></div><h4 xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema">Attributes</h4><table xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><tr><th style="background-color:#100080">Attribute</th><th style="background-color:#100080">Syntax</th><th style="background-color:#100080">LCI</th><th style="background-color:#100080">Description</th></tr><tr><td>operation</td><td><table><tr><tr><td><b>Type:</b></td><td>restriction of: xs:string</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td>enable</td></tr></table></td><td>No change unless changing the configured attribute is necessary to re-establish ethernet communication.  For instance, to enable the LXI API.</td><td><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
           <p>
             <em>operation</em> controls if the HTTP server is enabled, disabled, or if it 
             forwards all requests to HTTPS.
@@ -1005,35 +1005,35 @@
               shall implement at least the disable and redirectAll
               settings of @operation.
             
-          </p><p><b>Unsecure impact: </b>True if access to instrument configuration is enabled via any HTTP service.</p></td></tr><tr><td>port</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:int</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td>80</td></tr></table></td><td>RULE: The LCI HTTP port for the LXI Web interface and the LXI API services shall be 80.</td><td><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+          </p><p><b>Unsecure impact: </b>True if access to instrument configuration is enabled via any HTTP service.</p></td></tr><tr><td>port</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:int</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td>80</td></tr></table></td><td>RULE: The LCI HTTP port for the LXI Web interface and the LXI API services shall be 80.</td><td><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
           <p>TCP port of the HTTP server.</p>
         </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>Does not impact unsecure mode.</p></td></tr></table><h4>Sub-elements</h4><p>The following must occur in this order:</p><table><tr><th style="background-color:green">Element</th><th style="background-color:green">Type</th><th style="background-color:green">Cardinality</th><th style="background-color:green">Requirements</th></tr><tr xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><td>Service</td><td>lxi:Service</td><td> Optional unbounded </td><td>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
               Each <em>Service</em> element indicates the state of the HTTP service 
               indicated by the <em>Service/@name</em> attribute.  Only those services
               with the <em>Service/@enabled</em> attribute set to <em>true</em> are enabled on
               this HTTP server. 
             </p>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
               <em>Service</em> elements with the <em>Service/@enabled</em> attribute set to 
               false indicate the service is disabled.
             </p>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
               <b>OBSERVATION:</b><em>
               Users should be cautious emnabling authentication over HTTP since it may 
               expose unencrypted credentials.</em>
             </p>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
               <b>OBSERVATION:</b><em>
               Any service not explicitly enabled is disabled.</em>
             </p>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
               RULE: When the device is queried, it shall provide a <em>Service</em>
               element for each service provided by the device, with the 
               <em>Service/@enable</em> attribute indicating those that are 
               currently enabled.
             </p>
-          </td></tr></table><br/><h3><a id= "HTTPS" >HTTPS</a></h3><div><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+          </td></tr></table><br/><h3><a id= "HTTPS" >HTTPS</a></h3><div><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
         <p>
           <em>HTTPS</em> configures the secure HTTPS server.  That is, the 
           HTTP server that serves content using TLS.
@@ -1081,9 +1081,9 @@
         <p>
           RULE: On LCI the LXI Web interface and the LXI API services shall be enabled. 
         </p>
-      </xs:documentation></div><h4 xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema">Attributes</h4><table xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><tr><th style="background-color:#100080">Attribute</th><th style="background-color:#100080">Syntax</th><th style="background-color:#100080">LCI</th><th style="background-color:#100080">Description</th></tr><tr><td>port</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:int</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td>443</td></tr></table></td><td>RULE: The default HTTPS port shall be 443 for the Human Interface and the LXI API Service.</td><td><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+      </xs:documentation></div><h4 xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema">Attributes</h4><table xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><tr><th style="background-color:#100080">Attribute</th><th style="background-color:#100080">Syntax</th><th style="background-color:#100080">LCI</th><th style="background-color:#100080">Description</th></tr><tr><td>port</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:int</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td>443</td></tr></table></td><td>RULE: The default HTTPS port shall be 443 for the Human Interface and the LXI API Service.</td><td><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
           <p>TCP port of the HTTPS server.</p>
-        </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>Does not impact unsecure mode</p></td></tr><tr><td>clientAuthenticationRequired</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:boolean</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td>false</td></tr></table></td><td>No change</td><td><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+        </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>Does not impact unsecure mode</p></td></tr><tr><td>clientAuthenticationRequired</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:boolean</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td>false</td></tr></table></td><td>No change</td><td><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
           <p>
             <em>clientAuthenticationRequired</em> indicates if clients are required
             to authenticate as configured in this element.
@@ -1103,24 +1103,24 @@
             communication is secure.</em>
           </p>
         </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>Does not impact unsecure mode.</p></td></tr></table><h4>Sub-elements</h4><p>The following must occur in this order:</p><table><tr><th style="background-color:green">Element</th><th style="background-color:green">Type</th><th style="background-color:green">Cardinality</th><th style="background-color:green">Requirements</th></tr><tr xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><td>Service</td><td>lxi:Service</td><td> Optional unbounded </td><td>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
               A <em>Service</em> element with the <em>Service/@enabled</em> attribute
               set to true is included for each service enabled on 
               this HTTP(S) server. 
             </p>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
               RULE: When the device is queried, it shall provide a <em>Service</em>
               element for each service provided by the device, with the 
               <em>Service/@enable</em> attribute indicating those that are 
               currently enabled.
             </p>
-          </td></tr></table><br/><h3><a id= "Service" >Service</a></h3><div><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+          </td></tr></table><br/><h3><a id= "Service" >Service</a></h3><div><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
         <p>
           The <em>Service</em> element is used with the <em>HTTP</em> and
           <em>HTTPS</em> elements to indicate the services available on a device
           and if they are currently enabled.
         </p>
-      </xs:documentation></div><h4 xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema">Attributes</h4><table xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><tr><th style="background-color:#100080">Attribute</th><th style="background-color:#100080">Syntax</th><th style="background-color:#100080">LCI</th><th style="background-color:#100080">Description</th></tr><tr><td>name</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:string</td></tr><td><b>Card.:</b></td><td>Req.</td></tr><tr><td><b>Default:</b></td><td>NA</td></tr></table></td><td>NA</td><td><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+      </xs:documentation></div><h4 xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema">Attributes</h4><table xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><tr><th style="background-color:#100080">Attribute</th><th style="background-color:#100080">Syntax</th><th style="background-color:#100080">LCI</th><th style="background-color:#100080">Description</th></tr><tr><td>name</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:string</td></tr><td><b>Card.:</b></td><td>Req.</td></tr><tr><td><b>Default:</b></td><td>NA</td></tr></table></td><td>NA</td><td><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
           <p>
             <em>name</em> indicates the name of the service.
           </p>
@@ -1190,11 +1190,11 @@
                                               </td></tr>
             </table>
           </p>
-        </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>None</p></td></tr><tr><td>enabled</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:boolean</td></tr><td><b>Card.:</b></td><td>Req.</td></tr><tr><td><b>Default:</b></td><td>NA</td></tr></table></td><td>NA</td><td><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+        </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>None</p></td></tr><tr><td>enabled</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:boolean</td></tr><td><b>Card.:</b></td><td>Req.</td></tr><tr><td><b>Default:</b></td><td>NA</td></tr></table></td><td>NA</td><td><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
           <p>
             <em>enabled</em> indicates if the designated service is enabled.
           </p>
-        </xs:documentation><p><b>Required: </b>RULE: Note this attribute is syntactically required.</p><p><b>Unsecure impact: </b>Device determined</p></td></tr><tr><td><em>Any Attribute</em></td><td><table><tr><td><b>Type:</b></td><td><em>Any type</em></td></tr><tr><td><b>Card.:</b></td><td><em>Optional</em></td></tr><tr><td><b>Default:</b></td><td><em>NA</em></td></tr></table></td><td> NA</td><td><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+        </xs:documentation><p><b>Required: </b>RULE: Note this attribute is syntactically required.</p><p><b>Unsecure impact: </b>Device determined</p></td></tr><tr><td><em>Any Attribute</em></td><td><table><tr><td><b>Type:</b></td><td><em>Any type</em></td></tr><tr><td><b>Card.:</b></td><td><em>Optional</em></td></tr><tr><td><b>Default:</b></td><td><em>NA</em></td></tr></table></td><td> NA</td><td><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
           <p>
             Devices may include attributes to further configure the service.
           </p>
@@ -1202,29 +1202,29 @@
             RULE: Devices that do not understand additional attributes shall ignore them.
           </p>
         </xs:documentation><p><b>Required: </b>No</p><p><b>Unsecure impact: </b>Device determined</p></td></tr></table><h4>Sub-elements</h4><p>The following must occur in this order:</p><table><tr><th style="background-color:green">Element</th><th style="background-color:green">Type</th><th style="background-color:green">Cardinality</th><th style="background-color:green">Requirements</th></tr><tr xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><td>Basic</td><td>lxi:AuthenticationMechanism</td><td> Optional </td><td>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
               <em>Basic</em> indicates HTTPS Basic authentication per RFC7617 is enabled.  
             </p>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
               RULE: Devices shall implement <em>Basic.</em>
             </p>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
               When <em>Basic</em> is configured, devices are permitted to not be in unsecure mode.
             </p>
           </td></tr><tr xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><td>Digest</td><td>lxi:AuthenticationMechanism</td><td> Optional </td><td>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
               <em>Digest</em> indicates Digest authentication per RFC7616 is enabled.  
             </p>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
               RULE: Devices are permitted to not implement <em>Digest</em>, however
               this syntax shall be accepted and produce an error if turned on and not
               implemented.
             </p>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
               When <em>Digest</em> is configured, devices are permitted to not be in unsecure mode.
             </p>
           </td></tr><tr xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><td><em>Any element</em></td><td><em>Any type</em></td><td> Optional unbounded </td><td>
-        <xs:annotation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+        <xs:annotation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
           <xs:documentation>
             <p>
               This element is provided to enable devices to extend the list of 
@@ -1254,7 +1254,7 @@
             </p>
           </xs:documentation>
         </xs:annotation>
-      </td></tr></table><br/><h3><a id= "SCPIRaw" >SCPIRaw</a></h3><div><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      </td></tr></table><br/><h3><a id= "SCPIRaw" >SCPIRaw</a></h3><div><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
         <p>
           <em>SCPIRaw</em> configures a single SCPIRaw connection.  Additional 
           instances of <em>SCPIRaw</em> may be used to configure additional SCPIRaw servers
@@ -1284,9 +1284,9 @@
           RULE: <em>SCPIRaw</em> is required if the device implements
           SCPIRaw connections.
         </p>
-      </xs:documentation></div><h4 xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema">Attributes</h4><table xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><tr><th style="background-color:#100080">Attribute</th><th style="background-color:#100080">Syntax</th><th style="background-color:#100080">LCI</th><th style="background-color:#100080">Description</th></tr><tr><td>enabled</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:boolean</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td>true</td></tr></table></td><td>No change</td><td><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+      </xs:documentation></div><h4 xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema">Attributes</h4><table xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><tr><th style="background-color:#100080">Attribute</th><th style="background-color:#100080">Syntax</th><th style="background-color:#100080">LCI</th><th style="background-color:#100080">Description</th></tr><tr><td>enabled</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:boolean</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td>true</td></tr></table></td><td>No change</td><td><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
           <p><em>enabled</em> enables the SCPIRaw server at this address.</p>
-        </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>RULE: The device is operating in unsecure  mode if SCPIRaw is enabled.</p></td></tr><tr><td>port</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:int</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td>5025</td></tr></table></td><td>No change</td><td><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+        </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>RULE: The device is operating in unsecure  mode if SCPIRaw is enabled.</p></td></tr><tr><td>port</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:int</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td>5025</td></tr></table></td><td>No change</td><td><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
           <p>
             <em>port</em> specifies the port of this SCPIRaw server.
           </p>
@@ -1295,12 +1295,12 @@
             instances of SCPIRaw are enabled by default on the device, their ports are 
             device-specific.
           </p>
-        </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>Does not impact unsecure mode</p></td></tr><tr><td>capability</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:int</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td><em>None</em></td></tr></table></td><td>Read-only</td><td><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+        </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>Does not impact unsecure mode</p></td></tr><tr><td>capability</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:int</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td><em>None</em></td></tr></table></td><td>Read-only</td><td><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
           <p>
             <em>capability</em> is a read-only attribute that indicates the approximate 
             number of SCPIRaw ports that the client may configure.
           </p>
-        </xs:documentation><p><b>Required: </b>capability is required on a read.</p><p><b>Unsecure impact: </b>NA</p></td></tr></table><br/><p>The SCPIRaw complex type has <b>no subelements</b></p><br/><h3><a id= "SCPITLS" >SCPITLS</a></h3><div><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        </xs:documentation><p><b>Required: </b>capability is required on a read.</p><p><b>Unsecure impact: </b>NA</p></td></tr></table><br/><p>The SCPIRaw complex type has <b>no subelements</b></p><br/><h3><a id= "SCPITLS" >SCPITLS</a></h3><div><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
         <p>
           <em>SCPITLS</em> describes a single secure raw SCPI connection over TLS.  Additional 
           instances of <em>SCPITLS</em> may be used to configure additional secure raw SCPI servers
@@ -1327,11 +1327,11 @@
           RULE: <em>SCPITLS</em> is required by LXI Security if the device implements
           secure raw SCPI connections.
         </p>
-      </xs:documentation></div><h4 xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema">Attributes</h4><table xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><tr><th style="background-color:#100080">Attribute</th><th style="background-color:#100080">Syntax</th><th style="background-color:#100080">LCI</th><th style="background-color:#100080">Description</th></tr><tr><td>enabled</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:boolean</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td>true</td></tr></table></td><td>No change</td><td><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+      </xs:documentation></div><h4 xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema">Attributes</h4><table xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><tr><th style="background-color:#100080">Attribute</th><th style="background-color:#100080">Syntax</th><th style="background-color:#100080">LCI</th><th style="background-color:#100080">Description</th></tr><tr><td>enabled</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:boolean</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td>true</td></tr></table></td><td>No change</td><td><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
           <p><em>enabled</em> enables the secure raw SCPI server at this port.</p>
-        </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>Does not impact unsecure mode</p></td></tr><tr><td>port</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:int</td></tr><td><b>Card.:</b></td><td>Req.</td></tr><tr><td><b>Default:</b></td><td>NA</td></tr></table></td><td>No change</td><td><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+        </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>Does not impact unsecure mode</p></td></tr><tr><td>port</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:int</td></tr><td><b>Card.:</b></td><td>Req.</td></tr><tr><td><b>Default:</b></td><td>NA</td></tr></table></td><td>No change</td><td><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
           <p><em>port</em> specifies the port of this secure raw SCPI server.</p>
-        </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>Does not impact unsecure mode</p></td></tr><tr><td>clientAuthenticationRequired</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:boolean</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td>false</td></tr></table></td><td>No change</td><td><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+        </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>Does not impact unsecure mode</p></td></tr><tr><td>clientAuthenticationRequired</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:boolean</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td>false</td></tr></table></td><td>No change</td><td><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
           <p>
             <em>clientAuthenticationRequired</em> indicates if client authentication is required. Secure
             raw SCPI connections use mutual TLS (mTLS) for client authentication. 
@@ -1350,22 +1350,22 @@
               RULE: If secure raw SCPI client authentication is implemented it 
               shall use ClientAuthentication configuration.
             
-          </p><p><b>Unsecure impact: </b>Does not impact unsecure mode</p></td></tr><tr><td>capability</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:int</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td><em>None</em></td></tr></table></td><td>Read-only</td><td><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+          </p><p><b>Unsecure impact: </b>Does not impact unsecure mode</p></td></tr><tr><td>capability</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:int</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td><em>None</em></td></tr></table></td><td>Read-only</td><td><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
           <p>
             <em>capability</em> is a read-only attribute.  It indicates the 
             approximate number of SCPITLS ports that the client may configure.
           </p>
-        </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>NA</p></td></tr></table><br/><p>The SCPITLS complex type has <b>no subelements</b></p><br/><h3><a id= "Telnet" >Telnet</a></h3><div><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>NA</p></td></tr></table><br/><p>The SCPITLS complex type has <b>no subelements</b></p><br/><h3><a id= "Telnet" >Telnet</a></h3><div><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
         <p>
           <em>Telnet</em> indicates the telnet connection. Telnet is commonly used for 
           either Command and Control traffic or an operating system shell.
         </p>
-      </xs:documentation></div><h4 xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema">Attributes</h4><table xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><tr><th style="background-color:#100080">Attribute</th><th style="background-color:#100080">Syntax</th><th style="background-color:#100080">LCI</th><th style="background-color:#100080">Description</th></tr><tr><td>enabled</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:boolean</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td>true</td></tr></table></td><td>No change</td><td><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+      </xs:documentation></div><h4 xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema">Attributes</h4><table xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><tr><th style="background-color:#100080">Attribute</th><th style="background-color:#100080">Syntax</th><th style="background-color:#100080">LCI</th><th style="background-color:#100080">Description</th></tr><tr><td>enabled</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:boolean</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td>true</td></tr></table></td><td>No change</td><td><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
           <p><em>enabled</em> indicates if the Telnet server is enabled.</p>
         </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>
             If Telnet is enabled without requiring TLS (Telnet/@TLSRequired) the device is 
             in unsecure mode.
-          </p></td></tr><tr><td>port</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:int</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td>5024</td></tr></table></td><td>No change</td><td><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+          </p></td></tr><tr><td>port</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:int</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td>5024</td></tr></table></td><td>No change</td><td><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
           <p>
             <em>port</em> specifies the Telnet server port.
           </p>
@@ -1373,7 +1373,7 @@
             For Command and Control traffic, the 
             IANA assigned port of 5024 should be used.
           </p>
-        </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>Does not impact unsecure mode</p></td></tr><tr><td>TLSRequired</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:boolean</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td>false</td></tr></table></td><td>No change</td><td><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+        </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>Does not impact unsecure mode</p></td></tr><tr><td>TLSRequired</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:boolean</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td>false</td></tr></table></td><td>No change</td><td><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
           <p>
             <em>TLSRequired</em> indicates that telnet requires a secure TLS connection instead of TCP.
           </p>
@@ -1388,7 +1388,7 @@
         </xs:documentation><p><b>Required: </b>
             RULE: TLSRequired shall be implemented if the device Telnet implementation 
             supports TLS.
-          </p><p><b>Unsecure impact: </b>The device is in unsecure mode unless enabled.</p></td></tr><tr><td>clientAuthenticationRequired</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:boolean</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td>false</td></tr></table></td><td>No change</td><td><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+          </p><p><b>Unsecure impact: </b>The device is in unsecure mode unless enabled.</p></td></tr><tr><td>clientAuthenticationRequired</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:boolean</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td>false</td></tr></table></td><td>No change</td><td><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
           <p>
             <em>clientAuthenticationRequired</em> indicates that telnet 
             exclusively uses mTLS.
@@ -1407,12 +1407,12 @@
             shall include the <em>clientAuthenticationRequired</em> attribute in the 
             query response regardless of the state of <em>Telnet/@enabled</em>.
           </p>
-        </xs:documentation><p><b>Required: </b>RULE: clientAuthenticationRequired shall be implemented if the device Telnet implementation supports TLS.</p><p><b>Unsecure impact: </b>Does not impact unsecure mode</p></td></tr><tr><td>capability</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:int</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td><em>None</em></td></tr></table></td><td>Read-only</td><td><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+        </xs:documentation><p><b>Required: </b>RULE: clientAuthenticationRequired shall be implemented if the device Telnet implementation supports TLS.</p><p><b>Unsecure impact: </b>Does not impact unsecure mode</p></td></tr><tr><td>capability</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:int</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td><em>None</em></td></tr></table></td><td>Read-only</td><td><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
           <p>
             <em>capability</em> is a read-only attribute.  It indicates the 
             approximate number of Telnet ports that the client may configure.
           </p>
-        </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>NA</p></td></tr><tr><td><em>Any Attribute</em></td><td><table><tr><td><b>Type:</b></td><td><em>Any type</em></td></tr><tr><td><b>Card.:</b></td><td><em>Optional</em></td></tr><tr><td><b>Default:</b></td><td><em>NA</em></td></tr></table></td><td> NA</td><td><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+        </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>NA</p></td></tr><tr><td><em>Any Attribute</em></td><td><table><tr><td><b>Type:</b></td><td><em>Any type</em></td></tr><tr><td><b>Card.:</b></td><td><em>Optional</em></td></tr><tr><td><b>Default:</b></td><td><em>NA</em></td></tr></table></td><td> NA</td><td><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
           <p>
             Devices may further describe the telnet port, perhaps
             indicating if this server is SCPI or a command shell.
@@ -1421,7 +1421,7 @@
             RULE: Devices that do not understand additional attributes 
             shall ignore them.
           </p>
-        </xs:documentation><p><b>Required: </b>No</p><p><b>Unsecure impact: </b>Device determined</p></td></tr></table><br/><p>The Telnet complex type has <b>no subelements</b></p><br/><h3><a id= "HiSLIP" >HiSLIP</a></h3><div><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        </xs:documentation><p><b>Required: </b>No</p><p><b>Unsecure impact: </b>Device determined</p></td></tr></table><br/><p>The Telnet complex type has <b>no subelements</b></p><br/><h3><a id= "HiSLIP" >HiSLIP</a></h3><div><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
         <p>
           <em>HiSLIP</em> contains the configuration of the HiSLIP protocol. HiSLIP 
           supports multiple servers on a port, each at a 
@@ -1432,7 +1432,7 @@
           All HiSLIP servers, regardless of their subaddress use the 
           configuration in this element.
         </p>
-      </xs:documentation></div><h4 xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema">Attributes</h4><table xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><tr><th style="background-color:#100080">Attribute</th><th style="background-color:#100080">Syntax</th><th style="background-color:#100080">LCI</th><th style="background-color:#100080">Description</th></tr><tr><td>enabled</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:boolean</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td>true</td></tr></table></td><td>No change</td><td><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+      </xs:documentation></div><h4 xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema">Attributes</h4><table xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><tr><th style="background-color:#100080">Attribute</th><th style="background-color:#100080">Syntax</th><th style="background-color:#100080">LCI</th><th style="background-color:#100080">Description</th></tr><tr><td>enabled</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:boolean</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td>true</td></tr></table></td><td>No change</td><td><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
           <p>
             <em>enabled</em> indicates if the HiSLIP server is enabled. 
           </p>
@@ -1445,9 +1445,9 @@
           </p>
         </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>RULE:The device is in unsecure mode unless both 
             HiSLIP/@mustStartEncrypted and
-            HiSLIP/@encryptionMandatory are true.</p></td></tr><tr><td>port</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:int</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td>4880</td></tr></table></td><td>No change</td><td><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+            HiSLIP/@encryptionMandatory are true.</p></td></tr><tr><td>port</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:int</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td>4880</td></tr></table></td><td>No change</td><td><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
           <p><em>port</em> indicates the TCP port from which the HiSLIP server is served.</p>
-        </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>Does not impact unsecure mode</p></td></tr><tr><td>mustStartEncrypted</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:boolean</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td>false</td></tr></table></td><td>No change</td><td><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+        </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>Does not impact unsecure mode</p></td></tr><tr><td>mustStartEncrypted</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:boolean</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td>false</td></tr></table></td><td>No change</td><td><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
           <p>
             mustStartEncrypted controls the initial encryption. If enabled, a secure 
             connection must be initially made to this server. It can be subsequently 
@@ -1460,7 +1460,7 @@
         </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>
             RULE: The device is in unsecure mode if mustStartEncrypted 
             is false.
-          </p></td></tr><tr><td>encryptionMandatory</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:boolean</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td>false</td></tr></table></td><td>No change</td><td><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+          </p></td></tr><tr><td>encryptionMandatory</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:boolean</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td>false</td></tr></table></td><td>No change</td><td><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
           <p>
             <em>encryptionMandatory</em> indicates that this HiSLIP Server must 
             always have encryption on. That is, the connection must be started 
@@ -1474,16 +1474,16 @@
             RULE: The device is in unsecure mode if encryptionMandatory
             is false for any enabled HiSLIP servers.
           </p></td></tr></table><h4>Sub-elements</h4><p>The following must occur in this order:</p><table><tr><th style="background-color:green">Element</th><th style="background-color:green">Type</th><th style="background-color:green">Cardinality</th><th style="background-color:green">Requirements</th></tr><tr xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><td>ClientAuthenticationMechanisms</td><td>lxi:ClientAuthenticationMechanisms</td><td> Optional </td><td>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
               RULE: Devices that support the LXI Security Extended Function and the 
               LXI HiSLIP Extended function shall support Client Authentication.
             </p>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
               A device may optionally provide client authentication using a higher 
               protocol layer (for example, SCPI) to provide authentication when using 
               ANONYMOUS.
             </p>
-          </td></tr></table><br/><h3><a id= "ClientAuthenticationMechanisms" >ClientAuthenticationMechanisms</a></h3><div><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+          </td></tr></table><br/><h3><a id= "ClientAuthenticationMechanisms" >ClientAuthenticationMechanisms</a></h3><div><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
         <p>
           <em>ClientAuthenticationMechanisms</em> identifies the SASL mechanisms that are
           enabled for secure HiSLIP connections. The default of the <em>enabled</em> attribute for each 
@@ -1510,81 +1510,81 @@
           using the <em>AuthenticationMechanism</em> complex type, or types derived from it.
         </p>
       </xs:documentation></div><p>The <em>ClientAuthenticationMechanisms</em> complex type has <b>no attributes</b></p><h4>Sub-elements</h4><p>The following must occur in this order:</p><table><tr><th style="background-color:green">Element</th><th style="background-color:green">Type</th><th style="background-color:green">Cardinality</th><th style="background-color:green">Requirements</th></tr><tr xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><td>ANONYMOUS</td><td>lxi:AuthenticationMechanism</td><td> Optional </td><td>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
               <em>ANONYMOUS</em> indicates that clients can authenticate
               using the SASL anonymous mechanism.
             </p>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
               RULE: Devices that support LXI Security and the LXI HiSLIP Extended function shall support
               <em>ANONYMOUS.</em>
             </p>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
               <b>OBSERVATION:</b><em> A device can optionally provide client authentication using 
               a higher protocol layer (e.g., SCPI) when using ANONYMOUS.</em>
             </p>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
               Configuring <em>ANONYMOUS</em> does not put the device into unsecure mode.
             </p>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
               RULE: The IVI-6.5 SASL Mechanism Specification details specific requirements for 
               SASL mechanisms. Devices shall comply with the IVI device requirements. 
             </p>
           </td></tr><tr xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><td>PLAIN</td><td>lxi:AuthenticationMechanism</td><td> Optional </td><td>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
               <em>PLAIN</em> indicates that clients can authenticate using
               the SASL PLAIN mechanism.
             </p>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
               RULE: The IVI-6.5 SASL Mechanism Specification details the specific device 
               and client requirements for the generation of usernames and passwords. 
               Devices shall comply with the IVI device requirements. 
             </p>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
               RULE: Devices that support LXI Security and the LXI HiSLIP 
               Extended function shall support <em>PLAIN.</em>
             </p>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
               Configuring <em>PLAIN</em> does not put the device into unsecure mode.
             </p>
           </td></tr><tr xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><td>SCRAM</td><td>lxi:AuthenticationMechanism</td><td> Optional </td><td>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
               <em>SCRAM</em> indicates that clients can authenticate using
               the SASL SCRAM (Salted Challenge 
               Response Authentication Mechanism) 
               mechanism.
             </p>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
               Two attributes that are used to configure the SCRAM mechanism 
               are located on the element LXICommonConfiguration/ClientAuthentication.  
               See them for additional details.
             </p>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
               RULE: The IVI 6.5 SASL Mechanism Specification details the 
               specific device and client requirements for the use of the 
               SASL SCRAM mechanism with HiSLIP. Devices shall comply with 
               the IVI device requirements.
             </p>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
               RULE: Devices that support LXI Security and the LXI HiSLIP 
               Extended function shall support <em>SCRAM.</em>
             </p>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
               Configuring <em>SCRAM</em> does not put the device into unsecure mode.
             </p>
           </td></tr><tr xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><td>MTLS</td><td>lxi:AuthenticationMechanism</td><td> Optional </td><td>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
               <em>MTLS</em> indicates that devices authenticates TLS clients using TLS mutual
               authentication (mTLS).
             </p>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
               <b>OBSERVATION:</b><em> mTLS connections provide client authentication outside of the 
               SASL mechanisms, therefore SASL refers to mTLS as an EXTERNAL mechanism.</em>
             </p>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
               Configuring <em>MTLS</em> does not put the device into unsecure mode.
             </p>
           </td></tr><tr xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><td><em>Any element</em></td><td><em>Any type</em></td><td> Optional unbounded </td><td>
-        <xs:annotation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+        <xs:annotation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
           <xs:documentation>
             <p>
               Other extension elements may be included to configure authentication
@@ -1603,7 +1603,7 @@
             </p>
           </xs:documentation>
         </xs:annotation>
-      </td></tr></table><br/><h3><a id= "AuthenticationMechanism" >AuthenticationMechanism</a></h3><div><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      </td></tr></table><br/><h3><a id= "AuthenticationMechanism" >AuthenticationMechanism</a></h3><div><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
         <p>
           <em>AuthenticationMechanism</em> specifies a type of client authentication.
           It is used for both HiSLIP SASL mechanisms and HTTPS security schemes.</p>
@@ -1630,7 +1630,7 @@
           capabilities require additional configuration, they shall define their 
           own type by extending the <em>AuthenticationMechanism</em> ComplexType.
         </p>
-      </xs:documentation></div><h4 xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema">Attributes</h4><table xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><tr><th style="background-color:#100080">Attribute</th><th style="background-color:#100080">Syntax</th><th style="background-color:#100080">LCI</th><th style="background-color:#100080">Description</th></tr><tr><td>enabled</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:boolean</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td>true</td></tr></table></td><td>No change</td><td><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+      </xs:documentation></div><h4 xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema">Attributes</h4><table xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><tr><th style="background-color:#100080">Attribute</th><th style="background-color:#100080">Syntax</th><th style="background-color:#100080">LCI</th><th style="background-color:#100080">Description</th></tr><tr><td>enabled</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:boolean</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td>true</td></tr></table></td><td>No change</td><td><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
           <p>
             <em>enabled</em> indicates that the SASL mechanism or HTTP scheme is enabled.
           </p>
@@ -1639,18 +1639,18 @@
           </p>
         </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>NA</p></td></tr><tr><td><em>Any Attribute</em></td><td><table><tr><td><b>Type:</b></td><td><em>Any type</em></td></tr><tr><td><b>Card.:</b></td><td><em>Optional</em></td></tr><tr><td><b>Default:</b></td><td><em>NA</em></td></tr></table></td><td> 
             See the usage of the defined mechanism.
-          </td><td><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+          </td><td><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
           <p>
             Additional attributes that define SASL mechanisms or HTTPS schemas 
             beyond the scope of LXI may include additional attributes to define them.
           </p>
-        </xs:documentation><p><b>Required: </b>Not required.</p><p><b>Unsecure impact: </b></p></td></tr></table><br/><p>The AuthenticationMechanism complex type has <b>no subelements</b></p><br/><h3><a id= "VXI11" >VXI11</a></h3><div><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        </xs:documentation><p><b>Required: </b>Not required.</p><p><b>Unsecure impact: </b></p></td></tr></table><br/><p>The AuthenticationMechanism complex type has <b>no subelements</b></p><br/><h3><a id= "VXI11" >VXI11</a></h3><div><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
         <p>
           <em>VXI11</em> configures the VXI-11 protocol.
         </p>
-      </xs:documentation></div><h4 xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema">Attributes</h4><table xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><tr><th style="background-color:#100080">Attribute</th><th style="background-color:#100080">Syntax</th><th style="background-color:#100080">LCI</th><th style="background-color:#100080">Description</th></tr><tr><td>enabled</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:boolean</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td>true</td></tr></table></td><td>No change</td><td><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+      </xs:documentation></div><h4 xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema">Attributes</h4><table xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><tr><th style="background-color:#100080">Attribute</th><th style="background-color:#100080">Syntax</th><th style="background-color:#100080">LCI</th><th style="background-color:#100080">Description</th></tr><tr><td>enabled</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:boolean</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td>true</td></tr></table></td><td>No change</td><td><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
           <p><em>enabled</em> state of the VXI11 server at this address.</p>
-        </xs:documentation><p><b>Required: </b>Not required.</p><p><b>Unsecure impact: </b>RULE: The device is in unsecure mode if VXI-11 is enabled.</p></td></tr></table><br/><p>The VXI11 complex type has <b>no subelements</b></p><br/><h3><a id= "ClientAuthentication" >ClientAuthentication</a></h3><div><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        </xs:documentation><p><b>Required: </b>Not required.</p><p><b>Unsecure impact: </b>RULE: The device is in unsecure mode if VXI-11 is enabled.</p></td></tr></table><br/><p>The VXI11 complex type has <b>no subelements</b></p><br/><h3><a id= "ClientAuthentication" >ClientAuthentication</a></h3><div><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
         <p>
           <em>ClientAuthentication</em> contains client authentication information.  
           That is, information used by the device to determine if the identity proffered 
@@ -1677,7 +1677,7 @@
         <p><b>OBSERVATION:</b> <em> Devices may also have mechanisms beyond the scope
           of the LxiCommonConfiguration to manage the passwords.</em>
         </p>
-      </xs:documentation></div><h4 xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema">Attributes</h4><table xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><tr><th style="background-color:#100080">Attribute</th><th style="background-color:#100080">Syntax</th><th style="background-color:#100080">LCI</th><th style="background-color:#100080">Description</th></tr><tr><td>scramHashIterationCount</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:int</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td><em>None</em></td></tr></table></td><td>No change</td><td><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+      </xs:documentation></div><h4 xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema">Attributes</h4><table xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><tr><th style="background-color:#100080">Attribute</th><th style="background-color:#100080">Syntax</th><th style="background-color:#100080">LCI</th><th style="background-color:#100080">Description</th></tr><tr><td>scramHashIterationCount</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:int</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td><em>None</em></td></tr></table></td><td>No change</td><td><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
           <p>
             <em>scramHashIterationCount</em> sets the minimum iteration count 
             that SCRAM uses to hash the client credentials.  The default value 
@@ -1698,7 +1698,7 @@
               RULE: Required for devices that support the SCRAM SASL 
               mechanism via the LXICommonConfiguration.
             
-          </p><p><b>Unsecure impact: </b>NA</p></td></tr><tr><td>scramChannelBindingRequired</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:boolean</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td><em>None</em></td></tr></table></td><td>No change</td><td><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+          </p><p><b>Unsecure impact: </b>NA</p></td></tr><tr><td>scramChannelBindingRequired</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:boolean</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td><em>None</em></td></tr></table></td><td>No change</td><td><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
           <p>
             <em>scramChannelBindingRequired</em> specifies if the device permits the
             client to connect with a non-channel-bound version of SCRAM.
@@ -1714,11 +1714,11 @@
               mechanism via the LXICommonConfiguration.
             
           </p><p><b>Unsecure impact: </b>NA</p></td></tr></table><h4>Sub-elements</h4><p>The following must occur in this order:</p><table><tr><th style="background-color:green">Element</th><th style="background-color:green">Type</th><th style="background-color:green">Cardinality</th><th style="background-color:green">Requirements</th></tr><tr xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><td>ClientCredential</td><td>lxi:ClientCredential</td><td> Optional unbounded </td><td>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">RULE: Required.</p>
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">RULE: Required.</p>
           </td></tr><tr xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><td>ClientCertAuthentication</td><td>lxi:ClientCertAuthentication</td><td> Optional </td><td>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">RULE: Required.</p>
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">RULE: Required.</p>
           </td></tr><tr xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><td><em>Any element</em></td><td><em>Any type</em></td><td> Optional unbounded </td><td>
-        <xs:annotation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+        <xs:annotation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
           <xs:documentation>
             <p>
               Extension elements may be included to enable devices to specify types of 
@@ -1726,7 +1726,7 @@
             </p>
           </xs:documentation>
         </xs:annotation>
-      </td></tr></table><br/><h3><a id= "ClientCredential" >ClientCredential</a></h3><div><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      </td></tr></table><br/><h3><a id= "ClientCredential" >ClientCredential</a></h3><div><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
         <p>
           <em>ClientCredential</em> contains an individual user with an optional password 
           and an indication if this used has API Access rights.
@@ -1735,7 +1735,7 @@
           <em>@password</em> and <em>@APIAccess</em> are optional since they are 
           write-only fields and are not included in device responses for reasons of secrecy.
         </p>
-      </xs:documentation></div><h4 xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema">Attributes</h4><table xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><tr><th style="background-color:#100080">Attribute</th><th style="background-color:#100080">Syntax</th><th style="background-color:#100080">LCI</th><th style="background-color:#100080">Description</th></tr><tr><td>user</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:string</td></tr><td><b>Card.:</b></td><td>Req.</td></tr><tr><td><b>Default:</b></td><td>NA</td></tr></table></td><td>No change</td><td><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+      </xs:documentation></div><h4 xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema">Attributes</h4><table xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><tr><th style="background-color:#100080">Attribute</th><th style="background-color:#100080">Syntax</th><th style="background-color:#100080">LCI</th><th style="background-color:#100080">Description</th></tr><tr><td>user</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:string</td></tr><td><b>Card.:</b></td><td>Req.</td></tr><tr><td><b>Default:</b></td><td>NA</td></tr></table></td><td>No change</td><td><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
           <p><em>user</em> that may be authenticated on the device.</p>
           <p>
             RULE: LXI devices shall accept <em>user</em> names composed of alpha-numeric strings. 
@@ -1746,7 +1746,7 @@
             and client requirements for the generation of usernames and passwords. 
             Devices shall comply with the IVI device requirements. 
           </p>
-        </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>NA</p></td></tr><tr><td>password</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:string</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td><em>None</em></td></tr></table></td><td>No change</td><td><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+        </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>NA</p></td></tr><tr><td>password</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:string</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td><em>None</em></td></tr></table></td><td>No change</td><td><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
           <p>
             <em>password</em> contains the password associated with this user name.
           </p>
@@ -1764,7 +1764,7 @@
             and client requirements for the generation of usernames and passwords. 
             Devices shall comply with the IVI device requirements. 
           </p>
-        </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>NA</p></td></tr><tr><td>APIAccess</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:boolean</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td>false</td></tr></table></td><td>No change</td><td><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+        </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>NA</p></td></tr><tr><td>APIAccess</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:boolean</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td>false</td></tr></table></td><td>No change</td><td><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
           <p>
             <em>APIAccess</em> indicates if this user is authorized to 
             use the API.  If <em>true</em>, this user credential permits
@@ -1779,7 +1779,7 @@
             no change is to be made to the users stored <em>APIAccess</em> 
             value.
           </p>
-        </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>NA</p></td></tr></table><br/><p>The ClientCredential complex type has <b>no subelements</b></p><br/><h3><a id= "ClientCertAuthentication" >ClientCertAuthentication</a></h3><div><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>NA</p></td></tr></table><br/><p>The ClientCredential complex type has <b>no subelements</b></p><br/><h3><a id= "ClientCertAuthentication" >ClientCertAuthentication</a></h3><div><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
         <p>
           Configures client certificate authentication.
         </p>
@@ -1789,47 +1789,47 @@
           a thumbprint specified in this element.
         </p>
       </xs:documentation></div><p>The <em>ClientCertAuthentication</em> complex type has <b>no attributes</b></p><h4>Sub-elements</h4><p>The following must occur in this order:</p><table><tr><th style="background-color:green">Element</th><th style="background-color:green">Type</th><th style="background-color:green">Cardinality</th><th style="background-color:green">Requirements</th></tr><tr xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><td>RootCertPEM</td><td>xs:string</td><td> Optional unbounded </td><td>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
               <em>RootCertPEM</em> has a single root certificate the device shall use to validate
               client certificates.  Any client certificate that is signed by a trust authority 
               described in one of these root certificates shall be treated as authentic by the device.
             </p>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
               Certificates are in PEM format, represented in XML as strings.  PEM format is a Base64 
               ASCII encoding of the binary certificate. PEM Format is described in RFC 7468.
             </p>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
               RULE: Root certification PEMs shall be semantically validated. For instance, 
               expired root certificates shall not be used.
             </p>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
               RULE: <em>RootCertPEM</em> shall be supported.
             </p>
           </td></tr><tr xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><td>CertThumbprint</td><td>lxi:CertThumbprint</td><td> Optional unbounded </td><td>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
               Each instance of this element has the thumbprint of a client certificate. Client 
               certificates with this thumbprint shall be treated as authentic by the device.
               Authenticated certificates still require semantic validation, for instance, expired
               certificates shall not be used.
             </p>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
               The thumbprint is a hash of the full binary device certificate. The hash function 
               is specified in the CertThumbprint element.
             </p>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
               RULE: <em>CertThumbprint</em> shall be supported.
             </p>
-              </td></tr></table><br/><h3><a id= "CertThumbprint" >CertThumbprint</a></h3><div><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+              </td></tr></table><br/><h3><a id= "CertThumbprint" >CertThumbprint</a></h3><div><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
         <p>
           <em>CertThumbprint</em> contains a certificate thumbprint.  A certificate 
           thumbprint is a hash of a DER encoded X.509 certificate that is used to 
           recognize a specific certificate.
         </p>
-      </xs:documentation></div><h4 xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema">Attributes</h4><table xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><tr><th style="background-color:#100080">Attribute</th><th style="background-color:#100080">Syntax</th><th style="background-color:#100080">LCI</th><th style="background-color:#100080">Description</th></tr><tr><td>hash</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:string</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td>SHA-256</td></tr></table></td><td>No change</td><td><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+      </xs:documentation></div><h4 xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema">Attributes</h4><table xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><tr><th style="background-color:#100080">Attribute</th><th style="background-color:#100080">Syntax</th><th style="background-color:#100080">LCI</th><th style="background-color:#100080">Description</th></tr><tr><td>hash</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:string</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td>SHA-256</td></tr></table></td><td>No change</td><td><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
               <p>
                 <em>hash</em> indicates the hash function used to create this thumbPrint.
               </p>
-            </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>NA</p></td></tr><tr><td>thumbPrint</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:base64Binary</td></tr><td><b>Card.:</b></td><td>Req.</td></tr><tr><td><b>Default:</b></td><td>NA</td></tr></table></td><td>No change</td><td><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+            </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>NA</p></td></tr><tr><td>thumbPrint</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:base64Binary</td></tr><td><b>Card.:</b></td><td>Req.</td></tr><tr><td><b>Default:</b></td><td>NA</td></tr></table></td><td>No change</td><td><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
               <p>
                 <em>thumbPrint</em> contains the certificate thumbPrint.
               </p>

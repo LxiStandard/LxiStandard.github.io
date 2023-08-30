@@ -238,7 +238,7 @@
             h2 {
                 margin: 60px 0px 10px 0;
             }
-        </style><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICertificateList/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        </style><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICertificateList/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
         <div>
           <h2>LXI Certificate List Schema</h2>
           <p>
@@ -250,18 +250,18 @@
             the certificate.
           </p>
         </div>
-      </xs:documentation><div xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><p><b>This schema specifies the XML namespace:</b></p><p style="margin-left:10%"><em>http://lxistandard.org/schemas/LXICertificateList/1.0</em>,
-                version: <em>1.0</em><br/><em>Editorial date: </em><em>June 30, 2022</em></p></div><h3><a id= "LXICertificateList" >LXICertificateList</a></h3><div><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICertificateList/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      </xs:documentation><div xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><p><b>This schema specifies the XML namespace:</b></p><p style="margin-left:10%"><em>http://public.lxistandard.org/schemas/LXICertificateList/1.0</em>,
+                version: <em>1.0</em><br/><em>Editorial date: </em><em>August 29, 2023</em></p></div><h3><a id= "LXICertificateList" >LXICertificateList</a></h3><div><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICertificateList/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
         <p>
           <em>LXICertificateList</em> contains a list of certificate entities on a device.  Each is 
           assigned a GUID that can be used to further manipulate the certificate.
         </p>
       </xs:documentation></div><p>The <em>LXICertificateList</em> complex type has <b>no attributes</b></p><h4>Sub-elements</h4><p>The following must occur in this order:</p><table><tr><th style="background-color:green">Element</th><th style="background-color:green">Type</th><th style="background-color:green">Cardinality</th><th style="background-color:green">Requirements</th></tr><tr xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><td>CertificateInfo</td><td>lxi:CertificateInfo</td><td> Required unbounded </td><td>
-            <p xmlns:lxi="http://lxistandard.org/schemas/LXICertificateList/1.0">
+            <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICertificateList/1.0">
               <em>CertificateInfo</em> contains information about a certificate on the device, including
               the GUID which may be used to operate on the certificate.
             </p>
-          </td></tr></table><br/><h3><a id= "CertificateInfo" >CertificateInfo</a></h3><div><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICertificateList/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+          </td></tr></table><br/><h3><a id= "CertificateInfo" >CertificateInfo</a></h3><div><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICertificateList/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
         <p>
           <em>CertificateInfo</em> contains information about a certificate,
           certificate list, or CSR (certificate signing request).  
@@ -270,9 +270,9 @@
           The GUID included in the <em>CertificateInfo</em> is used to manipulate
           the individual entity.
         </p>
-      </xs:documentation></div><h4 xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema">Attributes</h4><table xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><tr><th style="background-color:#100080">Attribute</th><th style="background-color:#100080">Syntax</th><th style="background-color:#100080">LCI</th><th style="background-color:#100080">Description</th></tr><tr><td>GUID</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:string</td></tr><td><b>Card.:</b></td><td>Req.</td></tr><tr><td><b>Default:</b></td><td>NA</td></tr></table></td><td>NA</td><td><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICertificateList/1.0">
+      </xs:documentation></div><h4 xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema">Attributes</h4><table xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><tr><th style="background-color:#100080">Attribute</th><th style="background-color:#100080">Syntax</th><th style="background-color:#100080">LCI</th><th style="background-color:#100080">Description</th></tr><tr><td>GUID</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:string</td></tr><td><b>Card.:</b></td><td>Req.</td></tr><tr><td><b>Default:</b></td><td>NA</td></tr></table></td><td>NA</td><td><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICertificateList/1.0">
           <em>GUID</em> is a Globally Unique Identifier generated by the device to represent this certificate.
-        </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>NA</p></td></tr><tr><td>Type</td><td><table><tr><tr><td><b>Type:</b></td><td>restriction of: xs:string</td></tr><td><b>Card.:</b></td><td>Req.</td></tr><tr><td><b>Default:</b></td><td>NA</td></tr></table></td><td>NA</td><td><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICertificateList/1.0">
+        </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>NA</p></td></tr><tr><td>Type</td><td><table><tr><tr><td><b>Type:</b></td><td>restriction of: xs:string</td></tr><td><b>Card.:</b></td><td>Req.</td></tr><tr><td><b>Default:</b></td><td>NA</td></tr></table></td><td>NA</td><td><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICertificateList/1.0">
           <p>
             <em>Type</em> indicates the kind of entity.
           </p>
@@ -287,11 +287,11 @@
                                           a certificate authority.</td></tr>
             </table>
           </p>
-        </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>NA</p></td></tr><tr><td>DNSName</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:string</td></tr><td><b>Card.:</b></td><td>Req.</td></tr><tr><td><b>Default:</b></td><td>NA</td></tr></table></td><td>NA</td><td><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICertificateList/1.0">
+        </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>NA</p></td></tr><tr><td>DNSName</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:string</td></tr><td><b>Card.:</b></td><td>Req.</td></tr><tr><td><b>Default:</b></td><td>NA</td></tr></table></td><td>NA</td><td><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICertificateList/1.0">
           <p>
             <em>DNSName</em> is the DNS Name from the certificate.
           </p>
-        </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>NA</p></td></tr><tr><td>Enabled</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:boolean</td></tr><td><b>Card.:</b></td><td>Req.</td></tr><tr><td><b>Default:</b></td><td>NA</td></tr></table></td><td>NA</td><td><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICertificateList/1.0">
+        </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>NA</p></td></tr><tr><td>Enabled</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:boolean</td></tr><td><b>Card.:</b></td><td>Req.</td></tr><tr><td><b>Default:</b></td><td>NA</td></tr></table></td><td>NA</td><td><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICertificateList/1.0">
           <p>
             <em>Enabled</em> indicates if the corresponding certificate or 
             certificate chain is enabled for use by the device.
@@ -300,7 +300,7 @@
             <em>Enabled</em> is meaningless for Certificate Signing Requests.
             <em>Enabled</em> shall be returned <em>true</em> for CSRs.
           </p>
-        </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>NA</p></td></tr><tr><td>expirationDateTime</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:string</td></tr><td><b>Card.:</b></td><td>Req.</td></tr><tr><td><b>Default:</b></td><td>NA</td></tr></table></td><td>NA</td><td><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICertificateList/1.0">
+        </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>NA</p></td></tr><tr><td>expirationDateTime</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:string</td></tr><td><b>Card.:</b></td><td>Req.</td></tr><tr><td><b>Default:</b></td><td>NA</td></tr></table></td><td>NA</td><td><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICertificateList/1.0">
           <p>
             <em>expirationDateTime</em> is the expiration date and time of the certificate.
           </p>

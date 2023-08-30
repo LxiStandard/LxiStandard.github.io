@@ -1,11 +1,13 @@
      
 <!-- 
-    LXI Identification Schema Version 2.0, April 26, 2023
+    LXI Identification Schema Version 2.0, August 29, 2023
         Changes:
             * Simplifies the xsd specification while still retaining
               substantial equivalence with Version 1.0.  This facilitates use with
               current XML tools.
             * Adds optional subinstrument identification as LXIDevice/Subinstruments
+            * Changed namespace to public.lxistandard.org
+            * Misc comments and clarifications
  
     LXI Identification Schema Version 1.0
         Update History:
@@ -19,9 +21,9 @@
             April 2006 - Initial version associated with the LXI 1.2 standard.
 -->
 
-<xs:schema xmlns:lxi="http://www.lxistandard.org/InstrumentIdentification/2.0" 
+<xs:schema xmlns:lxi="http://www.public.lxistandard.org/InstrumentIdentification/2.0" 
         xmlns:xs="http://www.w3.org/2001/XMLSchema" 
-        targetNamespace="http://www.lxistandard.org/InstrumentIdentification/2.0" 
+        targetNamespace="http://www.public.lxistandard.org/InstrumentIdentification/2.0" 
         elementFormDefault="qualified" 
         attributeFormDefault="unqualified"
         version="2.0">
@@ -30,7 +32,7 @@
         <xs:annotation>
             <xs:appinfo>
             <!-- The following date should be updated whenever this schema is updated!  Including doc changes.-->
-                <editorialdate>April 26, 2023</editorialdate>
+                <editorialdate>August 29, 2023</editorialdate>
             </xs:appinfo>
             <xs:documentation>
                 <div>
@@ -369,15 +371,49 @@
                     <em>ConnectedDevices</em> contains a list of connected devices, 
                     that is, devices that are connected through the primary LXI device.
                 </p>
+                <p>        
+                    RULE: Devices that support connected devices (e.g., bridges) shall provide 
+                    base URLs for all connected devices in the ConnectedDevices element of the identification document. 
+                    A base URL is defined as a URL with a “url-path” that clearly identifies the connected device and one
+                    onto which a suffix path may be added to access properties of that connected device.
+                    The base URL allows clients to enumerate devices connected to the bridge device.
+                </p>
+                <p>    
+                    For example, the base URL for a connected device might be “http://hostname/device0” while another connected
+                    device might have a base URL of “http://hostname/device5”.  The format and path naming conventions for these
+                    connected device base URLs are left up to the vendor.
+                </p>
+                <p>    
+                    The following is an example snippet from an identification document with connected device DeviceURI elements:
+                        <ConnectedDevices>
+                            <DeviceURI>http://10.1.2.60/devices/LogicalAddress/0/</DeviceURI>
+                            <DeviceURI>http://10.1.2.60/devices/LogicalAddress/1/</DeviceURI>
+                        </ConnectedDevices>
+                </p>
             </xs:documentation>
         </xs:annotation>
         <xs:sequence>
             <xs:element name="DeviceURI" type="xs:anyURI" nillable="false" minOccurs="0" maxOccurs="unbounded">
                 <xs:annotation>
                     <xs:documentation>
-                        URIs for connected devices represent the base 
-                        URL for the connected device. Per LXI Standard 
-                        1.6, 10.2.4 RULE - Connected Device URLs.
+                        <p>
+                            URIs for connected devices represent the base URL for the connected device. 
+                        </p>
+                        <p>
+                            RULE: Devices that support connected devices shall provide identification
+                            documents that can be queried via a GET on &lt;baseURL&gt;/lxi/identification that conform
+                            to the LXI XSD Schema or one derived from that Schema according to the rules of XSD inheritance.
+                            The &lt;baseURL&gt; values may be found in DeviceURI elements of the ConnectedDevice element of the
+                            root element of the identification document of Rule 10.2.  This rule coupled with Rule 10.2.4 allows
+                            clients to enumerate (discover) and identify all connected devices.
+                        </p>
+                        <p>
+                            RULE: The xsi:schemaLocation attribute of the root element of the identification document
+                            shall contain an entry for the LXI XSD namespace with an accompanying absolute URI on the instrument
+                            that shall return the actual XSD schema document from the instrument
+                            (https://www.w3.org/standards/xml/schema). The W3C XSD Schema itself does not need to be available
+                            via a URI on the instrument
+                        </p>
                     </xs:documentation>
                     <xs:appinfo>
                         <requirement>Optional</requirement>
@@ -393,7 +429,24 @@
     <xs:complexType name="NetworkInformation">
         <xs:annotation>
             <xs:documentation>
-                The network information element has general information regarding a network device.
+                <p>
+                    The network information element has general information regarding a network device.
+                </p>
+                <p>
+                    Separate NetworkInformation elements are required to represent IPv4 and IPv6 addresses.
+                    When representing IPv6 addresses, devices should:
+                        •	not include SubnetMask, Gateway, DHCPEnabled, or AutoIPEnabled
+                        •	include the Hostname as configured on the device for mDNS announcements
+                        •	include  MACAddress as defined below
+                        •	include IPAddress elements for preferred addresses. They are expressed using dot/colon
+                            format not including the CIDR prefix length. Such as “fe80::2713:af27”.
+                </p>
+                <p>
+                    Devices may omit the InstrumentAddressString, or include a single exemplary instance.
+                </p>
+                <p>
+                    Devices may also implement the LXI Device Specific Configuration GET API to more clearly advertise its IPv6 address.
+                </p>
             </xs:documentation>
         </xs:annotation>
         <xs:sequence>

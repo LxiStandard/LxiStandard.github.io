@@ -238,7 +238,7 @@
             h2 {
                 margin: 60px 0px 10px 0;
             }
-        </style><xs:documentation xmlns:lxi="http://www.lxistandard.org/InstrumentIdentification/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        </style><xs:documentation xmlns:lxi="http://www.public.lxistandard.org/InstrumentIdentification/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
                 <div>
                     <h2>LXI Instrument Identification Schema</h2>
                     <p>
@@ -247,8 +247,8 @@
                         connected to an LXI device. 
                     </p>
                 </div>
-            </xs:documentation><div xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><p><b>This schema specifies the XML namespace:</b></p><p style="margin-left:10%"><em>http://www.lxistandard.org/InstrumentIdentification/2.0</em>,
-                version: <em>2.0</em><br/><em>Editorial date: </em><em>April 26, 2023</em></p></div><h3><a id= "LXIDevice" >LXIDevice</a></h3><div><xs:documentation xmlns:lxi="http://www.lxistandard.org/InstrumentIdentification/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+            </xs:documentation><div xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><p><b>This schema specifies the XML namespace:</b></p><p style="margin-left:10%"><em>http://www.public.lxistandard.org/InstrumentIdentification/2.0</em>,
+                version: <em>2.0</em><br/><em>Editorial date: </em><em>August 29, 2023</em></p></div><h3><a id= "LXIDevice" >LXIDevice</a></h3><div><xs:documentation xmlns:lxi="http://www.public.lxistandard.org/InstrumentIdentification/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
                 <div>
                     <p>
                       The LXI Device element is the root element of the 
@@ -299,10 +299,10 @@
                         this identification XML. Per LXI Standard 1.6, 10.2 RULE 
                         - XML Identification Document URL.
                     </td></tr><tr xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><td>Interface</td><td>lxi:NetworkInformation</td><td> Optional unbounded </td><td>
-                        <p xmlns:lxi="http://www.lxistandard.org/InstrumentIdentification/2.0">
+                        <p xmlns:lxi="http://www.public.lxistandard.org/InstrumentIdentification/2.0">
                             Interface Information. 
                         </p>
-                        <p xmlns:lxi="http://www.lxistandard.org/InstrumentIdentification/2.0">
+                        <p xmlns:lxi="http://www.public.lxistandard.org/InstrumentIdentification/2.0">
                             RULE: At 
                             least one Interface of type "NetworkInformation" must 
                             be provided, with an InterfaceType of "LXI". 
@@ -316,36 +316,36 @@
                         module, especially where the driver supports multiple 
                         software modules, that is, instrument personalities.
                     </td></tr><tr xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><td>Subinstruments</td><td>lxi:Subinstruments</td><td> Optional </td><td>
-                        <p xmlns:lxi="http://www.lxistandard.org/InstrumentIdentification/2.0">
+                        <p xmlns:lxi="http://www.public.lxistandard.org/InstrumentIdentification/2.0">
                             <em>Subinstruments</em> contains identification and 
                             connection information for subinstruments that are addressable within
                             this LXI device. A <em>subinstrument</em> is distinct functionality
                             with its own control capability that resides within an LXI device
                             at a given IP address.
                         </p>
-                        <p xmlns:lxi="http://www.lxistandard.org/InstrumentIdentification/2.0">
+                        <p xmlns:lxi="http://www.public.lxistandard.org/InstrumentIdentification/2.0">
                             <em>Subinstruments</em> permits the client to discover:
                         </p>
-                        <ul xmlns:lxi="http://www.lxistandard.org/InstrumentIdentification/2.0">
+                        <ul xmlns:lxi="http://www.public.lxistandard.org/InstrumentIdentification/2.0">
                             <li>the subinstruments within an LXI Device</li>
                             <li>identification information about each subinstrument</li>
                             <li>control channels available for the subinstrument via the network</li>
                         </ul>
-                        <p xmlns:lxi="http://www.lxistandard.org/InstrumentIdentification/2.0">
+                        <p xmlns:lxi="http://www.public.lxistandard.org/InstrumentIdentification/2.0">
                             Devices that implement subinstruments should populate the 
                             <em>Subinstrument</em> for each contained subinstrument.  
                             Devices that do not implement subinstruments should omit
                             the <em>Subinstruments</em> element.
                         </p>
                     </td></tr><tr xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><td>Extension</td><td>lxi:Extension</td><td> Optional </td><td>
-                        <em xmlns:lxi="http://www.lxistandard.org/InstrumentIdentification/2.0">Extension</em> contains vendor specific information used to describe the 
+                        <em xmlns:lxi="http://www.public.lxistandard.org/InstrumentIdentification/2.0">Extension</em> contains vendor specific information used to describe the 
                         instrument.
                     </td></tr><tr xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><td>LXIClass</td><td/><td> Optional </td><td>
-                        <p xmlns:lxi="http://www.lxistandard.org/InstrumentIdentification/2.0">
+                        <p xmlns:lxi="http://www.public.lxistandard.org/InstrumentIdentification/2.0">
                             Deprecated in LXI version 1.4. This element indicates 
                             if this device is Class A, B, or C.
                         </p>
-                        <p xmlns:lxi="http://www.lxistandard.org/InstrumentIdentification/2.0">
+                        <p xmlns:lxi="http://www.public.lxistandard.org/InstrumentIdentification/2.0">
                             Subsequent to LXI version 1.4, the notion of LXI classes was
                             replaced with individual extended functions that devices
                             may comply with.   Devices use the 
@@ -353,12 +353,12 @@
                             the extended functions they comply with.
                         </p>
                     </td></tr><tr xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><td>Domain</td><td>xs:unsignedByte</td><td> Optional </td><td>
-                        <p xmlns:lxi="http://www.lxistandard.org/InstrumentIdentification/2.0">
+                        <p xmlns:lxi="http://www.public.lxistandard.org/InstrumentIdentification/2.0">
                             The LXI domain(s) this instrument uses for LXI Event
                             Messages. Per LXI Event Messaging Extended Function, Standard 1.0, 3.3.2.1 RULE - Use 
                             of LXI Domain.
                         </p>
-                        <p xmlns:lxi="http://www.lxistandard.org/InstrumentIdentification/2.0">
+                        <p xmlns:lxi="http://www.public.lxistandard.org/InstrumentIdentification/2.0">
                             RULE: Devices that implement LXI Event Messaging shall include
                             this element in the LXI Instrument Identification response.
                         </p>
@@ -368,30 +368,81 @@
                     </td></tr><tr xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><td>LXIExtendedFunctions</td><td>lxi:LXIExtendedFunctions</td><td> Optional </td><td>
                         LXI Extended functions used to describe extended 
                         capabilities of the instrument.
-                    </td></tr></table><br/><h3><a id= "ConnectedDevices" >ConnectedDevices</a></h3><div><xs:documentation xmlns:lxi="http://www.lxistandard.org/InstrumentIdentification/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+                    </td></tr></table><br/><h3><a id= "ConnectedDevices" >ConnectedDevices</a></h3><div><xs:documentation xmlns:lxi="http://www.public.lxistandard.org/InstrumentIdentification/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
                 <p>
                     <em>ConnectedDevices</em> contains a list of connected devices, 
                     that is, devices that are connected through the primary LXI device.
                 </p>
+                <p>        
+                    RULE: Devices that support connected devices (e.g., bridges) shall provide 
+                    base URLs for all connected devices in the ConnectedDevices element of the identification document. 
+                    A base URL is defined as a URL with a “url-path” that clearly identifies the connected device and one
+                    onto which a suffix path may be added to access properties of that connected device.
+                    The base URL allows clients to enumerate devices connected to the bridge device.
+                </p>
+                <p>    
+                    For example, the base URL for a connected device might be “http://hostname/device0” while another connected
+                    device might have a base URL of “http://hostname/device5”.  The format and path naming conventions for these
+                    connected device base URLs are left up to the vendor.
+                </p>
+                <p>    
+                    The following is an example snippet from an identification document with connected device DeviceURI elements:
+                        <ConnectedDevices>
+                            <DeviceURI>http://10.1.2.60/devices/LogicalAddress/0/</DeviceURI>
+                            <DeviceURI>http://10.1.2.60/devices/LogicalAddress/1/</DeviceURI>
+                        </ConnectedDevices>
+                </p>
             </xs:documentation></div><p>The <em>ConnectedDevices</em> complex type has <b>no attributes</b></p><h4>Sub-elements</h4><p>The following must occur in this order:</p><table><tr><th style="background-color:green">Element</th><th style="background-color:green">Type</th><th style="background-color:green">Cardinality</th><th style="background-color:green">Requirements</th></tr><tr xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><td>DeviceURI</td><td>xs:anyURI</td><td> Optional unbounded </td><td>
-                        URIs for connected devices represent the base 
-                        URL for the connected device. Per LXI Standard 
-                        1.6, 10.2.4 RULE - Connected Device URLs.
-                    </td></tr></table><br/><h3><a id= "NetworkInformation" >NetworkInformation</a></h3><div><xs:documentation xmlns:lxi="http://www.lxistandard.org/InstrumentIdentification/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-                The network information element has general information regarding a network device.
-            </xs:documentation></div><h4 xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema">Attributes</h4><table xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><tr><th style="background-color:#100080">Attribute</th><th style="background-color:#100080">Syntax</th><th style="background-color:#100080">LCI</th><th style="background-color:#100080">Description</th></tr><tr><td>InterfaceType</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:string</td></tr><td><b>Card.:</b></td><td>Req.</td></tr><tr><td><b>Default:</b></td><td>NA</td></tr></table></td><td>NA</td><td><xs:documentation xmlns:lxi="http://www.lxistandard.org/InstrumentIdentification/2.0">
+                        <p xmlns:lxi="http://www.public.lxistandard.org/InstrumentIdentification/2.0">
+                            URIs for connected devices represent the base URL for the connected device. 
+                        </p>
+                        <p xmlns:lxi="http://www.public.lxistandard.org/InstrumentIdentification/2.0">
+                            RULE: Devices that support connected devices shall provide identification
+                            documents that can be queried via a GET on &lt;baseURL&gt;/lxi/identification that conform
+                            to the LXI XSD Schema or one derived from that Schema according to the rules of XSD inheritance.
+                            The &lt;baseURL&gt; values may be found in DeviceURI elements of the ConnectedDevice element of the
+                            root element of the identification document of Rule 10.2.  This rule coupled with Rule 10.2.4 allows
+                            clients to enumerate (discover) and identify all connected devices.
+                        </p>
+                        <p xmlns:lxi="http://www.public.lxistandard.org/InstrumentIdentification/2.0">
+                            RULE: The xsi:schemaLocation attribute of the root element of the identification document
+                            shall contain an entry for the LXI XSD namespace with an accompanying absolute URI on the instrument
+                            that shall return the actual XSD schema document from the instrument
+                            (https://www.w3.org/standards/xml/schema). The W3C XSD Schema itself does not need to be available
+                            via a URI on the instrument
+                        </p>
+                    </td></tr></table><br/><h3><a id= "NetworkInformation" >NetworkInformation</a></h3><div><xs:documentation xmlns:lxi="http://www.public.lxistandard.org/InstrumentIdentification/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+                <p>
+                    The network information element has general information regarding a network device.
+                </p>
+                <p>
+                    Separate NetworkInformation elements are required to represent IPv4 and IPv6 addresses.
+                    When representing IPv6 addresses, devices should:
+                        •	not include SubnetMask, Gateway, DHCPEnabled, or AutoIPEnabled
+                        •	include the Hostname as configured on the device for mDNS announcements
+                        •	include  MACAddress as defined below
+                        •	include IPAddress elements for preferred addresses. They are expressed using dot/colon
+                            format not including the CIDR prefix length. Such as “fe80::2713:af27”.
+                </p>
+                <p>
+                    Devices may omit the InstrumentAddressString, or include a single exemplary instance.
+                </p>
+                <p>
+                    Devices may also implement the LXI Device Specific Configuration GET API to more clearly advertise its IPv6 address.
+                </p>
+            </xs:documentation></div><h4 xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema">Attributes</h4><table xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><tr><th style="background-color:#100080">Attribute</th><th style="background-color:#100080">Syntax</th><th style="background-color:#100080">LCI</th><th style="background-color:#100080">Description</th></tr><tr><td>InterfaceType</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:string</td></tr><td><b>Card.:</b></td><td>Req.</td></tr><tr><td><b>Default:</b></td><td>NA</td></tr></table></td><td>NA</td><td><xs:documentation xmlns:lxi="http://www.public.lxistandard.org/InstrumentIdentification/2.0">
                     For LXI devices, this field must contain LXI. This may 
                     be used to designate other vendor specified interfaces 
                     (e.g., PXI, GPIB, Serial, USB, etc.). 
-                </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>NA</p></td></tr><tr><td>InterfaceName</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:string</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td><em>None</em></td></tr></table></td><td>NA</td><td><xs:documentation xmlns:lxi="http://www.lxistandard.org/InstrumentIdentification/2.0">
+                </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>NA</p></td></tr><tr><td>InterfaceName</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:string</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td><em>None</em></td></tr></table></td><td>NA</td><td><xs:documentation xmlns:lxi="http://www.public.lxistandard.org/InstrumentIdentification/2.0">
                     This field should contain a logical name for the 
                     interface, from the device's perspective. For 
                     example, network interfaces may be named "eth0", 
                     "eth1", etc. 
-                </xs:documentation><p><b>Required: </b>Optional</p><p><b>Unsecure impact: </b>NA</p></td></tr><tr><td>IPType</td><td><table><tr><tr><td><b>Type:</b></td><td>restriction of: xs:string</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td><em>None</em></td></tr></table></td><td>NA</td><td><xs:documentation xmlns:lxi="http://www.lxistandard.org/InstrumentIdentification/2.0">
+                </xs:documentation><p><b>Required: </b>Optional</p><p><b>Unsecure impact: </b>NA</p></td></tr><tr><td>IPType</td><td><table><tr><tr><td><b>Type:</b></td><td>restriction of: xs:string</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td><em>None</em></td></tr></table></td><td>NA</td><td><xs:documentation xmlns:lxi="http://www.public.lxistandard.org/InstrumentIdentification/2.0">
                     Identifies the IP implementation as either IPv4 or IPv6.
                 </xs:documentation><p><b>Required: </b>Optional</p><p><b>Unsecure impact: </b>NA</p></td></tr></table><h4>Sub-elements</h4><p>The following must occur in this order:</p><table><tr><th style="background-color:green">Element</th><th style="background-color:green">Type</th><th style="background-color:green">Cardinality</th><th style="background-color:green">Requirements</th></tr><tr xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><td>InstrumentAddressString</td><td>xs:string</td><td> Optional unbounded </td><td>
-                        <em xmlns:lxi="http://www.lxistandard.org/InstrumentIdentification/2.0">InstrumentAddressString</em> is a VISA-like 
+                        <em xmlns:lxi="http://www.public.lxistandard.org/InstrumentIdentification/2.0">InstrumentAddressString</em> is a VISA-like 
                         string to help a driver or a 
                         human determine the actual address string. Consistent 
                         with the web presentation of an IVI I/O Resource 
@@ -426,12 +477,12 @@
                         Indicates if the instrument is configured to use AutoIP 
                         to choose an IP address, per LXI Standard 1.6, 8.6.1 
                         RULE - Options for LAN configuration.
-                    </td></tr></table><br/><h3><a id= "IVISoftwareModuleName" >IVISoftwareModuleName</a></h3><div><xs:documentation xmlns:lxi="http://www.lxistandard.org/InstrumentIdentification/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+                    </td></tr></table><br/><h3><a id= "IVISoftwareModuleName" >IVISoftwareModuleName</a></h3><div><xs:documentation xmlns:lxi="http://www.public.lxistandard.org/InstrumentIdentification/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
                 <p>
                     <em>IVISoftwareModuleName</em> contains the name of
                     an IVI Software Module.
                 </p>
-            </xs:documentation></div><p><em>IVISoftwareModuleName</em> is based on: xs:string</p><h4 xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema">Attributes</h4><table xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><tr><th style="background-color:#100080">Attribute</th><th style="background-color:#100080">Syntax</th><th style="background-color:#100080">LCI</th><th style="background-color:#100080">Description</th></tr><tr><td>Comment</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:string</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td><em>None</em></td></tr></table></td><td>NA</td><td><xs:documentation xmlns:lxi="http://www.lxistandard.org/InstrumentIdentification/2.0">
+            </xs:documentation></div><p><em>IVISoftwareModuleName</em> is based on: xs:string</p><h4 xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema">Attributes</h4><table xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><tr><th style="background-color:#100080">Attribute</th><th style="background-color:#100080">Syntax</th><th style="background-color:#100080">LCI</th><th style="background-color:#100080">Description</th></tr><tr><td>Comment</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:string</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td><em>None</em></td></tr></table></td><td>NA</td><td><xs:documentation xmlns:lxi="http://www.public.lxistandard.org/InstrumentIdentification/2.0">
                            <p>Contains comments regarding the IVI Software Module.</p>
                            <p>
                                 <b>Deprecated:</b> The LXI consortium discourages developers from using
@@ -439,7 +490,7 @@
                                 construct and it is not essential to describe the instrument
                                 or its IVI Software Module.
                            </p>
-                       </xs:documentation><p><b>Required: </b>Optional</p><p><b>Unsecure impact: </b>NA</p></td></tr></table><h3><a id= "Extension" >Extension</a></h3><div><xs:documentation xmlns:lxi="http://www.lxistandard.org/InstrumentIdentification/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+                       </xs:documentation><p><b>Required: </b>Optional</p><p><b>Unsecure impact: </b>NA</p></td></tr></table><h3><a id= "Extension" >Extension</a></h3><div><xs:documentation xmlns:lxi="http://www.public.lxistandard.org/InstrumentIdentification/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
                 <p>
                     Permits vendor dependent functions.
                 </p>
@@ -447,24 +498,24 @@
                     The <em>Extension</em> element contains a sequence
                     of arbitrary elements.
                 </p>
-            </xs:documentation></div><p>The <em>Extension</em> complex type has <b>no attributes</b></p><h4>Sub-elements</h4><p>The following must occur in this order:</p><table><tr><th style="background-color:green">Element</th><th style="background-color:green">Type</th><th style="background-color:green">Cardinality</th><th style="background-color:green">Requirements</th></tr><tr xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><td><em>Any element</em></td><td><em>Any type</em></td><td> Required </td><td/></tr></table><br/><h3><a id= "LXIExtendedFunctions" >LXIExtendedFunctions</a></h3><div><xs:documentation xmlns:lxi="http://www.lxistandard.org/InstrumentIdentification/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+            </xs:documentation></div><p>The <em>Extension</em> complex type has <b>no attributes</b></p><h4>Sub-elements</h4><p>The following must occur in this order:</p><table><tr><th style="background-color:green">Element</th><th style="background-color:green">Type</th><th style="background-color:green">Cardinality</th><th style="background-color:green">Requirements</th></tr><tr xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><td><em>Any element</em></td><td><em>Any type</em></td><td> Required </td><td/></tr></table><br/><h3><a id= "LXIExtendedFunctions" >LXIExtendedFunctions</a></h3><div><xs:documentation xmlns:lxi="http://www.public.lxistandard.org/InstrumentIdentification/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
                 <p>
                 The <em>LXIExtendedFunctions</em> type contains a list of the 
                 extended functions implemented by this device.
                 </p>
                 
             </xs:documentation></div><p>The <em>LXIExtendedFunctions</em> complex type has <b>no attributes</b></p><h4>Sub-elements</h4><p>The following must occur in this order:</p><table><tr><th style="background-color:green">Element</th><th style="background-color:green">Type</th><th style="background-color:green">Cardinality</th><th style="background-color:green">Requirements</th></tr><tr xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><td>Function</td><td/><td> Optional unbounded </td><td>
-                        <p xmlns:lxi="http://www.lxistandard.org/InstrumentIdentification/2.0">
+                        <p xmlns:lxi="http://www.public.lxistandard.org/InstrumentIdentification/2.0">
                             Indicates that an LXI extended function is available, 
                             the version of the extended function implemented, and 
                             the options associated with it.
                         </p>
-                        <p xmlns:lxi="http://www.lxistandard.org/InstrumentIdentification/2.0">
+                        <p xmlns:lxi="http://www.public.lxistandard.org/InstrumentIdentification/2.0">
                             The <em>Function</em> element contains arbitrary elements.
                             The various LXI Extended functions specification specify the syntax 
                             used to identify each extended function.
                         </p>
-                    </td></tr></table><br/><h3><a id= "Subinstruments" >Subinstruments</a></h3><div><xs:documentation xmlns:lxi="http://www.lxistandard.org/InstrumentIdentification/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+                    </td></tr></table><br/><h3><a id= "Subinstruments" >Subinstruments</a></h3><div><xs:documentation xmlns:lxi="http://www.public.lxistandard.org/InstrumentIdentification/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
                 <p>
                     <em>Subinstruments</em> contains identification and 
                     connection information for subinstruments that are addressable within
@@ -495,63 +546,63 @@
                     <em>LXIDevice/(Manufacturer|Model|SerialNumber|FirmwareRevision)</em>.
                 </p>
             </xs:documentation></div><p>The <em>Subinstruments</em> complex type has <b>no attributes</b></p><h4>Sub-elements</h4><p>The following must occur in this order:</p><table><tr><th style="background-color:green">Element</th><th style="background-color:green">Type</th><th style="background-color:green">Cardinality</th><th style="background-color:green">Requirements</th></tr><tr xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><td>Subinstrument</td><td>lxi:Subinstrument</td><td> Required unbounded </td><td>
-                        <p xmlns:lxi="http://www.lxistandard.org/InstrumentIdentification/2.0">
+                        <p xmlns:lxi="http://www.public.lxistandard.org/InstrumentIdentification/2.0">
                             <em>Subinstrument</em> contains identification and 
                             connection information for an individual subinstrument.
                         </p>
-                    </td></tr></table><br/><h3><a id= "Subinstrument" >Subinstrument</a></h3><div><xs:documentation xmlns:lxi="http://www.lxistandard.org/InstrumentIdentification/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+                    </td></tr></table><br/><h3><a id= "Subinstrument" >Subinstrument</a></h3><div><xs:documentation xmlns:lxi="http://www.public.lxistandard.org/InstrumentIdentification/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
                 <em>Subinstrument</em> contains information about an individual subinstrument.
                 See the <em>lxi:Subinstruments</em> type for more information.
-            </xs:documentation></div><h4 xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema">Attributes</h4><table xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><tr><th style="background-color:#100080">Attribute</th><th style="background-color:#100080">Syntax</th><th style="background-color:#100080">LCI</th><th style="background-color:#100080">Description</th></tr><tr><td>Name</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:string</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td><em>None</em></td></tr></table></td><td>NA</td><td><xs:documentation xmlns:lxi="http://www.lxistandard.org/InstrumentIdentification/2.0">
+            </xs:documentation></div><h4 xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema">Attributes</h4><table xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><tr><th style="background-color:#100080">Attribute</th><th style="background-color:#100080">Syntax</th><th style="background-color:#100080">LCI</th><th style="background-color:#100080">Description</th></tr><tr><td>Name</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:string</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td><em>None</em></td></tr></table></td><td>NA</td><td><xs:documentation xmlns:lxi="http://www.public.lxistandard.org/InstrumentIdentification/2.0">
                     <p>
                         <em>Name</em> is the friendly name of the subinstrument.
                         It is typically displayed in tools that discover subinstruments
                         and facilitates connecting to them.
                     </p>
                 </xs:documentation><p><b>Required: </b>Optional</p><p><b>Unsecure impact: </b>NA</p></td></tr></table><h4>Sub-elements</h4><p>The following must occur in this order:</p><table><tr><th style="background-color:green">Element</th><th style="background-color:green">Type</th><th style="background-color:green">Cardinality</th><th style="background-color:green">Requirements</th></tr><tr xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><td>Identity</td><td>lxi:SubinstrumentIdentity</td><td> Optional </td><td>
-                        <p xmlns:lxi="http://www.lxistandard.org/InstrumentIdentification/2.0">
+                        <p xmlns:lxi="http://www.public.lxistandard.org/InstrumentIdentification/2.0">
                             Identity information about this subinstrument.  A given 
                             subinstrument may provide connections to various network channels.  Each
                             subinstrument and the channels by which it can be accessed are listed 
                             here.
                         </p>
-                        <p xmlns:lxi="http://www.lxistandard.org/InstrumentIdentification/2.0">
+                        <p xmlns:lxi="http://www.public.lxistandard.org/InstrumentIdentification/2.0">
                             RULE: If this subinstrument is the main instrument described in this
                             XML file then this element shall be omitted.  Note that the equivalent
                             identification information for the main instrument can be found at 
                             <em>LXIDevice/Manufacturer, LXIDevice/Model, LXIDevice/SerialNumber,</em> and
                             <em>LXIDevice/FirmwareRevision</em>.
                         </p>
-                        <p xmlns:lxi="http://www.lxistandard.org/InstrumentIdentification/2.0">
+                        <p xmlns:lxi="http://www.public.lxistandard.org/InstrumentIdentification/2.0">
                             RULE: If the subinstrument described is NOT the default LXI instrument
                             then this element shall be included.
                         </p>
                     </td></tr><tr xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><td>HiSLIP</td><td>lxi:SubinstrumentHiSLIP</td><td> Optional </td><td>
-                        <p xmlns:lxi="http://www.lxistandard.org/InstrumentIdentification/2.0">
+                        <p xmlns:lxi="http://www.public.lxistandard.org/InstrumentIdentification/2.0">
                             Indicates the HiSLIP subaddresses that control this subinstrument.
                             If none are available, this element is omitted.
                         </p>
                     </td></tr><tr xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><td>REST</td><td>lxi:SubinstrumentREST</td><td> Optional unbounded </td><td>
-                        <p xmlns:lxi="http://www.lxistandard.org/InstrumentIdentification/2.0">
+                        <p xmlns:lxi="http://www.public.lxistandard.org/InstrumentIdentification/2.0">
                             Indicates the REST APIs that control this subinstrument.
                             If none are available, this element is omitted.
                         </p>
                     </td></tr><tr xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><td>Socket</td><td>lxi:SubinstrumentSocket</td><td> Optional unbounded </td><td>
-                        <p xmlns:lxi="http://www.lxistandard.org/InstrumentIdentification/2.0">
+                        <p xmlns:lxi="http://www.public.lxistandard.org/InstrumentIdentification/2.0">
                             Indicates the sockets that control this subinstrument.
                             If none are available, this element is omitted.
                         </p>
                     </td></tr><tr xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><td>Telnet</td><td>lxi:SubinstrumentTelnet</td><td> Optional unbounded </td><td>
-                        <p xmlns:lxi="http://www.lxistandard.org/InstrumentIdentification/2.0">
+                        <p xmlns:lxi="http://www.public.lxistandard.org/InstrumentIdentification/2.0">
                             Indicates the telnet ports that control this subinstrument.
                             If none are available, this element is omitted.
                         </p>
                     </td></tr><tr xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><td>VXI11</td><td>lxi:SubinstrumentVXI11</td><td> Optional unbounded </td><td>
-                        <p xmlns:lxi="http://www.lxistandard.org/InstrumentIdentification/2.0">
+                        <p xmlns:lxi="http://www.public.lxistandard.org/InstrumentIdentification/2.0">
                             Indicates the VXI channel that controls this subinstrument.
                             If none are available, this element is omitted.
                         </p>
-                    </td></tr></table><br/><h3><a id= "SubinstrumentIdentity" >SubinstrumentIdentity</a></h3><div><xs:documentation xmlns:lxi="http://www.lxistandard.org/InstrumentIdentification/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+                    </td></tr></table><br/><h3><a id= "SubinstrumentIdentity" >SubinstrumentIdentity</a></h3><div><xs:documentation xmlns:lxi="http://www.public.lxistandard.org/InstrumentIdentification/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
                 <p>
                     <em>SubinstrumentIdentity</em> contains identity information about 
                     an individual subinstrument.
@@ -562,72 +613,72 @@
                     should match the IEEE 488.2 *IDN? query response from that subinstument.
                 </p>
             </xs:documentation></div><p>The <em>SubinstrumentIdentity</em> complex type has <b>no attributes</b></p><h4>Sub-elements</h4><p>The following must occur in this order:</p><table><tr><th style="background-color:green">Element</th><th style="background-color:green">Type</th><th style="background-color:green">Cardinality</th><th style="background-color:green">Requirements</th></tr><tr xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><td>Manufacturer2</td><td>xs:string</td><td> Required </td><td>
-                        <p xmlns:lxi="http://www.lxistandard.org/InstrumentIdentification/2.0">
+                        <p xmlns:lxi="http://www.public.lxistandard.org/InstrumentIdentification/2.0">
                             <em>Manufacturer2</em> indicates the manufacturer of this subinstrument
                         </p>
-                        <p xmlns:lxi="http://www.lxistandard.org/InstrumentIdentification/2.0">
+                        <p xmlns:lxi="http://www.public.lxistandard.org/InstrumentIdentification/2.0">
                             <em>Manufacturer2</em> should match the manufacturer 
                             field in IEEE 488.2 identity query for this subinstrument. 
                         </p>
                     </td></tr><tr xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><td>Model2</td><td>xs:string</td><td> Required </td><td>
-                        <p xmlns:lxi="http://www.lxistandard.org/InstrumentIdentification/2.0">
+                        <p xmlns:lxi="http://www.public.lxistandard.org/InstrumentIdentification/2.0">
                             <em>Model2</em> indicates the model of this subinstrument
                         </p>
-                        <p xmlns:lxi="http://www.lxistandard.org/InstrumentIdentification/2.0">
+                        <p xmlns:lxi="http://www.public.lxistandard.org/InstrumentIdentification/2.0">
                             <em>Model2</em> should match the model 
                             field in IEEE 488.2 identity query for this subinstrument. 
                         </p>
                     </td></tr><tr xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><td>SerialNumber2</td><td>xs:string</td><td> Optional </td><td>
-                        <p xmlns:lxi="http://www.lxistandard.org/InstrumentIdentification/2.0">
+                        <p xmlns:lxi="http://www.public.lxistandard.org/InstrumentIdentification/2.0">
                             <em>SerialNumber2</em> indicates the serial number of
                             this subinstrument.
                         </p>
-                        <p xmlns:lxi="http://www.lxistandard.org/InstrumentIdentification/2.0">
+                        <p xmlns:lxi="http://www.public.lxistandard.org/InstrumentIdentification/2.0">
                             <em>SerialNumber2</em> should match the serial number 
                             field in IEEE 488.2 identity query for this subinstrument. 
                         </p>
-                        <p xmlns:lxi="http://www.lxistandard.org/InstrumentIdentification/2.0">
+                        <p xmlns:lxi="http://www.public.lxistandard.org/InstrumentIdentification/2.0">
                             If the described subinstrument's serial number is not distinct from
                             the main instrument's serial number, then this
                             field is omitted.
                         </p>
                     </td></tr><tr xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><td>FirmwareRevision2</td><td>xs:string</td><td> Required </td><td>
-                        <p xmlns:lxi="http://www.lxistandard.org/InstrumentIdentification/2.0">
+                        <p xmlns:lxi="http://www.public.lxistandard.org/InstrumentIdentification/2.0">
                             <em>FirmwareRevision2</em> indcates the firmware version of this subinstrument.
                         </p>
-                        <p xmlns:lxi="http://www.lxistandard.org/InstrumentIdentification/2.0">
+                        <p xmlns:lxi="http://www.public.lxistandard.org/InstrumentIdentification/2.0">
                             <em>FirmwareRevision2</em> should match the version 
                             field in IEEE 488.2 identity query for this subinstrument. 
                         </p>
-                    </td></tr></table><br/><h3><a id= "SubinstrumentHiSLIP" >SubinstrumentHiSLIP</a></h3><div><xs:documentation xmlns:lxi="http://www.lxistandard.org/InstrumentIdentification/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+                    </td></tr></table><br/><h3><a id= "SubinstrumentHiSLIP" >SubinstrumentHiSLIP</a></h3><div><xs:documentation xmlns:lxi="http://www.public.lxistandard.org/InstrumentIdentification/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
                 <p>
                     <em>SubinstrumentHiSLIP</em> contains information about this HiSLIP subinstrument.
                 </p>
-            </xs:documentation></div><h4 xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema">Attributes</h4><table xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><tr><th style="background-color:#100080">Attribute</th><th style="background-color:#100080">Syntax</th><th style="background-color:#100080">LCI</th><th style="background-color:#100080">Description</th></tr><tr><td>Port</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:integer</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td><em>None</em></td></tr></table></td><td>NA</td><td><xs:documentation xmlns:lxi="http://www.lxistandard.org/InstrumentIdentification/2.0">
+            </xs:documentation></div><h4 xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema">Attributes</h4><table xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><tr><th style="background-color:#100080">Attribute</th><th style="background-color:#100080">Syntax</th><th style="background-color:#100080">LCI</th><th style="background-color:#100080">Description</th></tr><tr><td>Port</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:integer</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td><em>None</em></td></tr></table></td><td>NA</td><td><xs:documentation xmlns:lxi="http://www.public.lxistandard.org/InstrumentIdentification/2.0">
                     <p>
                         <em>Port</em> is the TCPIP port of this HiSLIP server.  The 
                         default is the IANA assigned port which is 4880.
                     </p>
                 </xs:documentation><p><b>Required: </b>Optional</p><p><b>Unsecure impact: </b>NA</p></td></tr></table><h4>Sub-elements</h4><p>The following must occur in this order:</p><table><tr><th style="background-color:green">Element</th><th style="background-color:green">Type</th><th style="background-color:green">Cardinality</th><th style="background-color:green">Requirements</th></tr><tr xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><td>Subaddress</td><td>xs:string</td><td> Required unbounded </td><td>
-                        <p xmlns:lxi="http://www.lxistandard.org/InstrumentIdentification/2.0">
+                        <p xmlns:lxi="http://www.public.lxistandard.org/InstrumentIdentification/2.0">
                             Subaddress of this HiSLIP server. If multiple subaddresses are
                             specified, each refers to the same subinstrument.
                         </p>
-                        <p xmlns:lxi="http://www.lxistandard.org/InstrumentIdentification/2.0">
+                        <p xmlns:lxi="http://www.public.lxistandard.org/InstrumentIdentification/2.0">
                             RULE: If the HiSLIP element is included, there shall be at 
                             least 1 subaddress.
                         </p>
-                     </td></tr></table><br/><h3><a id= "SubinstrumentREST" >SubinstrumentREST</a></h3><div><xs:documentation xmlns:lxi="http://www.lxistandard.org/InstrumentIdentification/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+                     </td></tr></table><br/><h3><a id= "SubinstrumentREST" >SubinstrumentREST</a></h3><div><xs:documentation xmlns:lxi="http://www.public.lxistandard.org/InstrumentIdentification/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
                 <p>
                     <em>SubinstrumentREST</em> indicates that a REST API at the 
                     designated port may be used to control the subinstrument.
                 </p>
-            </xs:documentation></div><h4 xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema">Attributes</h4><table xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><tr><th style="background-color:#100080">Attribute</th><th style="background-color:#100080">Syntax</th><th style="background-color:#100080">LCI</th><th style="background-color:#100080">Description</th></tr><tr><td>Port</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:integer</td></tr><td><b>Card.:</b></td><td>Req.</td></tr><tr><td><b>Default:</b></td><td>NA</td></tr></table></td><td>NA</td><td><xs:documentation xmlns:lxi="http://www.lxistandard.org/InstrumentIdentification/2.0">
+            </xs:documentation></div><h4 xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema">Attributes</h4><table xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><tr><th style="background-color:#100080">Attribute</th><th style="background-color:#100080">Syntax</th><th style="background-color:#100080">LCI</th><th style="background-color:#100080">Description</th></tr><tr><td>Port</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:integer</td></tr><td><b>Card.:</b></td><td>Req.</td></tr><tr><td><b>Default:</b></td><td>NA</td></tr></table></td><td>NA</td><td><xs:documentation xmlns:lxi="http://www.public.lxistandard.org/InstrumentIdentification/2.0">
                     <p>
                         <em>Port</em> is the TCPIP port of a REST API that can be used
                         to control the device.  
                     </p>
-                </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>NA</p></td></tr><tr><td>RootURL</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:string</td></tr><td><b>Card.:</b></td><td>Req.</td></tr><tr><td><b>Default:</b></td><td>NA</td></tr></table></td><td>NA</td><td><xs:documentation xmlns:lxi="http://www.lxistandard.org/InstrumentIdentification/2.0">
+                </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>NA</p></td></tr><tr><td>RootURL</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:string</td></tr><td><b>Card.:</b></td><td>Req.</td></tr><tr><td><b>Default:</b></td><td>NA</td></tr></table></td><td>NA</td><td><xs:documentation xmlns:lxi="http://www.public.lxistandard.org/InstrumentIdentification/2.0">
                     <p>
                         <em>RootURL</em> is the root URL of the REST API that can be used
                         to control the device.  <em>RootURL</em> is relative to the IP Address
@@ -638,41 +689,41 @@
                         192.168.0.1 and the <em>RootURL</em> attribute is <em>api/rest</em>, then
                         the API is at <em>h ttps://192.168.0.1/api/rest</em>.
                     </p>
-                </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>NA</p></td></tr></table><br/><p>The SubinstrumentREST complex type has <b>no subelements</b></p><br/><h3><a id= "SubinstrumentSocket" >SubinstrumentSocket</a></h3><div><xs:documentation xmlns:lxi="http://www.lxistandard.org/InstrumentIdentification/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+                </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>NA</p></td></tr></table><br/><p>The SubinstrumentREST complex type has <b>no subelements</b></p><br/><h3><a id= "SubinstrumentSocket" >SubinstrumentSocket</a></h3><div><xs:documentation xmlns:lxi="http://www.public.lxistandard.org/InstrumentIdentification/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
                 <p>
                     <em>SubinstrumentSocket</em> indicates that a socket connection at the 
                     designated port may be used to control the subinstrument.
                 </p>
-            </xs:documentation></div><h4 xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema">Attributes</h4><table xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><tr><th style="background-color:#100080">Attribute</th><th style="background-color:#100080">Syntax</th><th style="background-color:#100080">LCI</th><th style="background-color:#100080">Description</th></tr><tr><td>Port</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:integer</td></tr><td><b>Card.:</b></td><td>Req.</td></tr><tr><td><b>Default:</b></td><td>NA</td></tr></table></td><td>NA</td><td><xs:documentation xmlns:lxi="http://www.lxistandard.org/InstrumentIdentification/2.0">
+            </xs:documentation></div><h4 xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema">Attributes</h4><table xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><tr><th style="background-color:#100080">Attribute</th><th style="background-color:#100080">Syntax</th><th style="background-color:#100080">LCI</th><th style="background-color:#100080">Description</th></tr><tr><td>Port</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:integer</td></tr><td><b>Card.:</b></td><td>Req.</td></tr><tr><td><b>Default:</b></td><td>NA</td></tr></table></td><td>NA</td><td><xs:documentation xmlns:lxi="http://www.public.lxistandard.org/InstrumentIdentification/2.0">
                     <p>
                         <em>Port</em> is the TCPIP port of a server that can be used
                         to control the device.  
                     </p>
-                </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>NA</p></td></tr><tr><td>Protocol</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:string</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td><em>None</em></td></tr></table></td><td>NA</td><td><xs:documentation xmlns:lxi="http://www.lxistandard.org/InstrumentIdentification/2.0">
+                </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>NA</p></td></tr><tr><td>Protocol</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:string</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td><em>None</em></td></tr></table></td><td>NA</td><td><xs:documentation xmlns:lxi="http://www.public.lxistandard.org/InstrumentIdentification/2.0">
                     <p>
                         <em>Protocol</em> is the protocol the device accepts over
                         the designated socket.  The string used to designate the 
                         protocol is device specific. 
                     </p>
-                </xs:documentation><p><b>Required: </b>Optional</p><p><b>Unsecure impact: </b>NA</p></td></tr></table><br/><p>The SubinstrumentSocket complex type has <b>no subelements</b></p><br/><h3><a id= "SubinstrumentTelnet" >SubinstrumentTelnet</a></h3><div><xs:documentation xmlns:lxi="http://www.lxistandard.org/InstrumentIdentification/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+                </xs:documentation><p><b>Required: </b>Optional</p><p><b>Unsecure impact: </b>NA</p></td></tr></table><br/><p>The SubinstrumentSocket complex type has <b>no subelements</b></p><br/><h3><a id= "SubinstrumentTelnet" >SubinstrumentTelnet</a></h3><div><xs:documentation xmlns:lxi="http://www.public.lxistandard.org/InstrumentIdentification/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
                 <p>
                     <em>SubinstrumentTelnet</em> indicates that a telnet connection at the 
                     designated port may be used to control the subinstrument.
                 </p>
-            </xs:documentation></div><h4 xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema">Attributes</h4><table xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><tr><th style="background-color:#100080">Attribute</th><th style="background-color:#100080">Syntax</th><th style="background-color:#100080">LCI</th><th style="background-color:#100080">Description</th></tr><tr><td>Port</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:integer</td></tr><td><b>Card.:</b></td><td>Req.</td></tr><tr><td><b>Default:</b></td><td>NA</td></tr></table></td><td>NA</td><td><xs:documentation xmlns:lxi="http://www.lxistandard.org/InstrumentIdentification/2.0">
+            </xs:documentation></div><h4 xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema">Attributes</h4><table xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><tr><th style="background-color:#100080">Attribute</th><th style="background-color:#100080">Syntax</th><th style="background-color:#100080">LCI</th><th style="background-color:#100080">Description</th></tr><tr><td>Port</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:integer</td></tr><td><b>Card.:</b></td><td>Req.</td></tr><tr><td><b>Default:</b></td><td>NA</td></tr></table></td><td>NA</td><td><xs:documentation xmlns:lxi="http://www.public.lxistandard.org/InstrumentIdentification/2.0">
                     <p>
                         <em>Port</em> is the TCPIP port of a telnet server that can be used
                         to control the device.  
                     </p>
-                </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>NA</p></td></tr><tr><td>Protocol</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:string</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td><em>None</em></td></tr></table></td><td>NA</td><td><xs:documentation xmlns:lxi="http://www.lxistandard.org/InstrumentIdentification/2.0">
+                </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>NA</p></td></tr><tr><td>Protocol</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:string</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td><em>None</em></td></tr></table></td><td>NA</td><td><xs:documentation xmlns:lxi="http://www.public.lxistandard.org/InstrumentIdentification/2.0">
                     <p>
                         <em>Protocol</em> is the protocol the device accepts over
                         the designated telnet connection.  The string used to designate the 
                         protocol is device specific. 
                     </p>
-                </xs:documentation><p><b>Required: </b>Optional</p><p><b>Unsecure impact: </b>NA</p></td></tr></table><br/><p>The SubinstrumentTelnet complex type has <b>no subelements</b></p><br/><h3><a id= "SubinstrumentVXI11" >SubinstrumentVXI11</a></h3><div><xs:documentation xmlns:lxi="http://www.lxistandard.org/InstrumentIdentification/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+                </xs:documentation><p><b>Required: </b>Optional</p><p><b>Unsecure impact: </b>NA</p></td></tr></table><br/><p>The SubinstrumentTelnet complex type has <b>no subelements</b></p><br/><h3><a id= "SubinstrumentVXI11" >SubinstrumentVXI11</a></h3><div><xs:documentation xmlns:lxi="http://www.public.lxistandard.org/InstrumentIdentification/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
                 VXI-11 Device name associated with this subinstrument.
-            </xs:documentation></div><h4 xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema">Attributes</h4><table xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><tr><th style="background-color:#100080">Attribute</th><th style="background-color:#100080">Syntax</th><th style="background-color:#100080">LCI</th><th style="background-color:#100080">Description</th></tr><tr><td>Device</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:string</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td><em>None</em></td></tr></table></td><td>NA</td><td><xs:documentation xmlns:lxi="http://www.lxistandard.org/InstrumentIdentification/2.0">
+            </xs:documentation></div><h4 xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema">Attributes</h4><table xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><tr><th style="background-color:#100080">Attribute</th><th style="background-color:#100080">Syntax</th><th style="background-color:#100080">LCI</th><th style="background-color:#100080">Description</th></tr><tr><td>Device</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:string</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td><em>None</em></td></tr></table></td><td>NA</td><td><xs:documentation xmlns:lxi="http://www.public.lxistandard.org/InstrumentIdentification/2.0">
                     <p>
                         VXI-11 device name of this server.  If absent, indicates <em>inst0</em>.
                     </p>
