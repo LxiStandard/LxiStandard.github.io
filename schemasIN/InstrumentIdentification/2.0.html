@@ -381,8 +381,8 @@
                     The base URL allows clients to enumerate devices connected to the bridge device.
                 </p>
                 <p>    
-                    For example, the base URL for a connected device might be “http://hostname/device0” while another connected
-                    device might have a base URL of “http://hostname/device5”.  The format and path naming conventions for these
+                    For example, the base URL for a connected device might be "http://hostname/device0" while another connected
+                    device might have a base URL of "http://hostname/device5".  The format and path naming conventions for these
                     connected device base URLs are left up to the vendor.
                 </p>
                 <p>    
@@ -418,11 +418,13 @@
                 <p>
                     Separate NetworkInformation elements are required to represent IPv4 and IPv6 addresses.
                     When representing IPv6 addresses, devices should:
-                        •	not include SubnetMask, Gateway, DHCPEnabled, or AutoIPEnabled
-                        •	include the Hostname as configured on the device for mDNS announcements
-                        •	include  MACAddress as defined below
-                        •	include IPAddress elements for preferred addresses. They are expressed using dot/colon
-                            format not including the CIDR prefix length. Such as “fe80::2713:af27”.
+                        <ul>
+                            <li>not include SubnetMask, Gateway, DHCPEnabled, or AutoIPEnabled</li>
+                            <li>include the Hostname as configured on the device for mDNS announcements</li>
+                            <li>include  MACAddress as defined below</li>
+                            <li>include IPAddress elements for preferred addresses. They are expressed using dot/colon
+                                format not including the CIDR prefix length. Such as "fe80::2713:af27".</li>
+                        </ul>
                 </p>
                 <p>
                     Devices may omit the InstrumentAddressString, or include a single exemplary instance.
