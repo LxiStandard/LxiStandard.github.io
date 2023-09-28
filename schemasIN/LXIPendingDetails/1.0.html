@@ -238,7 +238,7 @@
             h2 {
                 margin: 60px 0px 10px 0;
             }
-        </style><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXIPendingDetails/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        </style><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXIPendingDetails/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
             <h2>LXI Pending Details Schema</h2>
             <div>
                 <p>
@@ -256,29 +256,29 @@
                     an LXI API method returns a status of 202.
                 </p>
             </div>
-        </xs:documentation><div xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><p><b>This schema specifies the XML namespace:</b></p><p style="margin-left:10%"><em>http://public.lxistandard.org/schemas/LXIPendingDetails/1.0</em>,
-                version: <em>1.0</em><br/><em>Editorial date: </em><em>August 29, 2023</em></p></div><h3><a id= "LXIPendingDetails" >LXIPendingDetails</a></h3><div><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXIPendingDetails/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        </xs:documentation><div xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><p><b>This schema specifies the XML namespace:</b></p><p style="margin-left:10%"><em>http://lxistandard.org/schemas/LXIPendingDetails/1.0</em>,
+                version: <em>1.0</em><br/><em>Editorial date: </em><em>September 28, 2023</em></p></div><h3><a id= "LXIPendingDetails" >LXIPendingDetails</a></h3><div><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXIPendingDetails/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
             <p>
                 The LXI PendingDetails element contains the details related to why
                 an operation is pending and permits the client to determine
                 when it is completed.
             </p>
           </xs:documentation></div><p>The <em>LXIPendingDetails</em> complex type has <b>no attributes</b></p><h4>Sub-elements</h4><p>The following must occur in this order:</p><table><tr><th style="background-color:green">Element</th><th style="background-color:green">Type</th><th style="background-color:green">Cardinality</th><th style="background-color:green">Requirements</th></tr><tr xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><td>URL</td><td>xs:anyURI</td><td> Required </td><td>
-                    <p xmlns:lxi="http://public.lxistandard.org/schemas/LXIPendingDetails/1.0">
+                    <p xmlns:lxi="http://lxistandard.org/schemas/LXIPendingDetails/1.0">
                         <em>URL</em> provides a URL at which the client can 
                         perform a GET to determine the status of the pending 
                         operation.
                     </p>
-                    <p xmlns:lxi="http://public.lxistandard.org/schemas/LXIPendingDetails/1.0">
+                    <p xmlns:lxi="http://lxistandard.org/schemas/LXIPendingDetails/1.0">
                         If the API for which this response is generated may result
                         in a new IP address, then the URL returned from the 202
                         response shall be constructed with either the hostname or
                         an absolute path with no host.
                     </p>
-                    <p xmlns:lxi="http://public.lxistandard.org/schemas/LXIPendingDetails/1.0">
+                    <p xmlns:lxi="http://lxistandard.org/schemas/LXIPendingDetails/1.0">
                         RULE: <em>URL</em> shall be included.
                     </p>
-                    <p xmlns:lxi="http://public.lxistandard.org/schemas/LXIPendingDetails/1.0">
+                    <p xmlns:lxi="http://lxistandard.org/schemas/LXIPendingDetails/1.0">
                         <b>OBSERVATION:</b> <em>When querying the URL the client 
                         will either receive another operation pending response with 
                         another instance of this XML or a status of OK that indicates
@@ -286,27 +286,27 @@
                     </p>
 
                 </td></tr><tr xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><td>UserActionRequired</td><td>xs:boolean</td><td> Required </td><td>
-                    <p xmlns:lxi="http://public.lxistandard.org/schemas/LXIPendingDetails/1.0">
+                    <p xmlns:lxi="http://lxistandard.org/schemas/LXIPendingDetails/1.0">
                         <em>UserActionRequired</em> indicates if the operation
                         is blocked waiting for a user action.  For instance, a 
                         front panel operation or a device reboot.
                     </p>
                 </td></tr><tr xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><td>EstimatedTimeToComplete</td><td>xs:integer</td><td> Optional </td><td>
-                    <p xmlns:lxi="http://public.lxistandard.org/schemas/LXIPendingDetails/1.0"> 
+                    <p xmlns:lxi="http://lxistandard.org/schemas/LXIPendingDetails/1.0"> 
                         <em>EstimatedTimeToComplete</em> indicates the amount of 
                         time in seconds to complete the operation.
                     </p>
-                    <p xmlns:lxi="http://public.lxistandard.org/schemas/LXIPendingDetails/1.0">
+                    <p xmlns:lxi="http://lxistandard.org/schemas/LXIPendingDetails/1.0">
                         <em>EstimatedTimeToComplete</em> shall be included if 
                         <em>@UserActionRequired</em> is false.
                     </p>
-                    <p xmlns:lxi="http://public.lxistandard.org/schemas/LXIPendingDetails/1.0">
+                    <p xmlns:lxi="http://lxistandard.org/schemas/LXIPendingDetails/1.0">
                         <em>EstimatedTimeToComplete</em> shall be omitted if 
                         the device is awaiting a user action and the device  
                         does not know when it will occur.
                     </p>
                 </td></tr><tr xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><td>Details</td><td>xs:string</td><td> Optional </td><td>
-                    <p xmlns:lxi="http://public.lxistandard.org/schemas/LXIPendingDetails/1.0">
+                    <p xmlns:lxi="http://lxistandard.org/schemas/LXIPendingDetails/1.0">
                         <em>Details</em> provides an explanation of the operation
                         that is pending, or why it is pending.
                     </p>

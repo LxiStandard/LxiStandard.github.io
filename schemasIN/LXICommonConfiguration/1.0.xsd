@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xs:schema targetNamespace="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0" 
-  xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0" 
+<xs:schema targetNamespace="http://lxistandard.org/schemas/LXICommonConfiguration/1.0" 
+  xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0" 
   xmlns:xs="http://www.w3.org/2001/XMLSchema" 
   elementFormDefault="qualified" 
   attributeFormDefault="unqualified" version="1.0">
@@ -11,7 +11,7 @@ instance of this element contains the full device security configuration. -->
     <xs:annotation>
       <xs:appinfo>
         <!-- The following date should be updated whenever this schema is updated!  Including doc changes.-->
-        <editorialdate>August 29, 2023</editorialdate>
+        <editorialdate>September 28, 2023</editorialdate>
       </xs:appinfo>
       <xs:documentation>
         <div>
@@ -2426,35 +2426,6 @@ instance of this element contains the full device security configuration. -->
       </xs:annotation>
     </xs:attribute>
 
-   <!-- <xs:attribute name="password" type="xs:string" use="optional">
-      <xs:annotation>
-        <xs:documentation>
-          <p>
-            <em>password</em> contains the password associated with this user name.
-          </p>
-          <p>
-            <em>password</em> is a write-only attribute.  On a write, the absence 
-            of a password indicates that no change is to be made to the devices 
-            stored password.  If the user has not already defined a password and 
-            the password is absent, then the user is not authenticated until a 
-            password is configured.  The password may be configured using this 
-            mechanism or other device-specific mechanisms beyond the scope of 
-            LXI Security.
-          </p>
-          <p>
-            RULE: The IVI-6.5 SASL Mechanism Specification details the specific device 
-            and client requirements for the generation of usernames and passwords. 
-            Devices shall comply with the IVI device requirements. 
-          </p>
-        </xs:documentation>
-        <xs:appinfo>
-          <requirement>RULE:</requirement>
-          <lci>No change</lci>
-          <unsecureMode>NA</unsecureMode>
-        </xs:appinfo>
-      </xs:annotation>
-    </xs:attribute>-->
-
     <xs:attribute name="APIAccess" type="xs:boolean" default="false" use="optional">
       <xs:annotation>
         <xs:documentation>
@@ -2518,6 +2489,36 @@ instance of this element contains the full device security configuration. -->
                 characters are literals. The fields enclosed in 
                 &lt;&gt; indicate where hash algorithm values are
                 incorporated into the string.                
+              </p>
+              <p>
+                The fields are as defined in RFC-5802.  For example, the stored hash value of the password "123456" is:
+              </p>
+              
+              <p>
+                SCRAM-SHA-256$4096:sY29SmrcV71GPelgD3H1dg==$NicztZlfZMbAFFbqamvsz8tCZlTc5h2a9zNpteOxsrc=:93tB38XwNA5sE7xni/SyGVL8biMIB+ftW050VwR5/lc=
+               
+              </p>
+              <p>
+                This encodes the field values of:
+              </p>  
+              <p>
+                <ul>
+                  <li>
+                    <em>scram_sasl_mech</em> SCRAM-SHA-256
+                  </li>
+                  <li>
+                    <em>iteration_count</em> 4096
+                  </li>
+                  <li>
+                    <em>base64_salt</em> sY29SmrcV71GPelgD3H1dg==
+                  </li>
+                  <li>
+                    <em>stored_key</em> NicztZlfZMbAFFbqamvsz8tCZlTc5h2a9zNpteOxsrc=
+                  </li>
+                  <li>
+                    <em>server_key</em> 93tB38XwNA5sE7xni/SyGVL8biMIB+ftW050VwR5/lc=
+                  </li>
+                </ul>
               </p>
             </li>
           </ul>

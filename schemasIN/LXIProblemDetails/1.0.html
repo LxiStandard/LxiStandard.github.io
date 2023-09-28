@@ -238,7 +238,7 @@
             h2 {
                 margin: 60px 0px 10px 0;
             }
-        </style><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXIProblemDetails/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        </style><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXIProblemDetails/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
             <h2>LXI Problem Details Schema</h2>
             <div>
                 <p>
@@ -266,30 +266,30 @@
                     the LXI API generates 40X errors.
                 </p>
             </div>
-        </xs:documentation><div xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><p><b>This schema specifies the XML namespace:</b></p><p style="margin-left:10%"><em>http://public.lxistandard.org/schemas/LXIProblemDetails/1.0</em>,
-                version: <em>1.0</em><br/><em>Editorial date: </em><em>August 29, 2023</em></p></div><h3><a id= "LXIProblemDetails" >LXIProblemDetails</a></h3><div><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXIProblemDetails/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        </xs:documentation><div xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><p><b>This schema specifies the XML namespace:</b></p><p style="margin-left:10%"><em>http://lxistandard.org/schemas/LXIProblemDetails/1.0</em>,
+                version: <em>1.0</em><br/><em>Editorial date: </em><em>September 28, 2023</em></p></div><h3><a id= "LXIProblemDetails" >LXIProblemDetails</a></h3><div><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXIProblemDetails/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
             <p>
                 The LXI ProblemDetails element contains the details related to an HTTP error.
             </p>
           </xs:documentation></div><p>The <em>LXIProblemDetails</em> complex type has <b>no attributes</b></p><h4>Sub-elements</h4><p>The following must occur in this order:</p><table><tr><th style="background-color:green">Element</th><th style="background-color:green">Type</th><th style="background-color:green">Cardinality</th><th style="background-color:green">Requirements</th></tr><tr xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><td>Title</td><td>xs:string</td><td> Required </td><td>
-                    <p xmlns:lxi="http://public.lxistandard.org/schemas/LXIProblemDetails/1.0">
+                    <p xmlns:lxi="http://lxistandard.org/schemas/LXIProblemDetails/1.0">
                         High level description of the method result, consistent with the HTTP status code
                         returned.
                     </p>
-                    <p xmlns:lxi="http://public.lxistandard.org/schemas/LXIProblemDetails/1.0">
+                    <p xmlns:lxi="http://lxistandard.org/schemas/LXIProblemDetails/1.0">
                         RULE: <em>Title</em> shall be included.
                     </p>
 
                 </td></tr><tr xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><td>Detail</td><td>xs:string</td><td> Optional </td><td>
-                    <p xmlns:lxi="http://public.lxistandard.org/schemas/LXIProblemDetails/1.0">
+                    <p xmlns:lxi="http://lxistandard.org/schemas/LXIProblemDetails/1.0">
                         Detail regarding the specific method status, for instance, the nature of
                         a syntactic error.
                     </p>
                 </td></tr><tr xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><td>Instance</td><td>xs:string</td><td> Optional </td><td>
-                    <p xmlns:lxi="http://public.lxistandard.org/schemas/LXIProblemDetails/1.0">
+                    <p xmlns:lxi="http://lxistandard.org/schemas/LXIProblemDetails/1.0">
                         Detail specific to the issue.
                     </p>
-                    <p xmlns:lxi="http://public.lxistandard.org/schemas/LXIProblemDetails/1.0"> 
+                    <p xmlns:lxi="http://lxistandard.org/schemas/LXIProblemDetails/1.0"> 
                         For instance, for a syntax error this could contain details used
                         to isolate and correct the problem, such as the line number
                         or specific reference to a flawed syntactic element.

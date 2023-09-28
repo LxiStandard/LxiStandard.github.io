@@ -21,9 +21,9 @@
             April 2006 - Initial version associated with the LXI 1.2 standard.
 -->
 
-<xs:schema xmlns:lxi="http://www.public.lxistandard.org/InstrumentIdentification/2.0" 
+<xs:schema xmlns:lxi="http://www.lxistandard.org/InstrumentIdentification/2.0" 
         xmlns:xs="http://www.w3.org/2001/XMLSchema" 
-        targetNamespace="http://www.public.lxistandard.org/InstrumentIdentification/2.0" 
+        targetNamespace="http://www.lxistandard.org/InstrumentIdentification/2.0" 
         elementFormDefault="qualified" 
         attributeFormDefault="unqualified"
         version="2.0">
