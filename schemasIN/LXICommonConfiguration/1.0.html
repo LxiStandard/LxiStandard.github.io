@@ -372,7 +372,7 @@
           </td></tr><tr xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><td>ClientAuthentication</td><td>lxi:ClientAuthentication</td><td> Optional </td><td>
             <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">RULE: <em>ClientAuthentication</em> shall be optionally accepted for PUT.</p>
             <p xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
-              RULE: <em>ClientAuthentication</em> without the <em>@passwords</em> or 
+              RULE: <em>ClientAuthentication</em> without the <em>/Password</em> element or 
               <em>@APIAccess</em> attributes shall be returned for GET over secure 
               connections and elided for unsecure connections.
             </p>
@@ -1728,36 +1728,18 @@
         </xs:annotation>
       </td></tr></table><br/><h3><a id= "ClientCredential" >ClientCredential</a></h3><div><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
         <p>
-          <em>ClientCredential</em> contains an individual user with an optional password 
-          and an indication if this used has API Access rights.
+          <em>ClientCredential</em> contains an individual user with optional passwords 
+          and an indication if this user has API Access rights.
         </p>
         <p>
-          <em>@password</em> and <em>@APIAccess</em> are optional since they are 
-          write-only fields and are not included in device responses for reasons of secrecy.
+          <em>@APIAccess</em> and <em>/Password</em> are optional since they are write-only 
+          fields that may not be included in device responses for reasons of secrecy.
         </p>
       </xs:documentation></div><h4 xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema">Attributes</h4><table xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><tr><th style="background-color:#100080">Attribute</th><th style="background-color:#100080">Syntax</th><th style="background-color:#100080">LCI</th><th style="background-color:#100080">Description</th></tr><tr><td>user</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:string</td></tr><td><b>Card.:</b></td><td>Req.</td></tr><tr><td><b>Default:</b></td><td>NA</td></tr></table></td><td>No change</td><td><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
           <p><em>user</em> that may be authenticated on the device.</p>
           <p>
             RULE: LXI devices shall accept <em>user</em> names composed of alpha-numeric strings. 
             User names shall be case-sensitive.
-          </p>
-          <p>
-            RULE: The IVI-6.5 SASL Mechanism Specification details the specific device 
-            and client requirements for the generation of usernames and passwords. 
-            Devices shall comply with the IVI device requirements. 
-          </p>
-        </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>NA</p></td></tr><tr><td>password</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:string</td></tr><td><b>Card.:</b></td><td> Opt.</td></tr><tr><td><b>Default:</b></td><td><em>None</em></td></tr></table></td><td>No change</td><td><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
-          <p>
-            <em>password</em> contains the password associated with this user name.
-          </p>
-          <p>
-            <em>password</em> is a write-only attribute.  On a write, the absence 
-            of a password indicates that no change is to be made to the devices 
-            stored password.  If the user has not already defined a password and 
-            the password is absent, then the user is not authenticated until a 
-            password is configured.  The password may be configured using this 
-            mechanism or other device-specific mechanisms beyond the scope of 
-            LXI Security.
           </p>
           <p>
             RULE: The IVI-6.5 SASL Mechanism Specification details the specific device 
@@ -1779,7 +1761,50 @@
             no change is to be made to the users stored <em>APIAccess</em> 
             value.
           </p>
-        </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>NA</p></td></tr></table><br/><p>The ClientCredential complex type has <b>no subelements</b></p><br/><h3><a id= "ClientCertAuthentication" >ClientCertAuthentication</a></h3><div><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>NA</p></td></tr></table><h4>Sub-elements</h4><p>The following must occur in this order:</p><table><tr><th style="background-color:green">Element</th><th style="background-color:green">Type</th><th style="background-color:green">Cardinality</th><th style="background-color:green">Requirements</th></tr><tr xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><td>Password</td><td>lxi:Password</td><td> Optional unbounded </td><td/></tr></table><br/><h3><a id= "Password" >Password</a></h3><div><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        <p><em>Password</em> contains the passwords associated with an individual
+          client. Passwords may be sent to the device hashed, avoiding the need
+          to serialize clear text passwords within this XML document.
+        </p>
+      </xs:documentation></div><h4 xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema">Attributes</h4><table xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><tr><th style="background-color:#100080">Attribute</th><th style="background-color:#100080">Syntax</th><th style="background-color:#100080">LCI</th><th style="background-color:#100080">Description</th></tr><tr><td>format</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:string</td></tr><td><b>Card.:</b></td><td>Req.</td></tr><tr><td><b>Default:</b></td><td>NA</td></tr></table></td><td>NA</td><td><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
+          <p><em>format</em> Indicates the format used to generate the hash.</p>
+          
+          <p>
+            The following formats are required by LXI:
+          </p>
+          <ul>
+            <li><em>ClearText</em> indicates that the <em>@value</em> is not hashed.</li>
+            <li><em>MCF</em> indicates that the <em>@value</em> is in a format 
+              consistent with the Modular Crypt Format, used by tools such
+              as libxcrypt or Linux crypt(3).</li>
+            <li>
+              <p>
+                <em>SCRAM</em> indicates that the <em>@value</em> is in a format to 
+                support SCRAM hashes and shall be represented as: 
+              </p>
+              <p>
+                &lt;scram_sasl_mech&gt;$&lt;iteration_count&gt;:&lt;base64_salt&gt;$&lt;stored_key&gt;:&lt;server_key&gt;
+              </p>
+              <p>
+                Note that in the above string, the '$' and ':' 
+                characters are literals. The fields enclosed in 
+                &lt;&gt; indicate where hash algorithm values are
+                incorporated into the string.                
+              </p>
+            </li>
+          </ul>
+          <p>
+            Other formats are permitted, but not specified by LXI.
+          </p>
+        </xs:documentation><p><b>Required: </b>RULE: Devices shall implement the formats specified.</p><p><b>Unsecure impact: </b>Does not impact unsecure mode</p></td></tr><tr><td>value</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:string</td></tr><td><b>Card.:</b></td><td>Req.</td></tr><tr><td><b>Default:</b></td><td>NA</td></tr></table></td><td>NA</td><td><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
+          <p><em>value</em> Contains the password in the format specified by <em>@format.</em></p>
+         
+        </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>Does not impact unsecure mode</p></td></tr><tr><td><em>Any Attribute</em></td><td><table><tr><td><b>Type:</b></td><td><em>Any type</em></td></tr><tr><td><b>Card.:</b></td><td><em>Optional</em></td></tr><tr><td><b>Default:</b></td><td><em>NA</em></td></tr></table></td><td>NA</td><td><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0">
+          <p>
+            Arbitrary attributes may be included for devices that wish to further qualify
+            a password, for instance, to associate the password with a specific protocol.
+          </p>
+        </xs:documentation><p><b>Required: </b>No</p><p><b>Unsecure impact: </b>NA</p></td></tr></table><br/><p>The Password complex type has <b>no subelements</b></p><br/><h3><a id= "ClientCertAuthentication" >ClientCertAuthentication</a></h3><div><xs:documentation xmlns:lxi="http://public.lxistandard.org/schemas/LXICommonConfiguration/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
         <p>
           Configures client certificate authentication.
         </p>

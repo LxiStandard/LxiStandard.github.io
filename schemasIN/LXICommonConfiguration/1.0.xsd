@@ -125,7 +125,7 @@ instance of this element contains the full device security configuration. -->
           <xs:documentation>
             <p>RULE: <em>ClientAuthentication</em> shall be optionally accepted for PUT.</p>
             <p>
-              RULE: <em>ClientAuthentication</em> without the <em>@passwords</em> or 
+              RULE: <em>ClientAuthentication</em> without the <em>/Password</em> element or 
               <em>@APIAccess</em> attributes shall be returned for GET over secure 
               connections and elided for unsecure connections.
             </p>
@@ -2380,15 +2380,29 @@ instance of this element contains the full device security configuration. -->
     <xs:annotation>
       <xs:documentation>
         <p>
-          <em>ClientCredential</em> contains an individual user with an optional password 
-          and an indication if this used has API Access rights.
+          <em>ClientCredential</em> contains an individual user with optional passwords 
+          and an indication if this user has API Access rights.
         </p>
         <p>
-          <em>@password</em> and <em>@APIAccess</em> are optional since they are 
-          write-only fields and are not included in device responses for reasons of secrecy.
+          <em>@APIAccess</em> and <em>/Password</em> are optional since they are write-only 
+          fields that may not be included in device responses for reasons of secrecy.
         </p>
       </xs:documentation>
     </xs:annotation>
+    <xs:sequence>
+      <xs:element name="Password" type="lxi:Password" minOccurs="0" maxOccurs="unbounded">
+        <xs:annotation>
+          <xs:appinfo>
+            <p>
+              Each Password element contains a single password which may be clear text
+              or hashed.  Multiple passwords may be specified in order to permit the 
+              device to choose between hashing algorithms, or associate different passwords
+              with different protocols.
+            </p>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
 
     <xs:attribute name="user" type="xs:string">
       <xs:annotation>
@@ -2412,7 +2426,7 @@ instance of this element contains the full device security configuration. -->
       </xs:annotation>
     </xs:attribute>
 
-    <xs:attribute name="password" type="xs:string" use="optional">
+   <!-- <xs:attribute name="password" type="xs:string" use="optional">
       <xs:annotation>
         <xs:documentation>
           <p>
@@ -2439,7 +2453,7 @@ instance of this element contains the full device security configuration. -->
           <unsecureMode>NA</unsecureMode>
         </xs:appinfo>
       </xs:annotation>
-    </xs:attribute>
+    </xs:attribute>-->
 
     <xs:attribute name="APIAccess" type="xs:boolean" default="false" use="optional">
       <xs:annotation>
@@ -2467,6 +2481,116 @@ instance of this element contains the full device security configuration. -->
       </xs:annotation>
     </xs:attribute>
   </xs:complexType>
+
+  <xs:complexType name="Password">
+    <xs:annotation>
+      <xs:documentation>
+        <p><em>Password</em> contains the passwords associated with an individual
+          client. Passwords may be sent to the device hashed, avoiding the need
+          to serialize clear text passwords within this XML document.
+        </p>
+      </xs:documentation>
+    </xs:annotation>
+
+    <xs:attribute name="format" type="xs:string" use="required">
+      <xs:annotation>
+        <xs:documentation>
+          <p><em>format</em> Indicates the format used to generate the hash.</p>
+          
+          <p>
+            The following formats are required by LXI:
+          </p>
+          <ul>
+            <li><em>ClearText</em> indicates that the <em>@value</em> is not hashed.</li>
+            <li><em>MCF</em> indicates that the <em>@value</em> is in a format 
+              consistent with the Modular Crypt Format, used by tools such
+              as libxcrypt or Linux crypt(3).</li>
+            <li>
+              <p>
+                <em>SCRAM</em> indicates that the <em>@value</em> is in a format to 
+                support SCRAM hashes and shall be represented as: 
+              </p>
+              <p>
+                &lt;scram_sasl_mech&gt;$&lt;iteration_count&gt;:&lt;base64_salt&gt;$&lt;stored_key&gt;:&lt;server_key&gt;
+              </p>
+              <p>
+                Note that in the above string, the '$' and ':' 
+                characters are literals. The fields enclosed in 
+                &lt;&gt; indicate where hash algorithm values are
+                incorporated into the string.                
+              </p>
+            </li>
+          </ul>
+          <p>
+            Other formats are permitted, but not specified by LXI.
+          </p>
+        </xs:documentation>
+        <xs:appinfo>
+          <requirement>RULE: Devices shall implement the formats specified.</requirement>
+          <lci>NA</lci>
+          <unsecureMode>Does not impact unsecure mode</unsecureMode>
+        </xs:appinfo>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="value" type="xs:string" use="required">
+      <xs:annotation>
+        <xs:documentation>
+          <p><em>value</em> Contains the password in the format specified by <em>@format.</em></p>
+         
+        </xs:documentation>
+        <xs:appinfo>
+          <requirement>RULE:</requirement>
+          <lci>NA</lci>
+          <unsecureMode>Does not impact unsecure mode</unsecureMode>
+        </xs:appinfo>
+      </xs:annotation>
+    </xs:attribute>
+    <!-- <xs:attribute name="hashed" type="xs:string" use="optional">
+      <xs:annotation>
+        <xs:documentation>
+          <p><em>hashed</em> Contains a hashed password.</p>
+          <p>
+            RULE: LXI requires that hashed passwords are represented 
+            consistently with the Modular Crypt Format, used by tools such
+            as Linux crypt(3).
+          </p>
+          <p>
+            RULE: LXI devices may require a SCRAM password (for instance, 
+            for HiSLIP).  SCRAM passwords shall be represented as: 
+          </p>
+          <p>
+            $SCRAM$&lt;scram_sasl_mech&gt;$&lt;iteration_count&gt;:&lt;base64_salt&gt;$&lt;stored_key&gt;:&lt;server_key&gt;
+          </p>
+          <p>
+            Note that in the above string, the '$' and ':' 
+            characters are literals, as is the '$SCRAM$' at the beginning 
+            of the string.
+          </p>
+        </xs:documentation>
+        <xs:appinfo>
+          <requirement>RULE:</requirement>
+          <lci>NA</lci>
+          <unsecureMode>Does not impact unsecure mode</unsecureMode>
+        </xs:appinfo>
+      </xs:annotation>
+    </xs:attribute> -->
+    <xs:anyAttribute namespace="##any" processContents="lax">
+      <xs:annotation>
+        <xs:documentation>
+          <p>
+            Arbitrary attributes may be included for devices that wish to further qualify
+            a password, for instance, to associate the password with a specific protocol.
+          </p>
+        </xs:documentation>
+        <xs:appinfo>
+          <requirement>No</requirement>
+          <lci>NA</lci>
+          <unsecureMode>NA</unsecureMode>
+        </xs:appinfo>
+      </xs:annotation>
+    </xs:anyAttribute>
+  </xs:complexType>
+
 
   <!-- Complex Type ClientCertAuthentication -->
   <xs:complexType name="ClientCertAuthentication">
