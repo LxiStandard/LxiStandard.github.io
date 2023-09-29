@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LXIDeviceSpecificConfiguration xmlns="http://lxistandard.org/schemas/LXIDeviceSpecificConfiguration/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.lxistandard.org/LXIDeviceSpecificConfiguration/1.0 https://192.168.1.153/lxi/schemas/LXIDeviceSpecificConfiguration/1.0" name="LXI">
+    <IPv4Device address="192.168.1.153" subnetMask="255.255.255.0" gateway="192.168.1.249" dns1="192.168.1.13" dns2="192.168.1.7"/>
+    <IPv6Device>
+        <StaticAddress address="3031:3030:3030:3030:3030:3030:3030:3030/64" router="fe80:0:0:0:208:a2ff:fe0e:f880/0" dns="2003:a:2713:2b01:0:0:0:7/0"/>
+        <LinkLocalAddress address="fe80:0:0:0:a00:27ff:fe93:1809/64" router="fe80:0:0:0:208:a2ff:fe0e:f880/0" dns="2003:a:2713:2b01:0:0:0:7/0"/>
+        <GlobalAddress address="2003:a:2713:2b01:0:0:0:de93/128" router="fe80:0:0:0:208:a2ff:fe0e:f880/0" dns="2003:a:2713:2b01:0:0:0:7/0"/>
+    </IPv6Device>
+</LXIDeviceSpecificConfiguration>
