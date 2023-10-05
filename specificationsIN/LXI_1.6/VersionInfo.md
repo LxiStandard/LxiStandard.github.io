@@ -1,6 +1,6 @@
 ---
 layout: default
-title: LXI 1.6
+title: LXI 1.6-2022
 parent: Specifications
 nav_order:  9
 ---
