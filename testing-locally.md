@@ -18,12 +18,17 @@ Running the website nominally requires:
 
 Basic steps are:
 
-1. clone the website sources (LxiStandard.github.io).
+1. clone the website sources (LxiStandard.github.io).  This will pick up the
+  most recently posted specifications and schemas (actions in those repositories
+  push any changes to them to the website repo).
+
 2. If you want to run with different *Specifications* or *lxi-api* put the new image 
   into *specificationsIN*/*schemasIN* directory.  Presumably you would only be doing 
   this if you want to verify the behavior of a new schema or specification 
   on the website rendering.
+
 3. From the *site* subdirectory, run *bundle install*
+
 4. At the time of this writing, you will need to change 1 line in the file  
   *site/_config.yml*.  That is the line that declares the template. 
 
@@ -33,12 +38,24 @@ Basic steps are:
     theme: just-the-docs
     #remote_theme: just-the-docs/just-the-docs
     ```
-5. Run the server from the *site* subdirectory, using *bundle exec jekyll server*
+  
+  This is basically required because Ruby/Jekyll in unable to find the 
+  theme from the *theme* keyword (the just-the-docs theme is not one
+  of the themes automatically provided by github).  Future versions of 
+  github pages (or Jekyll?) may change this.
+   
+5. From Linux, run the script *scripts/buildLXI.sh*, this is the script run
+  by the github action.  If you are not on Linux, you can directly invoke the
+  python scripts *scripts/buildSchemaPages.py* and/or
+  *scripts/buildSpecificationPages.py*.
+
+6. Run the server from the *site* subdirectory, using *bundle exec jekyll server*
 
 Above verified on Ubuntu 22, 2023-10-17 (JM).
 
 ## Using the scripts/serve.ps1 script
 
-This automates firing up the website, using a Docker container.
+This automates firing up the website inside a Docker container.
 
-However, it is a little more fragile and does require Docker.  Worked on Windows last time I tried it (JM).
+However, it is a little more fragile and does require Docker.  Worked on Windows 
+the last time I tried it (JM).
