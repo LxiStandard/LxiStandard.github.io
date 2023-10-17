@@ -35,7 +35,7 @@ Basic steps are:
     ```
 5. Run the server from the *site* subdirectory, using *bundle exec jekyll server*
 
-Above verified on Ubuntu 22, 2023-010-17 (JM).
+Above verified on Ubuntu 22, 2023-10-17 (JM).
 
 ## Using the scripts/serve.ps1 script
 
