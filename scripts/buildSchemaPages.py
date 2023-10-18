@@ -53,6 +53,9 @@ def stripSuffixAndBuildTable(specName):
             xmlFiles.append(file)
     
     table=[]
+    table.append("")
+    table.append("## Schemas")
+    table.append("")
     table.append("|---|---|---|")
     #table.append(specName+"|Version|Doc")  seems to look better without this
     for file in schemasFiles:
