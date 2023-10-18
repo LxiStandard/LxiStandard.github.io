@@ -21,11 +21,10 @@ This schema is used to:
   * Interrogate a device to determine its security settings
   * Interrogate a device to determine its security capabilities
 
-The following examples are provideed:
-
 The following examples are provided:
 
 | Example | Purpose |
 | ------------- |-------------|
-| LXICommonConfigurationExample.xml | Basic example, (does not validate, does not include the new password format) |
+| LXICommonConfigurationExample.xml | Basic example (does not validate based on spec revision without LXi 1.6 password format) |
 | HashedPasswordExample.xml | Added a couple of passwords to the basic example  |
+
