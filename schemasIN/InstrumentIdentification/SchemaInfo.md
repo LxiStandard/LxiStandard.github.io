@@ -23,6 +23,3 @@ The following examples are provided:
 | Example | Purpose |
 | ------------- |-------------|
 | InstrumentWithSubinstrumentsExample.xml | Simple example showing a device with some subinstruments |
-
-
-## Schemas
