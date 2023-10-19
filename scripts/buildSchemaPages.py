@@ -14,7 +14,6 @@ import shutil
 # directories
 schemasIN=r"schemasIN/"
 schemasOUT=r"site/schemas/"
-schemaRoot=r"schemas/"
 schemaInfoFilename="SchemaInfo.md"
 
 defaultSchemaInfo="""---
