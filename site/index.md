@@ -7,7 +7,7 @@ Title: "LXI Public Auxiliary Website"
 # Home
 
 The LXI consortium operates this subdomain (public.LxiStandard.org) as a
-posting place for final specifications, code, examples, and other files that
+posting place for final specifications, REST API schemas, examples, and other files that
 are not naturally hosted out of the LXI website.
 
-If you are looking for the main LXI website, see [LXI Website](https://lxistandard.org).
+For the main LXI website, see: [LXI Website](https://lxistandard.org).
