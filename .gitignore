@@ -1,3 +1,8 @@
-site/_site/
+#The git ignore for LXI site
 
+# this directory created by Jekyll when deploying
+site/_site/**
 
+# the following are built by Python programs when site is deployed
+site/schemas/**
+site/specifications/**
