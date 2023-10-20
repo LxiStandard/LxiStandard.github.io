@@ -1829,6 +1829,17 @@
         </xs:documentation><p><b>Required: </b>RULE: Devices shall implement the formats specified.</p><p><b>Unsecure impact: </b>Does not impact unsecure mode</p></td></tr><tr><td>value</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:string</td></tr><td><b>Card.:</b></td><td>Req.</td></tr><tr><td><b>Default:</b></td><td>NA</td></tr></table></td><td>NA</td><td><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
           <p><em>value</em> Contains the password in the format specified by <em>@format.</em></p>
          
+        </xs:documentation><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
+          <p>RULE: If the device does not support the requested hash algorithm,
+                       then the CommonConfiguration put request shall fail. The returned
+                       LXIProblemDetails/Title element shall contain an indication that 
+                       the hash algorithm specified in the value attribute was invalid.
+                       The LXIProblemDetails/Instance shall have a comma separated list 
+                       of accepted values. 
+                       
+                       OBSERVATION: Clients can determine the supported hash algorithms
+                       by sending an empty value attribute. 
+          </p>
         </xs:documentation><p><b>Required: </b>RULE:</p><p><b>Unsecure impact: </b>Does not impact unsecure mode</p></td></tr><tr><td><em>Any Attribute</em></td><td><table><tr><td><b>Type:</b></td><td><em>Any type</em></td></tr><tr><td><b>Card.:</b></td><td><em>Optional</em></td></tr><tr><td><b>Default:</b></td><td><em>NA</em></td></tr></table></td><td>NA</td><td><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
           <p>
             Arbitrary attributes may be included for devices that wish to further qualify
