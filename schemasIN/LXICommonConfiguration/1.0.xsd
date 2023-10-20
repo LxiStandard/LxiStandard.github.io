@@ -2536,24 +2536,17 @@ instance of this element contains the full device security configuration. -->
     <xs:attribute name="value" type="xs:string" use="required">
       <xs:annotation>
         <xs:documentation>
-          <p><em>value</em> Contains the password in the format specified by <em>@format.</em></p>
-         
-        </xs:documentation>
-        <xs:appinfo>
-          <requirement>RULE:</requirement>
-          <lci>NA</lci>
-          <unsecureMode>Does not impact unsecure mode</unsecureMode>
-        </xs:appinfo>
-        <xs:documentation>
+          <p>Rule: <em>value</em> contains the password in the format specified by <em>@format.</em></p>
+          
           <p>RULE: If the device does not support the requested hash algorithm,
-                       then the CommonConfiguration put request shall fail. The returned
-                       LXIProblemDetails/Title element shall contain an indication that 
-                       the hash algorithm specified in the value attribute was invalid.
-                       The LXIProblemDetails/Instance shall have a comma separated list 
-                       of accepted values. 
-                       
-                       OBSERVATION: Clients can determine the supported hash algorithms
-                       by sending an empty value attribute. 
+             then the CommonConfiguration put request shall fail. The returned
+             LXIProblemDetails/Title element shall contain an indication that 
+             the hash algorithm specified in the value attribute was invalid.
+             The LXIProblemDetails/Instance shall have a comma separated list 
+             of accepted values. 
+          
+             OBSERVATION: Clients can determine the supported hash algorithms
+             by sending an empty value attribute. 
           </p>
         </xs:documentation>
         <xs:appinfo>
