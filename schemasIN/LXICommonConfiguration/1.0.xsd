@@ -2544,6 +2544,20 @@ instance of this element contains the full device security configuration. -->
           <lci>NA</lci>
           <unsecureMode>Does not impact unsecure mode</unsecureMode>
         </xs:appinfo>
+        <xs:appinfo>
+          <requirement>RULE: If the device does not support the requested hash algorithm,
+                       then the CommonConfiguration put request shall fail. The returned
+                       LXIProblemDetails/Title element shall contain an indication that 
+                       the hash algorithm specified in the value attribute was invalid.
+                       The LXIProblemDetails/Instance shall have a comma separated list 
+                       of accepted values. 
+                       
+                       OBSERVATION: Clients can determine the supported hash algorithms
+                       by sending an empty value attribute. 
+          </requirement>
+          <lci>NA</lci>
+          <unsecureMode>Does not impact unsecure mode</unsecureMode>
+        </xs:appinfo>
       </xs:annotation>
     </xs:attribute>
     <!-- <xs:attribute name="hashed" type="xs:string" use="optional">
