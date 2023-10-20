@@ -2,7 +2,7 @@
 layout: default
 title: LXI Common Configuration Schema
 nav_order:  1
-parent: Schemas
+parent: LXI API Schemas
 ---
 
 # LXI Common Configuration Schema

@@ -2,7 +2,7 @@
 layout: default
 title: LXI Pending Details Schema
 nav_order:  1
-parent: Schemas
+parent: LXI API Schemas
 ---
 
 # LXI Pending Details Schema

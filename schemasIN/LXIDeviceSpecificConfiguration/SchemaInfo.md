@@ -2,7 +2,7 @@
 layout: default
 title: LXI Device Specific Configuration Schema
 nav_order:  1
-parent: Schemas
+parent: LXI API Schemas
 ---
 
 # LXI Device Specific Configuration Schema
