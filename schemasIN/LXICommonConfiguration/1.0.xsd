@@ -2556,6 +2556,11 @@ instance of this element contains the full device security configuration. -->
                        by sending an empty value attribute. 
           </p>
         </xs:documentation>
+        <xs:appinfo>
+          <requirement>RULE:</requirement>
+          <lci>NA</lci>
+          <unsecureMode>Does not impact unsecure mode</unsecureMode>
+        </xs:appinfo>
       </xs:annotation>
     </xs:attribute>
     <!-- <xs:attribute name="hashed" type="xs:string" use="optional">
