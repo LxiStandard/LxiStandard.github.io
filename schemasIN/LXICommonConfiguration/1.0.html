@@ -1827,7 +1827,7 @@
             Other formats are permitted, but not specified by LXI.
           </p>
         </xs:documentation><p><b>Required: </b>RULE: Devices shall implement the formats specified.</p><p><b>Unsecure impact: </b>Does not impact unsecure mode</p></td></tr><tr><td>value</td><td><table><tr><tr><td><b>Type:</b></td><td>xs:string</td></tr><td><b>Card.:</b></td><td>Req.</td></tr><tr><td><b>Default:</b></td><td>NA</td></tr></table></td><td>NA</td><td><xs:documentation xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/1.0">
-          <p>Rule: <em>value</em> contains the password in the format specified by <em>@format.</em></p>
+          <p>RULE: <em>value</em> contains the password in the format specified by <em>@format.</em></p>
           
           <p>RULE: If the device does not support the requested hash algorithm,
              then the CommonConfiguration put request shall fail. The returned
@@ -1835,7 +1835,8 @@
              the hash algorithm specified in the value attribute was invalid.
              The LXIProblemDetails/Instance shall have a comma separated list 
              of accepted values. 
-          
+          </p>
+          <p>
              OBSERVATION: Clients can determine the supported hash algorithms
              by sending an empty value attribute. 
           </p>
