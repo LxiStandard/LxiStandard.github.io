@@ -1,7 +1,7 @@
 ---
 layout: default
 title: LXI 1.6 Specifications
-parent: Specifications
+parent: LXI Specifications
 nav_order:  8
 ---
 
