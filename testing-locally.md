@@ -14,7 +14,7 @@ Running the website nominally requires:
 * jekyll
 * bundle
 
-## Basic steps
+## Basic steps (Linux)
 
 Basic steps are:
 
@@ -53,9 +53,15 @@ Basic steps are:
 
 Above verified on Ubuntu 22, 2023-10-17 (JM).
 
-## Using the scripts/serve.ps1 script
+## Using the scripts/serve.ps1 script (Windows)
 
 This automates firing up the website inside a Docker container.
 
-However, it is a little more fragile and does require Docker.  Worked on Windows 
-the last time I tried it (JM).
+Additional considerations are:
+1. Requires WSL and Docker on the Windows machine
+2. To run the BuildLXI.sh script have two choices:
+  1. Run it under WSL/Linux.  To do so, need to run do2unix to fix line endings
+      in BuildLXI.sh.
+  2. Run the Python directly (should work same on Windows and Linux)
+ 
+However, it is a little slower than on Linux, but works.
