@@ -4,6 +4,7 @@ title: LXI 1.5 Specifications
 parent: LXI Specifications
 nav_order:  10
 ---
+# LXI 1.5 Specifications
 
 This is the LXI 1.5 version of  the specifications.
 
