@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Specifications
+title: LXI Specifications
 nav_order:  2
 has_children: true
 ---
