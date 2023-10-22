@@ -59,13 +59,14 @@ This automates firing up the website inside a Docker container.
 
 Additional considerations are:
 1. Requires WSL and Docker on the Windows machine
-2. To run the BuildLXI.sh script have two choices:
-  1. Run it under WSL/Linux.  To do so, need to run do2unix to fix line endings
+2. To run the BuildLXI.sh script have some choices:
+   1. Run it under WSL/Linux.  To do so, need to run do2unix to fix line endings
       in BuildLXI.sh.
-  2. Run the Python directly (should work same on Windows and Linux)
-  3. Provide a PS version
-   Note that the BuildLXI.sh script only has 2 lines.  It invokes Python for 
-   the schemas and again for the specifications.  So any of these 
-   choices is pretty straightforward.
+   2. Run the Python directly (should work same on Windows and Linux)
+   3. Provide a PS version
+      
+  Note that the BuildLXI.sh script only has 2 lines.  It invokes Python for 
+  the schemas and again for the specifications.  So any of these 
+  choices is pretty straightforward.
  
 However, it is a little slower than on Linux, but works.
