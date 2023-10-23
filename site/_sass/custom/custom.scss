@@ -26,15 +26,19 @@ div.spec-table {
         
         border: 1px solid black;
         padding: 1px;
+        text-align: center;
     }
 
     td:first-child {
-        min-width: 70%;
-        
+        text-align:left;
+    }
+
+    td:nth-child(2), td:nth-child(3), th:nth-child(2), th:nth-child(3) {
+        min-width:20%;
     }
 
     td:nth-child(4), td:nth-child(5), th:nth-child(4), th:nth-child(5) {
-        min-width: 30px;
+        min-width: 10%;
     }
     
 }
