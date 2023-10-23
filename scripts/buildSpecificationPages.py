@@ -99,7 +99,8 @@ class documentInfo:
     def html(self):
         html = "<tr>"
         if self.rawURL == "":
-            html += "<td>" + self.name + "</td>"
+            name = self.name.replace("_"," ")
+            html += "<td>" + name + "</td>"
             html += "<td>" + self.version + "</td>"
             html += "<td>" + self.date + "</td>"
             if self.URLdocx != "":
@@ -111,7 +112,8 @@ class documentInfo:
             else:
                 html += "<td>-</td>"
         else:
-            html += "<td><a href=\"" + self.rawURL+ "\">" + self.rawURL+ "</a></td>"
+            readableURL = self.rawURL.replace("_"," ")
+            html += "<td><a href=\"" + self.rawURL+ "\">" + readableURL+ "</a></td>"
             html += "<td></td><td></td><td></td><td></td>"
         html += "</tr>"
         return html  
