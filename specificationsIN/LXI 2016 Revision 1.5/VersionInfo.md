@@ -8,5 +8,5 @@ nav_order:  2
 
 This is the LXI 1.5 version of  the specifications.
 
-There were adopted November 7, 2016 and superceded in 2023 by LXI 1.6.
+They were adopted November 7, 2016 and superceded in 2023 by LXI 1.6.
 
