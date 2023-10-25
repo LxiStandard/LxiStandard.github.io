@@ -8,7 +8,7 @@ excerpt_separator: <!--excerpt-->
 At the June 2023 LXI meeting the LXI Consortium decided to create a
 public LXI subdomain with various elements that LXI
 needs to have publicly available.  This is primarily the
-LXI specificatgions and the XML schema files for the LXI API.
+LXI specifications and the XML schema files for the LXI API.
 
 <!--excerpt-->
 
