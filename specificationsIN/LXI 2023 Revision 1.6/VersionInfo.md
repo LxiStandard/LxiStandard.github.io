@@ -12,7 +12,7 @@ LXI 1.6 adds network security features, and an LXI REST API which is
 used to manage the device security settings.  The LXI REST API
 may also be extended for other applications in future LXI versions.
 
-LXI 1.6 also has various editorial udpates, including an update
+LXI 1.6 also has various editorial updates, including an update
 to the LXI identification schema.  This new schema is in a simplified
 XSD style, but validates all known LXI Identification XML files 
 based on the previous schema.
