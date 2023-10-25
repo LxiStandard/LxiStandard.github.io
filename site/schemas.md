@@ -16,8 +16,5 @@ For details on the APIs, the schemas, and their use, see
 the LXI API Extended Function specification for the LXI 
 generations 1.6 and newer at [LXI Specifications](specifications.html).
 
-The schemas are in XSD format and do not return formatted HTML pages.
-
 The schemas are maintained in the LXI github source 
 repository. For access contact the LXI consortium.
-

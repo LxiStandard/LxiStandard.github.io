@@ -4,7 +4,7 @@ nav_order: 0
 Title: "LXI Public Auxiliary Website"
 ---
 
-# Home
+# LXI Public Auxiliary Website
 
 The LXI consortium operates this subdomain (public.LxiStandard.org) as a
 posting place for:
