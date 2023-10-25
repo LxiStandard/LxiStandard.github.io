@@ -25,6 +25,5 @@ The following examples are provided:
 
 | Example | Purpose |
 | ------------- |-------------|
-| LXICommonConfigurationExample.xml | Basic example (does not validate based on spec revision without LXi 1.6 password format) |
 | HashedPasswordExample.xml | Added a couple of passwords to the basic example  |
 
