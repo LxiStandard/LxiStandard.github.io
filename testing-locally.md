@@ -14,7 +14,7 @@ Running the website nominally requires:
 * jekyll
 * bundle
 
-## Basic steps (Linux)
+## Basic steps
 
 Basic steps are:
 
@@ -27,9 +27,10 @@ Basic steps are:
   this if you want to verify the behavior of a new schema or specification 
   on the website rendering.
 
-3. From the *site* subdirectory, run *bundle install*
+3. From the *site* subdirectory, run *bundle install*.  This should only be
+   necessary the first time you follow this process.
 
-4. At the time of this writing, you will need to change 1 line in the file  
+5. At the time of this writing, you will need to change 1 line in the file  
   *site/_config.yml*.  That is the line that declares the template. 
 
     Specifically, the *remote_theme* must be changed to just a *theme*
@@ -39,34 +40,21 @@ Basic steps are:
     #remote_theme: just-the-docs/just-the-docs
     ```
   
-  This is basically required because Ruby/Jekyll in unable to find the 
-  theme from the *theme* keyword (the just-the-docs theme is not one
-  of the themes automatically provided by github).  Future versions of 
-  github pages (or Jekyll?) may change this.
+    This is basically required because Ruby/Jekyll in unable to find the 
+    theme from the *theme* keyword (the just-the-docs theme is not one
+    of the themes automatically provided by github).  Future versions of 
+    github pages (or Jekyll?) may change this.
    
-5. From Linux, run the script *scripts/buildLXI.sh*, this is the script run
-  by the github action.  If you are not on Linux, you can directly invoke the
-  python scripts *scripts/buildSchemaPages.py* and/or
-  *scripts/buildSpecificationPages.py*.
+6. Build the spec pages and scheme pages.
+    * From Linux, run the script *scripts/buildLXI.sh*, this is the script run
+     by the github action.
+    * From Windows directly invoke the
+      python scripts *scripts/buildSchemaPages.py* and/or
+      *scripts/buildSpecificationPages.py*. (or write a PS script :)
 
-6. Run the server from the *site* subdirectory, using *bundle exec jekyll server*
+7. Run the server
+     * From Linux: from the *site* subdirectory, using *bundle exec jekyll server*
+     * From Windows run scripts/server.ps1
+       This script fires up the website inside a Docker container.  
 
-Above verified on Ubuntu 22, 2023-10-17 (JM).
-
-## Using the scripts/serve.ps1 script (Windows)
-
-This automates firing up the website inside a Docker container.
-
-Additional considerations are:
-1. Requires WSL and Docker on the Windows machine
-2. To run the BuildLXI.sh script have some choices:
-   1. Run it under WSL/Linux.  To do so, need to run do2unix to fix line endings
-      in BuildLXI.sh.
-   2. Run the Python directly (should work same on Windows and Linux)
-   3. Provide a PS version
-      
-  Note that the BuildLXI.sh script only has 2 lines.  It invokes Python for 
-  the schemas and again for the specifications.  So any of these 
-  choices is pretty straightforward.
- 
-However, it is a little slower than on Linux, but works.
+Above verified on Ubuntu 22 and Windows 10/11, 2023-10-23 (JM).
