@@ -11,14 +11,34 @@ div.lxi-small-box {
 
 div.spec-table {
     table {
-        width: 60%;
         border-collapse: collapse;
         border: 1px solid black;
         font-family: sans-serif;
     }
-    th, td {
+    th {
+        border: 1px ;
+        padding: 1px;
+        background-color: #9e5a2f;
+        color: white;
+    }
+
+    td {
+        
         border: 1px solid black;
         padding: 1px;
+        text-align: center;
+    }
+
+    td:first-child {
+        text-align:left;
+    }
+
+    td:nth-child(2), td:nth-child(3), th:nth-child(2), th:nth-child(3) {
+        min-width:20%;
+    }
+
+    td:nth-child(4), td:nth-child(5), th:nth-child(4), th:nth-child(5) {
+        min-width: 10%;
     }
     
 }
