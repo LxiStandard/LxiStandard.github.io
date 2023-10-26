@@ -2502,7 +2502,7 @@ instance of this element contains the full device security configuration. -->
                 This encodes the field values of:
               </p>  
               <p>
-                <ul>
+                <ul style="list-style-type: none">
                   <li>
                     <em>scram_sasl_mech</em> SCRAM-SHA-256
                   </li>
@@ -2536,8 +2536,19 @@ instance of this element contains the full device security configuration. -->
     <xs:attribute name="value" type="xs:string" use="required">
       <xs:annotation>
         <xs:documentation>
-          <p><em>value</em> Contains the password in the format specified by <em>@format.</em></p>
-         
+          <p>RULE: <em>value</em> contains the password in the format specified by <em>@format.</em></p>
+          
+          <p>RULE: If the device does not support the requested hash algorithm,
+             then the CommonConfiguration put request shall fail. The returned
+             LXIProblemDetails/Title element shall contain an indication that 
+             the hash algorithm specified in the value attribute was invalid.
+             The LXIProblemDetails/Instance shall have a comma separated list 
+             of accepted values. 
+          </p>
+          <p>
+             OBSERVATION: Clients can determine the supported hash algorithms
+             by sending an empty value attribute. 
+          </p>
         </xs:documentation>
         <xs:appinfo>
           <requirement>RULE:</requirement>

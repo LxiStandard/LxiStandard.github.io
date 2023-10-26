@@ -27,8 +27,8 @@ Basic steps are:
   this if you want to verify the behavior of a new schema or specification 
   on the website rendering.
 
-3. From the *site* subdirectory, run *bundle install*.  This should only be
-   necessary the first time you follow this process.
+3. From the *site* subdirectory, run *bundle install*.  This should only be necessary 
+   the first time you follow this process (or if you add components).
 
 5. At the time of this writing, you will need to change 1 line in the file  
   *site/_config.yml*.  That is the line that declares the template. 
@@ -44,17 +44,23 @@ Basic steps are:
     theme from the *theme* keyword (the just-the-docs theme is not one
     of the themes automatically provided by github).  Future versions of 
     github pages (or Jekyll?) may change this.
+    This is basically required because Ruby/Jekyll in unable to find the 
+    theme from the *theme* keyword (the just-the-docs theme is not one
+    of the themes automatically provided by github).  Future versions of 
+    github pages (or Jekyll?) may change this.
    
-6. Build the spec pages and scheme pages.
-    * From Linux, run the script *scripts/buildLXI.sh*, this is the script run
-     by the github action.
-    * From Windows directly invoke the
-      python scripts *scripts/buildSchemaPages.py* and/or
-      *scripts/buildSpecificationPages.py*. (or write a PS script :)
+1. From Linux, run the script *scripts/buildLXI.sh*, this is the script run
+  by the github action.  If you are not on Linux, you can directly invoke the
+  python scripts *scripts/buildSchemaPages.py* and/or
+  *scripts/buildSpecificationPages.py*.
 
-7. Run the server
-     * From Linux: from the *site* subdirectory, using *bundle exec jekyll server*
-     * From Windows run scripts/server.ps1
-       This script fires up the website inside a Docker container.  
+1. Run the server from the *site* subdirectory, using *bundle exec jekyll server*
 
-Above verified on Ubuntu 22 and Windows 10/11, 2023-10-23 (JM).
+Above verified on Ubuntu 22, 2023-10-17 (JM).
+
+## Using the scripts/serve.ps1 script
+
+This automates firing up the website inside a Docker container.
+
+However, it is a little more fragile and does require Docker.  Worked on Windows 
+the last time I tried it (JM).
