@@ -2,7 +2,7 @@
 layout: default
 title: LXI Certificate Request Schema
 nav_order:  1
-parent: Schemas
+parent: LXI API Schemas
 ---
 
 # LXI Certificate Request Schema

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Schemas
+title: LXI API Schemas
 nav_order:  3
 has_children: true
 ---

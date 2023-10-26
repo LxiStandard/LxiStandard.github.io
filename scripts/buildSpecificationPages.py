@@ -94,9 +94,42 @@ class documentInfo:
         else:
             md = "["+self.rawURL+"](" + self.rawURL + ")||||"
         return md  
+    
+    # create the markdown table line for this instance as html
+    def html(self):
+        html = "<tr>"
+        if self.rawURL == "":
+            name = self.name.replace("_"," ")
+            html += "<td>" + name + "</td>"
+            html += "<td>" + self.version + "</td>"
+            html += "<td>" + self.date + "</td>"
+            if self.URLdocx != "":
+                html += "<td><a href=\"" + self.URLdocx + "\">docx</a></td>"
+            else:
+                html += "<td>-</td>"
+            if self.URLpdf != "":
+                html += "<td><a href=\"" + self.URLpdf + "\">pdf</a></td>"
+            else:
+                html += "<td>-</td>"
+        else:
+            readableURL = self.rawURL.replace("_"," ")
+            html += "<td><a href=\"" + self.rawURL+ "\">" + readableURL+ "</a></td>"
+            html += "<td></td><td></td><td></td><td></td>"
+        html += "</tr>"
+        return html  
 
 
 
+SpecTableHeader="""
+<table>
+<tr>
+<th>Title</th>
+<th>Version</th>
+<th>Date</th>
+<th>Word</th>
+<th>PDF</th>
+</tr>
+"""
 
 # called from root directory where spec version resides
 def buildURLTable(directory):
@@ -112,16 +145,21 @@ def buildURLTable(directory):
                 fileList[fileInfo.sortKey] = fileInfo
     lines= list(fileList.keys())
     lines.sort()
+
+    # Write the HTML table
     output= []
-    #output.append("<div class=\"spec-table\">")
-    #output.append("\n")
-    output.append("|Title|Version|Date|Word|PDF|")
-    output.append("|---|:---:|---|:---:|:---:|")
+    output.append("<div class=\"spec-table\">")
+    
+    # output.append("|Title|Version|Date|Word|PDF|")
+    # output.append("|---|:---:|---|:---:|:---:|")
+    output.append(SpecTableHeader)
+    
     for line in lines:
-        newItem = fileList[line]
-        output.append(newItem.markdown())
+         newItem = fileList[line]
+         output.append(newItem.html())
+    output.append("</table>")
+    output.append("</div>")
     output.append("\n")
-    #output.append("</div>")
 
     return output
 
