@@ -1,2 +1,4 @@
 User-agent: *
-Disallow: /
+Allow: /
+
+Sitemap: https://public.lxistandard.org/sitemap.xml
