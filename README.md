@@ -3,7 +3,12 @@
 This repository is used to generate the website at the *public.lxistandard.org* 
 subdomain.  The README files for the *LxiStandard/lxi-api* repository and the
 *LxiStandard/Specifications* repos point to this documentation for details
-on the required file names and organizatin.
+on the required file names and organization.
+
+**For step-by-step instructions to just update the specifications
+that are posted, see the README file in the *Specifications*
+repository:**
+[Posting New Specifications](https://github.com/LxiStandard/Specifications/blob/main/README.md)
 
 The purpose of this subdomain is to make certain key LXI documents
 publicly available on the web.  This includes:
@@ -67,6 +72,11 @@ documentation would fit well in the README in that repository,
 however, to keep the documentation together, and because
 the Python scripts that consume the files in that repository
 are in this repository, the documentation is here.
+
+**For step-by-step instructions to update the specifications
+that are posted, see the README file in the *Specifications*
+repository:**
+[Posting New Specifications](https://github.com/LxiStandard/Specifications/blob/main/README.md)
 
 ## Organization of the Specifications repository
 
