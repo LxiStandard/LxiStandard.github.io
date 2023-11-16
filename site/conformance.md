@@ -23,7 +23,8 @@ The following document describes the LXI Consortium policies for certifying conf
   </ul>
   <p><strong>Note:</strong> No vendor may use the LXI logo or the letters "LXI" on an instrument or in any promotional material or press releases regarding the instrument until the instrument passes all certification tests and is approved by the LXI Conformance Committee as being LXI compliant. The LXI Consortium will enforce the laws governing the use of the LXI trademark for the benefit of all its members.</p><br>
   <p><strong>Where to start</strong><br><br>
-The first order of business is to join the LXI Consortium. Information on joining is located at <a href="http://lxistandard.org/Consortium/HowToJoin.aspx">http://lxistandard.org/Consortium/HowToJoin.aspx</a>. There are various classes of membership (University, Informational, Participating, and Strategic), so you can choose which one is right for you.&nbsp; If you have questions, contact <a href="mailto:execdir@lxistandard.org">Aaron Hall</a>, Executive Director, LXI Consortium. </p>
+The first order of business is to join the LXI Consortium. Information on joining is located at <a href="http://lxistandard.org/Consortium/HowToJoin.aspx">http://lxistandard.org/Consortium/HowToJoin.aspx</a>. There are various classes of membership (University, Informational, Participating, and Strategic), so you can choose which one is right for you.&nbsp; If you have questions, contact 
+the LXI consortium <a href="https://lxistandard.org/ContactUs.aspx">LXI contact</a>. </p>
   <p>Once you join, you will have access to the conformance information to get started.  You will also be able to use the LXI Reference Design software to speed the development of LXI products, and the latest <strong>LXI Conformance Test Suite</strong> to conduct the basic LXI conformance tests. In addition, you gain insight into the evolving LXI Standard, can contribute to and collaborate with T&amp;M industry leaders, customers and partners, advance your knowledge of new testing approaches and grow marketing leverage for your new LXI-conformant products.</p><br>
   <p><strong>Conformance Version Restrictions</strong></p>
   <p>There are version restrictions for new devices and technical justification as shown in the next figure.<br>
@@ -108,7 +109,7 @@ There are two basic ways for you to test your device:</p>
   <ul type="circle">
     <blockquote>
       <p><strong>Wheelwright Enterprises</strong><br>
-        Contact: <a href="mailto:Aaron.Hall@Bode-Ent.com">Aaron Hall</a></p>
+        Contact: <a href="mailto:Aaron.Hall@Bode-Ent.com">Wheelwright Enterprises</a></p>
       <p><strong>Keysight Technologies Deutschland GmbH</strong><br>
         Herrenberger Straße 130<br>
         71034 Böblingen<br>
