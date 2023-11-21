@@ -9,7 +9,7 @@ nav_order:  1
 This is the DRAFT LXI 1.6 version of  the specifications. For information
 on how LXI documents are organized see:
 
-   [LXI Specifications](../../specifications.html)
+   [LXI Specifications](../specifications.html)
 
 LXI 1.6 adds network security features, and an LXI REST API which is
 used to manage the device security settings.  The LXI REST API
@@ -22,8 +22,3 @@ that were based on the previous schema.
 
 For additional details on differences, see the Guide to the LXI 
 Documentation and revision tables in the individual specifications.
-
-In the table below are two documents:
-   - Differences between LXI 1.5 and LXI 1.6 - 2022
-   - Differences between LXI 1.6 - 2022 and LXI 1.6 - 2023
-     
