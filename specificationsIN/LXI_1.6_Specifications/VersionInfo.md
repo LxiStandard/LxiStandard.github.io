@@ -22,3 +22,7 @@ that were based on the previous schema.
 
 For additional details on differences, see the Guide to the LXI 
 Documentation and revision tables in the individual specifications.
+
+In the table below are two documents:
+   - Differences between LXI 1.5 and LXI 1.6 - 2022
+   - Differences between LXI 1.6 - 2022 and LXI 1.6 - 2023
