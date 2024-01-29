@@ -19,7 +19,7 @@ Interoperability.&nbsp; Plain and simple.&nbsp; The LXI Consortium was formed in
 <br>
 The following document describes the LXI Consortium policies for certifying conformance to the current LXI 1.6 and previous versions:</p>
   <ul>
-    <li><a href="../assets/conformance/LXI Conformance Policy for Certifying Conformance to LXI Consortium Standards V1.6 Rev2.1.pdf"><strong>LXI Consortium Policy for Certifying to LXI Consortium Standards</strong></a></li>
+    <li><a href="../assets/conformance/LXI Conformance Policy for Certifying Conformance to LXI Consortium Standards V1.6 Rev2.2.pdf"><strong>LXI Consortium Policy for Certifying to LXI Consortium Standards</strong></a></li>
   </ul>
   <p><strong>Note:</strong> No vendor may use the LXI logo or the letters "LXI" on an instrument or in any promotional material or press releases regarding the instrument until the instrument passes all certification tests and is approved by the LXI Conformance Committee as being LXI compliant. The LXI Consortium will enforce the laws governing the use of the LXI trademark for the benefit of all its members.</p><br>
   <p><strong>Where to start</strong><br><br>
@@ -32,7 +32,7 @@ the LXI consortium <a href="https://lxistandard.org/ContactUs.aspx">LXI contact<
   NVS = New Version Starts<br>
   PVE = Previous Version Ends <br>
 Technical justification: See the Technical Justification below for more details. <br></p>
-    <img src="https://lxistandard.org/images/Conformance/LXI-1.6-NVS-PVE.png"><img src="https://lxistandard.org/images/Conformance/LXI-1.6-TechJust.png"><br><br><table>
+    <img src="../assets/conformance/Version Specific LXI Conformance Restrictions.png"><img src="https://lxistandard.org/images/Conformance/LXI-1.6-TechJust.png"><br><br><table>
     <tbody><tr></tr>
     <tr></tr>
     </tbody></table>  <br><br>  
@@ -152,7 +152,7 @@ There are two basic ways for you to test your device:</p>
     Apply for LXI Conformance</strong><br><br>
   If your device has successfully passed the LXI conformance tests submit your “Application for Certification to LXI Device Specification 2016” with your conformance documentation together with the test results (LXI Conformance Test Suite XML/PDF file) to <a href="mailto:LXIConformance@lxistandard.org">the LXI Conformance Committee</a>. For the conformance documentation use the 2-page template form:</p>
   <ul>
-    <li><a href="../assets/conformance/Application for Certification to LXI Consortium Standards V1.5 Rev.2.0.docx"><strong>Application for Certification to LXI Device Specification</strong></a></li>
+    <li><a href="../assets/conformance/Application for Certification to LXI Consortium Device Specification 2023.docx"><strong>Application for Certification to LXI Device Specification</strong></a></li>
   </ul>
   <p>The LXI Conformance Committee Chair will then present the application to the LXI Conformance Committee for review. If approved, you will receive the notification to use the LXI trademark and advertise the device as LXI conformant.&nbsp; In addition, your product will be included in the official list of LXI conformant devices on the LXI website.<br><br>
     If denied, you will get an explanation why and detailed steps to resolve any issue(s). <br>
