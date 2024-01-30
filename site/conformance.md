@@ -146,7 +146,7 @@ There are two basic ways for you to test your device:</p>
     <li>Have at least one certified LXI device</li>
   </ul>
   <p>If an LXI vendor company fulfills these requirements it can apply for LXI Self-Certification. The LXI Vendor company’s representative submits the<strong> <u>
-  <a href="../assets/conformance/Registration for LXI Self-Certification Acceptance_May2019.docx">registration form</a>
+  <a href="../assets/conformance/Registration for LXI Self-Certification Acceptance.docx">registration form</a>
   </u>  </strong> and signs up to attend an LXI PlugFest. This is to demonstrate the LXI Self-Certification testing capabilities to qualify for LXI Self-Certification Approval.<br>
     <strong><br><br>
     Apply for LXI Conformance</strong><br><br>
