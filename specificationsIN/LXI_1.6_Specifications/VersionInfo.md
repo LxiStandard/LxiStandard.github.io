@@ -4,7 +4,7 @@ title: LXI 1.6
 parent: LXI Specifications
 nav_order:  1
 ---
-# Draft LXI 1.6 Specifications
+# LXI 1.6 Specifications
 
 This is the LXI 1.6 version of  the specifications. For information
 on how LXI documents are organized see:
