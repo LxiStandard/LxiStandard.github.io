@@ -2,7 +2,7 @@
 layout: default
 title: LXI Common Configuration Schema
 nav_order:  1
-parent: LXI API Schemas
+parent: Schemas
 ---
 
 # LXI Common Configuration Schema
@@ -25,5 +25,7 @@ The following examples are provided:
 
 | Example | Purpose |
 | ------------- |-------------|
+| LXICommonConfigurationExample.xml | Common Configuration Basic example with UnsecureMode as false |
 | HashedPasswordExample.xml | Added a couple of passwords to the basic example  |
+| LXICommonConfigurationExampleWithUnsecureModeEnabled.xml | Telnet and SCPIRaw enabled so UnsecureMode is enabled |
 

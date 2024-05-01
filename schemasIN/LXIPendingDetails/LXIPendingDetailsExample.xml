@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LXIPendingDetails xmlns="http://lxistandard.org/schemas/LXIPendingDetails/1.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://lxistandard.org/schemas/LXIPendingDetails/1.0 1.0.xsd">
+    <URL>/pending/query/page</URL>
+    <UserActionRequired>false</UserActionRequired>
+    <EstimatedTimeToComplete>0</EstimatedTimeToComplete>
+    <Details>Trigger Services refresh, Mdns is not ready.</Details>
+</LXIPendingDetails>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LXIProblemDetails xmlns="http://lxistandard.org/schemas/LXIProblemDetails/1.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://lxistandard.org/schemas/LXIProblemDetails/1.0 1.0.xsd">
+    <Title>405 - Method Not Allowed</Title>
+    <Detail>The HTTP method accesed is not defined</Detail>
+    <Instance>/lxi/api/common-configuration</Instance>
+</LXIProblemDetails>

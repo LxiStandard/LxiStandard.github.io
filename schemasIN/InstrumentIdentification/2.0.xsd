@@ -1,7 +1,10 @@
-     
 <!-- 
+    LXI Identification Schema Version 2.0, April 12, 2024
+       Changes:
+            * Removed "www." from namespace to be consistant with all other schemas.
+
     LXI Identification Schema Version 2.0, August 29, 2023
-        Changes:
+       Changes:
             * Simplifies the xsd specification while still retaining
               substantial equivalence with Version 1.0.  This facilitates use with
               current XML tools.
@@ -21,9 +24,9 @@
             April 2006 - Initial version associated with the LXI 1.2 standard.
 -->
 
-<xs:schema xmlns:lxi="http://www.lxistandard.org/InstrumentIdentification/2.0" 
+<xs:schema xmlns:lxi="http://lxistandard.org/schemas/InstrumentIdentification/2.0" 
         xmlns:xs="http://www.w3.org/2001/XMLSchema" 
-        targetNamespace="http://www.lxistandard.org/InstrumentIdentification/2.0" 
+        targetNamespace="http://lxistandard.org/schemas/InstrumentIdentification/2.0" 
         elementFormDefault="qualified" 
         attributeFormDefault="unqualified"
         version="2.0">
@@ -32,7 +35,7 @@
         <xs:annotation>
             <xs:appinfo>
             <!-- The following date should be updated whenever this schema is updated!  Including doc changes.-->
-                <editorialdate>August 29, 2023</editorialdate>
+                <editorialdate>April 12, 2024</editorialdate>
             </xs:appinfo>
             <xs:documentation>
                 <div>

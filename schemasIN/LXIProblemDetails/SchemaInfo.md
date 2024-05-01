@@ -2,7 +2,7 @@
 layout: default
 title: LXI Problem Details Schema
 nav_order:  1
-parent: LXI API Schemas
+parent: Schemas
 ---
 
 # LXI Problem Details Schema
@@ -24,3 +24,8 @@ the requirements to access the designated resource.
 In such cases, the information in this element may be redundant with 
 information also available from response headers.
 
+The following examples are provided:
+
+| Example | Purpose |
+| ------------- |-------------|
+| LXIProblemDetailsExample.xml | Simple example showing how to use the schema |

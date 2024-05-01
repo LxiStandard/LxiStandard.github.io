@@ -2,7 +2,7 @@
 layout: default
 title: LXI Pending Details Schema
 nav_order:  1
-parent: LXI API Schemas
+parent: Schemas
 ---
 
 # LXI Pending Details Schema
@@ -12,3 +12,8 @@ the server regarding HTTP operations that return an HTTP status
 of 202. The HTTP status of 202 indicates that the operation is 
 pending.
 
+The following examples are provided:
+
+| Example | Purpose |
+| ------------- |-------------|
+| LXIPendingDetailsExample.xml | Simple example showing how to use the schema |

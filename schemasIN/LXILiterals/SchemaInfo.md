@@ -2,7 +2,7 @@
 layout: default
 title: LXI Literals Schema
 nav_order:  1
-parent: LXI API Schemas
+parent: Schemas
 ---
 
 # LXI Literals Schema
@@ -17,3 +17,9 @@ syntactic validation.
 
 Methods that utilize this schema must document the attribute names 
 and types used.
+
+The following examples are provided:
+
+| Example | Purpose |
+| ------------- |-------------|
+| LXILiteralsExample.xml | Simple example showing how to use the schema |

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- General Example -->
-<LXIDevice xmlns="http://www.lxistandard.org/InstrumentIdentification/2.0" 
+<LXIDevice xmlns="http://lxistandard.org/InstrumentIdentification/2.0" 
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    xsi:schemaLocation="http://www.lxistandard.org/InstrumentIdentification/2.0 ./2.0.xsd"
+    xsi:schemaLocation="http://lxistandard.org/InstrumentIdentification/2.0 2.0.xsd"
 >
     <Manufacturer>My Company, Inc.</Manufacturer>
     <Model>EX1234</Model>

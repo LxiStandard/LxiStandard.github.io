@@ -2,7 +2,7 @@
 layout: default
 title: LXI Device Specific Configuration Schema
 nav_order:  1
-parent: LXI API Schemas
+parent: Schemas
 ---
 
 # LXI Device Specific Configuration Schema
@@ -13,3 +13,8 @@ interface. If the device configuration enables automatic
 configuration, such as DHCP, any configuration specified in the LXI 
 Device Specific Configuration Schema may be superseded.
 
+The following examples are provided:
+
+| Example | Purpose |
+| ------------- |-------------|
+| LXIDeviceSpecificConfigurationExample.xml | Simple example showing how to use the schema |

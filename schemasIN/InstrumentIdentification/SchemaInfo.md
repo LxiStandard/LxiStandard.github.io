@@ -2,7 +2,7 @@
 layout: default
 title: LXI Instrument Identification Schema
 nav_order:  1
-parent: LXI API Schemas
+parent: Schemas
 ---
 
 # LXI Instrument Identification Schema

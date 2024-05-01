@@ -2,7 +2,7 @@
 layout: default
 title: LXI Certificate List
 nav_order:  1
-parent: LXI API Schemas
+parent: Schemas
 ---
 
 # LXI Certificate List
@@ -14,3 +14,8 @@ Requests) currently on the device.
 The returned list of certificates includes a GUID that the client
 can use to delete the certificate.
 
+The following examples are provided:
+
+| Example | Purpose |
+| ------------- |-------------|
+| LXICertificateListExample.xml | Simple example showing a list of certificates |

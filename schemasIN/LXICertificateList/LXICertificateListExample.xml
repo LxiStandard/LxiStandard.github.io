@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LXICertificateList xmlns="http://lxistandard.org/schemas/LXICertificateList/1.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://lxistandard.org/schemas/LXICertificateList/1.0 1.0.xsd">
+    
+    <CertificateInfo GUID="0" Type="IDevID" DNSName="" Enabled="true" expirationDateTime="99991231235959Z"/>
+    <CertificateInfo GUID="5" Type="CSR" DNSName="" Enabled="true" expirationDateTime=""/>
+    <CertificateInfo GUID="7" Type="CSR" DNSName="" Enabled="true" expirationDateTime=""/>
+    <CertificateInfo GUID="8" Type="CSR" DNSName="" Enabled="true" expirationDateTime=""/>
+    <CertificateInfo GUID="9" Type="LDevID" DNSName="" Enabled="true" expirationDateTime="20231231235959Z"/>
+</LXICertificateList>
