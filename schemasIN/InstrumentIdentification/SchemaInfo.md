@@ -23,3 +23,4 @@ The following examples are provided:
 | Example | Purpose |
 | ------------- |-------------|
 | InstrumentWithSubinstrumentsExample.xml | Simple example showing a device with some subinstruments |
+| rs-sample-identification-1.0.xml        | Example of Rohde & Schwarz for LXI Version 1.5           |
