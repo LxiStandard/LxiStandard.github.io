@@ -41,6 +41,7 @@ with descriptive information about this schema.
 
 
 # fix the filename of the version and create the table for schema info
+
 def stripSuffixAndBuildTable(specName):
     schemasFiles=[]
     xmlFiles=[]
@@ -86,7 +87,7 @@ def updateSchemaInfo(directory, versionTable):
      # get header from default above or input file
     header=defaultSchemaInfo
     summaryMdFile=directory+r"/"+schemaInfoFilename
-    
+
     if os.path.isfile(summaryMdFile):
         with open(summaryMdFile,'r') as file:
             header=file.read()
@@ -102,7 +103,6 @@ def updateSchemaInfo(directory, versionTable):
     return
 
 
-
 # entirely rewrite schema output directory, so delete old and create anew
 if os.path.isdir(schemasOUT):
     shutil.rmtree(schemasOUT, ignore_errors=True)
@@ -115,8 +115,3 @@ schemas=os.listdir()
 for directory in schemas:
     versionTable=stripSuffixAndBuildTable(directory)
     updateSchemaInfo(directory, versionTable)
-
-  
-
-
-
