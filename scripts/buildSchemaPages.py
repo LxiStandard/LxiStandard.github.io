@@ -57,7 +57,7 @@ def stripSuffixAndBuildTable(specName):
     table.append("## Schemas")
     table.append("")
     #table.append("|---|---|---|")
-    table.append(specName+"|Version|Doc")
+    table.append("| |Version|Doc")
     for file in schemasFiles:
         shortname = file[:-4]
         os.rename(directory+file, directory+shortname)
