@@ -377,7 +377,7 @@
                 <p>        
                     RULE: Devices that support connected devices (e.g., bridges) shall provide 
                     base URLs for all connected devices in the ConnectedDevices element of the identification document. 
-                    A base URL is defined as a URL with a &quot;url-path&quot; that clearly identifies the connected device and one
+                    A base URL is defined as a URL with a “url-path” that clearly identifies the connected device and one
                     onto which a suffix path may be added to access properties of that connected device.
                     The base URL allows clients to enumerate devices connected to the bridge device.
                 </p>
