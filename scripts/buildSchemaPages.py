@@ -56,8 +56,8 @@ def stripSuffixAndBuildTable(specName):
     table.append("")
     table.append("## Schemas")
     table.append("")
-    table.append("|---|---|---|")
-    #table.append(specName+"|Version|Doc")  seems to look better without this
+    #table.append("|---|---|---|")
+    table.append(specName+"|Version|Doc")
     for file in schemasFiles:
         shortname = file[:-4]
         os.rename(directory+file, directory+shortname)
