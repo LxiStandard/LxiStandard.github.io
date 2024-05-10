@@ -1,5 +1,5 @@
 <!-- 
-    LXI Identification Schema Version 2.0, April 12, 2024
+    LXI Identification Schema Version 2.0, May 10, 2024
        Changes:
             * Removed "www." from namespace to be consistant with all other schemas.
 
@@ -35,7 +35,7 @@
         <xs:annotation>
             <xs:appinfo>
             <!-- The following date should be updated whenever this schema is updated!  Including doc changes.-->
-                <editorialdate>April 12, 2024</editorialdate>
+                <editorialdate>May 10, 2024</editorialdate>
             </xs:appinfo>
             <xs:documentation>
                 <div>
