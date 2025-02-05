@@ -51,7 +51,7 @@ jobs:
           destination: ./_site
       - name: Upload artifact
         # This will automatically upload an artifact from the '/_site' directory
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v4
         if: ${{ success() && github.ref == 'refs/heads/main' }}
         with:
           path: ./_site/
