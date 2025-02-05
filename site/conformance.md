@@ -32,7 +32,9 @@ the LXI consortium <a href="https://lxistandard.org/ContactUs.aspx">LXI contact<
   NVS = New Version Starts<br>
   PVE = Previous Version Ends <br>
 Technical justification: See the Technical Justification below for more details. <br></p>
-    <img src="../assets/conformance/Version Specific LXI Conformance Restrictions.png"><br><br><table>
+    <img src="../assets/conformance/New Products Version Specific LXI Conformance Restrictions 2025.PNG"><br><br>
+    <img src="../assets/conformance/Technical Justification Version Specific LXI Conformance Restrictions 2025.PNG"><br><br><table>
+                
     <tbody><tr></tr>
     <tr></tr>
     </tbody></table>  <br><br>  
