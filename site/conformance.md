@@ -108,20 +108,26 @@ There are two basic ways for you to test your device:</p>
 <ul type="disc">
   <ul type="circle">
     <blockquote>
-      <p><strong>Wheelwright Enterprises</strong><br>
-        Contact: <a href="mailto:Aaron.Hall@Bode-Ent.com">Wheelwright Enterprises</a></p>
       <p><strong>Keysight Technologies Deutschland GmbH</strong><br>
         Herrenberger Straße 130<br>
         71034 Böblingen<br>
         Germany<br>
         Contact: <a href="mailto:jochen_schmidt@keysight.com">Jochen Schmidt</a> <br>
         Lab email</p>
+      <p><strong>RIGOL Technologies</strong><br>
+          No.8, Ke Ling Road, New District, Suzhou, JiangSu, China <br>
+          Contact: <blockquote><a href="mailto:edward.pan@rigol.com">Edward Pan</a> <br>
+                   <a href="mailto:caiyoujie@rigol.com">YouJie Cai</a> <br>
+          </blockquote>
+          Web: <a href="http://rigol.com">www.rigol.com</a></p>
       <p><strong>TSEP</strong><br>
         Hopfenstr. 30<br>
         85283 Wolnzach<br>
         Germany<br>
         Contact: <a href="mailto:info@tsep.com">info@tsep.com</a> <br>
         Web: <a href="https://tsep.com/en/">www.tsep.com</a></p>
+      <p><strong>Wheelwright Enterprises</strong><br>
+        Contact: <a href="mailto:Aaron.Hall@Bode-Ent.com">Wheelwright Enterprises</a></p>
     </blockquote>
   </ul>
   </ul>
