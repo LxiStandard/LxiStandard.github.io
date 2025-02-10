@@ -106,7 +106,7 @@ There are two basic ways for you to test your device:</p>
   <ul>
     <li><strong>Test using an approved, privately arranged LXI Test House:</strong></li>
   </ul>
-  <p>Currently there are four test houses in the US and Europe:<br>
+  <p>Currently there are four test houses in the US, China and Europe:<br>
     </p>
 <ul type="disc">
   <ul type="circle">
