@@ -20,7 +20,7 @@ Interoperability.&nbsp; Plain and simple.&nbsp; The LXI Consortium was formed in
 <br>
 The following document describes the LXI Consortium policies for certifying conformance to the current LXI 1.6 and previous versions:</p>
   <ul>
-    <li><a href="../assets/conformance/LXI Conformance Policy for Certifying Conformance to LXI Consortium Standards V1.6 Rev2.2.pdf"><strong>LXI Consortium Policy for Certifying to LXI Consortium Standards</strong></a></li>
+    <li><a href="../assets/conformance/LXI Conformance Policy for Certifying Conformance to LXI Consortium Standards V1.6 Rev2.3.pdf"><strong>LXI Consortium Policy for Certifying to LXI Consortium Standards</strong></a></li>
   </ul>
   <p><strong>Note:</strong> No vendor may use the LXI logo or the letters "LXI" on an instrument or in any promotional material or press releases regarding the instrument until the instrument passes all certification tests and is approved by the LXI Conformance Committee as being LXI compliant. The LXI Consortium will enforce the laws governing the use of the LXI trademark for the benefit of all its members.</p><br>
   <p><strong>Where to start</strong><br><br>
