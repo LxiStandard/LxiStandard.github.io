@@ -1,4 +1,9 @@
 <!-- 
+    LXI Identification Schema Version 2.0, October 31, 2024
+       Changes:
+            * Made LXIDevice/LXIVersion optional to enable connected devices 
+              that are not LXI devices (such as PXI and GPIB).
+
     LXI Identification Schema Version 2.0, May 10, 2024
        Changes:
             * Removed "www." from namespace to be consistant with all other schemas.
@@ -35,7 +40,7 @@
         <xs:annotation>
             <xs:appinfo>
             <!-- The following date should be updated whenever this schema is updated!  Including doc changes.-->
-                <editorialdate>May 10, 2024</editorialdate>
+                <editorialdate>October 31, 2024</editorialdate>
             </xs:appinfo>
             <xs:documentation>
                 <div>
@@ -337,7 +342,7 @@
                     </xs:appinfo>
                 </xs:annotation>
             </xs:element>
-            <xs:element name="LXIVersion" type="xs:string" minOccurs="1" maxOccurs="1">
+            <xs:element name="LXIVersion" type="xs:string" minOccurs="0" maxOccurs="1">
                 <xs:annotation>
                     <xs:documentation>
                         Indicates the latest version of the LXI specification 
