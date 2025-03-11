@@ -351,12 +351,13 @@
                 <xs:annotation>
                     <xs:documentation>
                         <p>
-						    Indicates the latest version of the LXI specification 
-                            this device conforms with.
-						</p>
-						<p>
+			   Indicates the latest version of the LXI specification 
+                           this device conforms with.
+			</p>
+			
+			<p>
                             RULE: All LXI Devices are required to have a LXIVersion. Only ConnectedDevices which
-							are required to inherit from LXIDevice are not reuired to have a LXIVersion.
+			    are required to inherit from LXIDevice are not required to have a LXIVersion.
                         </p>
                     </xs:documentation>
                     <xs:appinfo>
