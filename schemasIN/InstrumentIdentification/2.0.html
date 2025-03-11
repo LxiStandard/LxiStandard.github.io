@@ -363,8 +363,14 @@
                             this element in the LXI Instrument Identification response.
                         </p>
                     </td></tr><tr xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><td>LXIVersion</td><td>xs:string</td><td> Optional </td><td>
-                        Indicates the latest version of the LXI specification 
-                        this device conforms with.
+                        <p xmlns:lxi="http://lxistandard.org/schemas/InstrumentIdentification/2.0">
+						    Indicates the latest version of the LXI specification 
+                            this device conforms with.
+						</p>
+						<p xmlns:lxi="http://lxistandard.org/schemas/InstrumentIdentification/2.0">
+                            RULE: All LXI Devices are required to have a LXIVersion. Only ConnectedDevices which
+							are required to inherit from LXIDevice are not reuired to have a LXIVersion.
+                        </p>
                     </td></tr><tr xmlns:lxi="http://lxistandard.org/schemas/LXICommonConfiguration/0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"><td>LXIExtendedFunctions</td><td>lxi:LXIExtendedFunctions</td><td> Optional </td><td>
                         LXI Extended functions used to describe extended 
                         capabilities of the instrument.
