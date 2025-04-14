@@ -2,7 +2,7 @@
 layout: default
 title: LXI 1.6 Specifications Archive
 parent: LXI Specifications
-nav_order:  1
+nav_order:  4
 ---
 # LXI 1.6 Specifications Archive
 
