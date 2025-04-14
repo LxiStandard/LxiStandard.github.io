@@ -5,10 +5,10 @@ author: LXI Admin
 excerpt_separator: <!--excerpt-->
 ---
 
-The Kerberos Test Procedures have been updated
-    * More descriptive in certain areas.
-    * Address change to API Extended Function with Connected Devices and LXIVersion.
-
+The Kerberos Test Procedures have been updated for:    
+   * More descriptive in certain areas.
+   * Address a change in the API Extended Function with Connected Devices and LXIVersion.  
+    
 <!--excerpt-->
 
 
