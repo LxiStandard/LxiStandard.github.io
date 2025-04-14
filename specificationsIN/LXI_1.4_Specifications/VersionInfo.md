@@ -2,7 +2,7 @@
 layout: default
 title: LXI 1.4 Specifications
 parent: LXI Specifications
-nav_order:  3
+nav_order:  1
 ---
 # LXI 1.4 Specifications
 
