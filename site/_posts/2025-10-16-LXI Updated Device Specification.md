@@ -1,6 +1,6 @@
 ---
 layout: posts
-title: "Updated LXI 1.6 HiSLIP Extended Function"
+title: "Updated LXI 1.6.1 Device Specification"
 author: LXI Admin
 excerpt_separator: <!--excerpt-->
 ---
@@ -16,5 +16,6 @@ The LXI HiSLIP Extended Function Updated
 John Ryland
 LXI Technical Committee Chair
 Email: tech-chair@members.lxistandard.org
+
 
 
