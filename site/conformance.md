@@ -159,7 +159,7 @@ There are two basic ways for you to test your device:</p>
   </u>  </strong> and signs up to attend an LXI PlugFest. This is to demonstrate the LXI Self-Certification testing capabilities to qualify for LXI Self-Certification Approval.<br>
     <strong><br><br>
     Apply for LXI Conformance</strong><br><br>
-  If your device has successfully passed the LXI conformance tests submit your “Application for Certification to LXI Device Specification 2016” with your conformance documentation together with the test results (LXI Conformance Test Suite XML/PDF file) to <a href="mailto:LXIConformance@lxistandard.org">the LXI Conformance Committee</a>. For the conformance documentation use the 2-page template form:</p>
+  If your device has successfully passed the LXI conformance tests submit your “Application for Certification to LXI Device Specification 2016” with your conformance documentation together with the test results (LXI Conformance Test Suite XML/PDF file) to <a href="mailto:thwg@members.lxistandard.org">the LXI Conformance Committee</a>. For the conformance documentation use the 2-page template form:</p>
   <ul>
     <li><a href="../assets/conformance/Application for Certification to LXI Device Specification 2023.docx"><strong>Application for Certification to LXI Device Specification</strong></a></li>
   </ul>
@@ -171,7 +171,7 @@ There are two basic ways for you to test your device:</p>
   <ul>
     <li><a href="../assets/conformance/LXI%20Conformance%20Committee%20-%20Technical%20Justification.pdf" target="_blank"><strong>LXI Conformance Committee - Technical Justification (pdf)</strong></a><strong><u> </u></strong></li>
   </ul>
-  <p>After successfully completed, the LXI Conformance Tests with the new (similar) product submit the following documents via email to <a href="mailto:LXIConformance@lxistandard.org">the LXI Conformance Committee</a>:</p>
+  <p>After successfully completed, the LXI Conformance Tests with the new (similar) product submit the following documents via email to <a href="mailto:thwg@members.lxistandard.org">the LXI Conformance Committee</a>:</p>
   <ul>
     <li>Original submission for LXI Conformant Device</li>
     <li>Original test data for LXI Conformant Device</li>
