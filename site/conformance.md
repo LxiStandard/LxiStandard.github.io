@@ -10,7 +10,7 @@ has_children: false
 
 <body>
     
-For information and forms for LXI Conformance see the main LXI Website here: https://lxistandard.org/lxi-conformance/
+For information and forms for LXI Conformance see the main LXI Website here: (https://lxistandard.org/lxi-conformance/)
 
    
 </body>
