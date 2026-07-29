@@ -10,6 +10,6 @@ has_children: false
 
 <body>
     
-For information and forms for LXI Conformance see the main LXI Website: [LXI Conformance](https://lxistandard.org/lxi-conformance/).
+For information and forms for LXI Conformance see the main LXI Website:[LXI Conformance](https://lxistandard.org/lxi-conformance/).
    
 </body>
